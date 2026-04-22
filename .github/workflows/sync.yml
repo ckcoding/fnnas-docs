@@ -1,0 +1,41 @@
+name: Sync fnOS Docs
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Sync docs
+        run: python scripts/sync_fnnas_docs.py
+
+      - name: Commit and push changes
+        run: |
+          if git diff --quiet -- docs assets ALL_DOCS.md; then
+            echo "No documentation changes"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs assets ALL_DOCS.md
+          git commit -m "chore: sync fnOS docs"
+          git push
