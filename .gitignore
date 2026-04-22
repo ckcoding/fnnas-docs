@@ -6,3 +6,4 @@ __pycache__/
 .python-version
 .venv/
 venv/
+sync-summary.json

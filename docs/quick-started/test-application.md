@@ -1,46 +1,41 @@
-# ð§ªãæµè¯åºç¨
+# 🧪　测试应用
 
-> Source: [https://developer.fnnas.com/docs/quick-started/test-application/](https://developer.fnnas.com/docs/quick-started/test-application/)
+> 原始页面: [https://developer.fnnas.com/docs/quick-started/test-application/](https://developer.fnnas.com/docs/quick-started/test-application/)
 
-## å®è£ fpk
+## 安装 fpk
 
-å° fpk æä»¶æ¾ç½®å°é£ç fnOS è®¾å¤ä¸å®è£æµè¯ï¼
+将 fpk 文件放置到飞牛 fnOS 设备上安装测试：
 
-### æ¹å¼ä¸
+### 方式一
 
-ä½¿ç¨ `appcenter-cli` å·¥å·æä½
+使用 `appcenter-cli` 工具操作
 
 ```bash
 appcenter-cli install-fpk App.Native.HelloFnosAppCenter.fpk
 ```
 
-### æ¹å¼äº
+### 方式二
 
 ![](../../assets/static/appcenter-marketing/20250829100144099.png)
 
 > [!NOTE]
-> æå¨å®è£
-> å
-> ¥å£ä»
-> ç¨äºåºç¨æµè¯ç¨éï¼ä¸å¾ç¨äºåºç¨ååãæ¸©é¦¨æéï¼å¨ç³»ç»åç»­æ´æ°ä¸­ï¼å°è¡¥å
->
-> ç­¾åæ ¡éªé»è¾ã
+> 手动安装入口仅用于应用测试用途，不得用于应用分发。温馨提醒，在系统后续更新中，将补充签名校验逻辑。
 
-æå¨å®è£å¥å£é»è®¤å³é­ï¼ä½ å¯ä»¥ ssh ç»å½é£ç fnOS åè¾å¥ä»¥ä¸å½ä»¤å¼å¯
+手动安装入口默认关闭，你可以 ssh 登录飞牛 fnOS 后输入以下命令开启
 
 ```bash
 appcenter-cli manual-install enable
 ```
 
-## æ¥çå¯å¨åæ­¢æ¥å¿
+## 查看启动停止日志
 
-æç§ `cmd/main` çéç½®ï¼æ¥å¿ä½ç½®ä¸º `/var/apps/App.Native.HelloFnosAppCenter/var/info.log`ï¼å¯æ£æ¥æ¯å¦æ­£å¸¸è¿è¡
+按照 `cmd/main` 的配置，日志位置为 `/var/apps/App.Native.HelloFnosAppCenter/var/info.log`，可检查是否正常运行
 
-## ç¹å»æ¡é¢å¾æ 
+## 点击桌面图标
 
-å®è£å¹¶å¯å¨å®æåï¼æ¡é¢å°åºç°åä¸º **åºç¨ä¸­å¿æ¡ä¾** çå¾æ ï¼ç¹å»å³å¯è®¿é®åºç¨
+安装并启动完成后，桌面将出现名为 **应用中心案例** 的图标，点击即可访问应用
 
 ---
 
-- Previous: [â¨ãåå»ºåºç¨](create-application.md)
-- Next: [ð¤ãä¸æ¶åºç¨](publish-application.md)
+- 上一页: [✨　创建应用](create-application.md)
+- 下一页: [📤　上架应用](publish-application.md)

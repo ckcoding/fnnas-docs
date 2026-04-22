@@ -1,77 +1,73 @@
-# â¨ãåå»ºåºç¨
+# ✨　创建应用
 
-> Source: [https://developer.fnnas.com/docs/quick-started/create-application/](https://developer.fnnas.com/docs/quick-started/create-application/)
+> 原始页面: [https://developer.fnnas.com/docs/quick-started/create-application/](https://developer.fnnas.com/docs/quick-started/create-application/)
 
-## ä» "0" å¼å§æå»ºåºç¨ä¸­å¿åºç¡åºç¨
+## 从 "0" 开始构建应用中心基础应用
 
 > [!TIP]
-> `App.Native.HelloFnosAppCenter` web é¡µé¢ç¤ºä¾ä»£ç å¯ä»¥ç¹å» [æ­¤å¤](https://static.fnnas.com/appcenter-marketing/App.Native.HelloFnosAppCenter.zip) ä¸è½½
+> `App.Native.HelloFnosAppCenter` web 页面示例代码可以点击 [此处](https://static.fnnas.com/appcenter-marketing/App.Native.HelloFnosAppCenter.zip) 下载
 
 > [!NOTE]
-> è¯¥åºç¨æç¨æ¡ä¾æ å®é
-> ç¨éä»
-> ä¸ºæ¹ä¾¿å¼åè
-> å¿«éäºè§£åºç¨å¼åååºç¨å°å
-> æµç¨ï¼
+> 该应用教程案例无实际用途仅为方便开发者快速了解应用开发及应用封包流程！
 
-## å¼åæµç¨
+## 开发流程
 
-ããä¸ä¸ªåºç¨çå¼åæµç¨ï¼å¯ä»¥åä¸ºä»¥ä¸å ä¸ªæ­¥éª¤ï¼
+一个应用的开发流程，可以分为以下几个步骤：
 
-![æµç¨å¾](../../assets/site/assets/images/image-1-601afe3743744f3eb951bb56fe35f8a2.png)
+![流程图](../../assets/site/assets/images/image-1-601afe3743744f3eb951bb56fe35f8a2.png)
 
-## å·ä½æ­¥éª¤
+## 具体步骤
 
-### 1. å¶ä½ web é¡µé¢
+### 1. 制作 web 页面
 
-ããä¸ºæ¹ä¾¿ä¸åé¶æ®µçå¼åèæ´å¿«éçäºè§£é£ç OS åºç¨ä¸­å¿å¼åæµç¨ï¼æ¬æç¨æ¡ä¾å°ä½¿ç¨åç«¯åºç¡å¼åè¯­è¨ `Html/Javascript/CSS` å¶ä½ä¸ä¸ªç®åç web é¡µé¢ï¼åå«å¾çèµæºãCSS æ ·å¼è¡¨å JS æä»¶ï¼å¹¶å°é¡µé¢ä¿å­ä¸º index.html æä»¶ã
+为方便不同阶段的开发者更快速的了解飞牛 OS 应用中心开发流程，本教程案例将使用前端基础开发语言 `Html/Javascript/CSS` 制作一个简单的 web 页面，包含图片资源、CSS 样式表及 JS 文件，并将页面保存为 index.html 文件。
 
-#### web é¡µé¢ç®å½ç»æ:
+#### web 页面目录结构:
 
 ```text
 HelloFnosAppCenter
-âââ css
-âÂ Â  âââ style.css
-âââ images
-âÂ Â  âââ logo.png
-âââ index.html
-âââ js
-    âââ main.js
+├── css
+│   └── style.css
+├── images
+│   └── logo.png
+├── index.html
+└── js
+    └── main.js
 ```
 
 **./index.html**
 
 ```html
 <!DOCTYPE html>
-<!-- å£°æææ¡£ç±»åä¸º HTML5 -->
+<!-- 声明文档类型为 HTML5 -->
 <html lang="zh-CN">
 <head>
-    <!-- å­ç¬¦ç¼ç ï¼ç¡®ä¿ä¸­æ/ç¹æ®å­ç¬¦æ­£å¸¸æ¾ç¤º -->
+    <!-- 字符编码：确保中文/特殊字符正常显示 -->
     <meta charset="UTF-8">
-    <!-- è§å£è®¾ç½®ï¼ééç§»å¨ç«¯ -->
+    <!-- 视口设置：适配移动端 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- é¡µé¢æ é¢ï¼æµè§å¨æ ç­¾æ¾ç¤º -->
-    <title>åºç¨ä¸­å¿æå­¦æ¼ç¤º</title>
+    <!-- 页面标题：浏览器标签显示 -->
+    <title>应用中心教学演示</title>
 
-    <!-- å¼å¥å¤é¨ CSS æ ·å¼æä»¶ï¼æ ¸å¿ç¥è¯ç¹ï¼å¤é¨æ ·å¼å¼å¥ï¼ -->
-    <!-- è·¯å¾è¯´æï¼./ è¡¨ç¤ºå½åç®å½ï¼css/style.css æ¯æ ·å¼æä»¶çç¸å¯¹è·¯å¾ -->
+    <!-- 引入外部 CSS 样式文件（核心知识点：外部样式引入） -->
+    <!-- 路径说明：./ 表示当前目录，css/style.css 是样式文件的相对路径 -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- 1. Logo å±ç¤ºåºï¼æ ¸å¿ç¥è¯ç¹ï¼å¾çå¼å¥ï¼ -->
+    <!-- 1. Logo 展示区（核心知识点：图片引入） -->
     <div class="logo-container">
-        <!-- srcï¼å¾çè·¯å¾ï¼altï¼å¾çå è½½å¤±è´¥æ¶çæ¿ä»£ææ¬ï¼æ éç¢/SEOï¼ -->
-        <img src="./images/logo.png" alt="æå­¦æ¼ç¤ºLogo" class="logo">
+        <!-- src：图片路径；alt：图片加载失败时的替代文本（无障碍/SEO） -->
+        <img src="./images/logo.png" alt="教学演示Logo" class="logo">
     </div>
 
     <div class="hello-container">
         <h1 id="helloText">Welcome to the fnOS AppCenter</h1>
-        <p class="tips">ç¹å»ä¸æ¹æå­ä½éªJSäº¤äº</p>
+        <p class="tips">点击上方文字体验JS交互</p>
     </div>
 
-    <!-- 2. å¼å¥å¤é¨ JS æä»¶ï¼æ ¸å¿ç¥è¯ç¹ï¼JS æä»¶å¼å¥ï¼ -->
-    <!-- å»ºè®®æ¾å¨ body åºé¨ï¼ç¡®ä¿ DOM å è½½å®æååæ§è¡ JSï¼é¿åè·åä¸å°åç´  -->
-    <!-- è·¯å¾è¯´æï¼./js/main.js æ¯JSæä»¶çç¸å¯¹è·¯å¾ -->
+    <!-- 2. 引入外部 JS 文件（核心知识点：JS 文件引入） -->
+    <!-- 建议放在 body 底部：确保 DOM 加载完成后再执行 JS，避免获取不到元素 -->
+    <!-- 路径说明：./js/main.js 是JS文件的相对路径 -->
     <script src="./js/main.js"></script>
 </body>
 </html>
@@ -80,71 +76,71 @@ HelloFnosAppCenter
 **./css/style.css**
 
 ```css
-/* å¨å±æ ·å¼éç½® */
+/* 全局样式重置 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* é¡µé¢æ´ä½æ ·å¼ */
+/* 页面整体样式 */
 body {
-    font-family: "Microsoft YaHei", sans-serif; /* å­ä½è®¾ç½® */
-    background: linear-gradient(120deg, #5f85ff, #48e08f); ; /* é¡µé¢èç»¿æ¸åèæ¯*/
-    min-height: 100vh; /* é¡µé¢é«åº¦å æ»¡è§å£ */
-    display: flex; /* Flexå¸å±ï¼è®©åå®¹åç´+æ°´å¹³å±ä¸­ */
+    font-family: "Microsoft YaHei", sans-serif; /* 字体设置 */
+    background: linear-gradient(120deg, #5f85ff, #48e08f); ; /* 页面蓝绿渐变背景*/
+    min-height: 100vh; /* 页面高度占满视口 */
+    display: flex; /* Flex布局：让内容垂直+水平居中 */
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px; /* åç´ ä¹é´çé´è· */
-    /* æ¸åèæ¯é²éå¤ */
+    gap: 30px; /* 元素之间的间距 */
+    /* 渐变背景防重复 */
     background-repeat: no-repeat;
 }
 
-/* Logoå®¹å¨æ ·å¼ */
+/* Logo容器样式 */
 .logo-container {
-    width: 120px; /* å®¹å¨å®½åº¦ */
-    height: 120px; /* å®¹å¨é«åº¦ */
-    border-radius: 50%; /* åå½¢å®¹å¨ */
-    overflow: hidden; /* è£åªè¶åºå®¹å¨çå¾ç */
-    border: 3px solid #2563eb; /* è¾¹æ¡æ ·å¼ */
-    box-shadow: 0 0 15px rgba(37, 99, 235, 0.4); /* é´å½±ææ */
+    width: 120px; /* 容器宽度 */
+    height: 120px; /* 容器高度 */
+    border-radius: 50%; /* 圆形容器 */
+    overflow: hidden; /* 裁剪超出容器的图片 */
+    border: 3px solid #2563eb; /* 边框样式 */
+    box-shadow: 0 0 15px rgba(37, 99, 235, 0.4); /* 阴影效果 */
 }
 
-/* Logoå¾çæ ·å¼ */
+/* Logo图片样式 */
 .logo {
-    width: 100%; /* å¾çå®½åº¦å æ»¡å®¹å¨ */
-    height: 100%; /* å¾çé«åº¦å æ»¡å®¹å¨ */
-    object-fit: cover; /* å¾çç­æ¯ç¼©æ¾ï¼å¡«åå®¹å¨ */
-    cursor: pointer; /* é¼ æ æ¬æµ®æ¾ç¤ºæå */
-    transition: transform 0.3s ease; /* è¿æ¸¡å¨ç»ï¼æå­¦ç¹ï¼CSSå¨ç»ï¼ */
+    width: 100%; /* 图片宽度占满容器 */
+    height: 100%; /* 图片高度占满容器 */
+    object-fit: cover; /* 图片等比缩放，填充容器 */
+    cursor: pointer; /* 鼠标悬浮显示手型 */
+    transition: transform 0.3s ease; /* 过渡动画（教学点：CSS动画） */
 }
 
-/* Logoæ¬æµ®ææ */
+/* Logo悬浮效果 */
 .logo:hover {
-    transform: scale(1.2); /* é¼ æ æ¬æµ®æ¾å¤§1.2å */
+    transform: scale(1.2); /* 鼠标悬浮放大1.2倍 */
 }
 
 .hello-container {
-    text-align: center; /* ææ¬å±ä¸­ */
+    text-align: center; /* 文本居中 */
 }
 
 #helloText {
-    font-size: 48px; /* å­ä½å¤§å° */
-    color: #303133; /* å­ä½é¢è² */
-    transition: all 0.3s ease; /* è¿æ¸¡å¨ç» */
+    font-size: 48px; /* 字体大小 */
+    color: #303133; /* 字体颜色 */
+    transition: all 0.3s ease; /* 过渡动画 */
     cursor: pointer;
 }
 
-/* æ é¢æ¬æµ®ææ */
+/* 标题悬浮效果 */
 #helloText:hover {
-    color: #2563eb; /* æ¬æµ®åè² */
-    transform: translateY(-5px); /* æ¬æµ®ä¸ç§» 5px */
-    /* æ°å¢æå­é´å½±ï¼å¢å¼ºè§è§å±æ¬¡ */
+    color: #2563eb; /* 悬浮变色 */
+    transform: translateY(-5px); /* 悬浮上移 5px */
+    /* 新增文字阴影，增强视觉层次 */
     text-shadow: 0 2px 8px rgba(37, 99, 235, 0.3)
 }
 
-/* æç¤ºææ¬æ ·å¼ */
+/* 提示文本样式 */
 .tips {
     margin-top: 15px;
     font-size: 16px;
@@ -155,84 +151,84 @@ body {
 **./js/main.js**
 
 ```js
-// æå­¦ç¹1ï¼DOM è·ååç´
+// 教学点1：DOM 获取元素
 const helloText = document.getElementById('helloText');
 
-// æå­¦ç¹2ï¼ç»å®ç¹å»äºä»¶ï¼äº¤äºæ ¸å¿ï¼
+// 教学点2：绑定点击事件（交互核心）
 helloText.addEventListener('click', function() {
-    // æå­¦ç¹3ï¼ä¿®æ¹ DOM åå®¹ï¼å¨ææ¹åææ¬ï¼
+    // 教学点3：修改 DOM 内容（动态改变文本）
     const originalText = 'Hello fnOS AppCenter !';
-    const newText = 'ð ä½ å¥½ï¼é£çåºç¨ä¸­å¿åéå¼åèï¼';
+    const newText = '👋 你好，飞牛应用中心先锋开发者！';
 
     if (helloText.innerText === originalText) {
         helloText.innerText = newText;
-        // æå­¦ç¹4ï¼å¼¹åºæç¤ºæ¡ï¼åºç¡äº¤äºï¼
-        alert('ð JSäº¤äºçæå¦ï¼ææ¬å·²ä¿®æ¹ï½');
+        // 教学点4：弹出提示框（基础交互）
+        alert('🎉 JS交互生效啦！文本已修改～');
     } else {
-        helloText.innerText = originalText; // è¿åææ¬
+        helloText.innerText = originalText; // 还原文本
     }
 });
 
-// æå­¦ç¹5ï¼æ§å¶å°è¾åºï¼è°è¯å¸¸ç¨ï¼
-console.log('â å¤é¨JSæä»¶å è½½æåï¼');
-console.log('ð å½åç¹å»çåç´ ï¼', helloText);
+// 教学点5：控制台输出（调试常用）
+console.log('✅ 外部JS文件加载成功！');
+console.log('🔍 当前点击的元素：', helloText);
 ```
 
-### 2. fnpack å·¥å·åå»ºåºç¨é¡¹ç®
+### 2. fnpack 工具创建应用项目
 
-ããä½¿ç¨ `fnpack` å·¥å·åå»ºåºç¨é¡¹ç®ï¼å¹¶å° web é¡µé¢è¿ç§»å° app ç®å½ä¸ã`fnpack` å·¥å·ä½¿ç¨æ¹å¼ [ç¹æ­¤äºè§£](../cli/fnpack.md)ã
+使用 `fnpack` 工具创建应用项目，并将 web 页面迁移到 app 目录下。`fnpack` 工具使用方式 [点此了解](../cli/fnpack.md)。
 
 ```bash
-# åå»ºç¬ç«é¡¹ç®
+# 创建独立项目
 fnpack create App.Native.HelloFnosAppCenter
 ```
 
-- åå»ºå®æåå°ä¼å¾å°å¦ä¸ç®å½ç»æ
+- 创建完成后将会得到如下目录结构
 
 ```text
 App.Native.HelloFnosAppCenter
-âââ app                         # ðï¸ åºç¨æä»¶ç®å½
-âÂ Â  âââ server                  # ðï¸ åå°æå¡ç¨åºç®å½ï¼æ¬æ¡ä¾ä¸ºéæé¡µé¢ä¸æ¶åï¼
-âÂ Â  âââ ui                      # ðï¸ åºç¨å¥å£åè§å¾
-âÂ Â  âÂ Â  âââ config              # ðï¸ åºç¨å¥å£éç½®æä»¶
-âÂ Â  âÂ Â  âââ images              # ðï¸ åºç¨å¾æ èµæº
-âÂ Â  âÂ Â      âââ icon_256.png    # åºç¨å¾æ ï¼256x256ï¼
-âÂ Â  âÂ Â      âââ icon_64.png     # åºç¨å¾æ ï¼64x64ï¼
-âÂ Â  âââ www                     # ðï¸ åºç¨ web èµæºç®å½
-âââ cmd                         # ðï¸ åºç¨çå½å¨æç®¡çèæ¬
-âÂ Â  âââ config_callback         # åºç¨éç½®åè°èæ¬
-âÂ Â  âââ config_init             # åºç¨éç½®åå§åèæ¬
-âÂ Â  âââ install_callback        # åºç¨å®è£åè°èæ¬
-âÂ Â  âââ install_init            # åºç¨å®è£åå§åèæ¬
-âÂ Â  âââ main                    # åºç¨ä¸»èæ¬ï¼ç¨äºå¯å¨ãåæ­¢ãæ£æ¥åºç¨ç¶æ
-âÂ Â  âââ uninstall_callback      # åºç¨å¸è½½åè°èæ¬
-âÂ Â  âââ uninstall_init          # åºç¨å¸è½½åå§åèæ¬
-âÂ Â  âââ upgrade_callback        # åºç¨æ´æ°åè°èæ¬
-âÂ Â  âââ upgrade_init            # åºç¨æ´æ°åå§åèæ¬
-âââ config                      # ðï¸ åºç¨éç½®ç®å½
-âÂ Â  âââ privilege               # åºç¨æééç½®
-âÂ Â  âââ resource                # åºç¨èµæºéç½®
-âââ ICON_256.PNG                # åºç¨å 256*256 å¾æ æä»¶
-âââ ICON.PNG                    # åºç¨å 64*64 å¾æ æä»¶
-âââ manifest                    # åºç¨ååºæ¬ä¿¡æ¯æè¿°æä»¶
-âââ wizard                      # ðï¸ åºç¨åå¯¼ç®å½
+├── app                         # 🗂️ 应用文件目录
+│   ├── server                  # 🗂️ 后台服务程序目录（本案例为静态页面不涉及）
+│   ├── ui                      # 🗂️ 应用入口及视图
+│   │   ├── config              # 🗂️ 应用入口配置文件
+│   │   └── images              # 🗂️ 应用图标资源
+│   │       ├── icon_256.png    # 应用图标（256x256）
+│   │       └── icon_64.png     # 应用图标（64x64）
+│   └── www                     # 🗂️ 应用 web 资源目录
+├── cmd                         # 🗂️ 应用生命周期管理脚本
+│   ├── config_callback         # 应用配置回调脚本
+│   ├── config_init             # 应用配置初始化脚本
+│   ├── install_callback        # 应用安装回调脚本
+│   ├── install_init            # 应用安装初始化脚本
+│   ├── main                    # 应用主脚本，用于启动、停止、检查应用状态
+│   ├── uninstall_callback      # 应用卸载回调脚本
+│   ├── uninstall_init          # 应用卸载初始化脚本
+│   ├── upgrade_callback        # 应用更新回调脚本
+│   └── upgrade_init            # 应用更新初始化脚本
+├── config                      # 🗂️ 应用配置目录
+│   ├── privilege               # 应用权限配置
+│   └── resource                # 应用资源配置
+├── ICON_256.PNG                # 应用包 256*256 图标文件
+├── ICON.PNG                    # 应用包 64*64 图标文件
+├── manifest                    # 应用包基本信息描述文件
+└── wizard                      # 🗂️ 应用向导目录
 ```
 
-### 3. å¶ä½åæä»¶ icon å¾æ 
+### 3. 制作包文件 icon 图标
 
-- å¶ä½ icon å¾æ ï¼åå«å¯¼åº`256*256`å`64*64`çå¾æ æä»¶ï¼å¹¶å½åä¸º`ICON_256.PNG`å`ICON.PNG`æ¾ç½®å¨é¡¹ç®æ ¹ç®å½ä¸ï¼å¹¶å°å¯¹åºåç´ çå¾æ æä»¶é¢å¤å¤å¶ä¸ä»½æ¾ç½®å¨`app/ui/images`ç®å½ä¸ï¼**æ³¨æï¼è¯¥è·¯å¾å¾æ æä»¶çå½åä¸ºå°åï¼**ï¼
-- å¾æ è®¾è®¡ç´ æï¼å¯åå¾ [**iconfont**](https://www.iconfont.cn/) è¿è¡ç´ ææå¯»æ¥æ¾ï¼æ¯æSVG/PNGæ ¼å¼å¯¼åºã
+- 制作 icon 图标，分别导出`256*256`和`64*64`的图标文件，并命名为`ICON_256.PNG`和`ICON.PNG`放置在项目根目录下，并将对应像素的图标文件额外复制一份放置在`app/ui/images`目录下（**注意：该路径图标文件的命名为小写！**）
+- 图标设计素材，可前往 [**iconfont**](https://www.iconfont.cn/) 进行素材搜寻查找，支持SVG/PNG格式导出。
 
 > [!NOTE]
-> ãå«åè§ç©å½¢èæ¯å¾å±å¾æ  PSD æºæä»¶ï¼å¯ç¹ [**æ­¤å¤**](https://static.fnnas.com/appcenter-marketing/fnpack_ICON_256.zip) è¿è¡ä¸è½½ã
+> 含圆角矩形背景图层图标 PSD 源文件，可点 [**此处**](https://static.fnnas.com/appcenter-marketing/fnpack_ICON_256.zip) 进行下载。
 
-### 4. ç¼å manifest æä»¶å£°æåºç¨ä¿¡æ¯
+### 4. 编写 manifest 文件声明应用信息
 
 ```text
 appname               = App.Native.HelloFnosAppCenter
 version               = 1.0.0
-display_name          = æå­¦æ¡ä¾
-desc                  = æ¹ä¾¿å¼åèå¿«éäºè§£åºç¨å¼åååºç¨å°åæµç¨æå¶ä½çæå­¦æ¡ä¾
+display_name          = 教学案例
+desc                  = 方便开发者快速了解应用开发及应用封包流程所制作的教学案例
 arch                  = x86_64
 source                = thirdparty
 maintainer            = MR_XIAOBO
@@ -242,58 +238,56 @@ desktop_applaunchname = App.Native.HelloFnosAppCenter.Application
 ```
 
 > [!NOTE]
-> ãæ´å¤ `manifeståºç¨ä¿¡æ¯æè¿°æä»¶` é
-> ç½®æ¹æ³ï¼å¯ç¹ [**æ­¤å¤**](../core-concepts/manifest.md) è·³è½¬è¿è¡å­¦ä¹ ã
+> 更多 `manifest应用信息描述文件` 配置方法，可点 [**此处**](../core-concepts/manifest.md) 跳转进行学习。
 
-### 5. è¿ç§» web åºç¨å° app ç®å½ä¸
+### 5. 迁移 web 应用到 app 目录下
 
-- å¤å¶ web é¡µé¢å°app/wwwç®å½ä¸ï¼å¤å¶å®çæä»¶ç»æå¦ä¸(åç§æ·±è²é¨å)ï¼
+- 复制 web 页面到app/www目录下，复制完的文件结构如下(参照深色部分)：
 
 ```text
 App.Native.HelloFnosAppCenter
-âââ app
-âÂ Â  âââ .DS_Store
-âÂ Â  âââ server
-âÂ Â  âââ ui
-âÂ Â  âÂ Â  âââ config
-âÂ Â  âÂ Â  âââ .DS_Store
-âÂ Â  âÂ Â  âââ images
-âÂ Â  âÂ Â      âââ .DS_Store
-âÂ Â  âÂ Â      âââ icon_256.png
-âÂ Â  âÂ Â      âââ icon_64.png
-âÂ Â  âââ www                     # ðï¸ åºç¨ web èµæºç®å½
-âÂ Â      âââ css                 # ðï¸ æ ·å¼æä»¶ç®å½
-âÂ Â      âÂ Â  âââ style.css       # æ ·å¼æä»¶
-âÂ Â      âââ images              # ðï¸ å¾çæä»¶ç®å½
-âÂ Â      âÂ Â  âââ logo.png        # å¾çæä»¶
-âÂ Â      âââ index.html          # index ä¸»é¡µé¢æä»¶
-âÂ Â      âââ js                  # ðï¸ èæ¬æä»¶ç®å½
-âÂ Â          âââ main.js         # javascript èæ¬æä»¶
-Â·Â·Â·Â·Â·Â· # å¶ä»è·¯å¾å±çº§ç¥
+├── app
+│   ├── .DS_Store
+│   ├── server
+│   ├── ui
+│   │   ├── config
+│   │   ├── .DS_Store
+│   │   └── images
+│   │       ├── .DS_Store
+│   │       ├── icon_256.png
+│   │       └── icon_64.png
+│   └── www                     # 🗂️ 应用 web 资源目录
+│       ├── css                 # 🗂️ 样式文件目录
+│       │   └── style.css       # 样式文件
+│       ├── images              # 🗂️ 图片文件目录
+│       │   └── logo.png        # 图片文件
+│       ├── index.html          # index 主页面文件
+│       └── js                  # 🗂️ 脚本文件目录
+│           └── main.js         # javascript 脚本文件
+······ # 其他路径层级略
 ```
 
-### 6. éç½®åºç¨æé
+### 6. 配置应用权限
 
-- ä½¿ç¨é»è®¤æéæ¨¡å¼ï¼ä»¥ä¾¿åºç¨ç¨åºä»¥æå®å¨çæ¹å¼è¿è¡ï¼åå°é«æéå¯¹ NAS ç³»ç»äº§çå½±åï¼
-- å¨ config/ ç®å½ä¸åå»º privilege æä»¶ï¼æ²¡ææä»¶åç¼ï¼ï¼å¹¶æ·»å å¦ä¸åå®¹ï¼
+- 使用默认权限模式，以便应用程序以最安全的方式运行（减少高权限对 NAS 系统产生影响）
+- 在 config/ 目录下创建 privilege 文件（没有文件后缀），并添加如下内容：
 
 **config/privilege**
 
 ```json
 {
     "defaults": {
-        "run-as": "package"                 // è¿è¡èº«ä»½ï¼é»è®¤ä¸º packageï¼åºç¨ç¨æ·ï¼
+        "run-as": "package"                 // 运行身份，默认为 package（应用用户）
     },
-    "username": "hello_fnos_appcenter",     // åºç¨ä¸ç¨ç¨æ·åï¼é»è®¤ä¸º manifest ä¸­ç appname
-    "groupname": "hello_fnos_appcenter"     // åºç¨ä¸ç¨ç¨æ·ç»åï¼é»è®¤ä¸º manifest ä¸­ç appname
+    "username": "hello_fnos_appcenter",     // 应用专用用户名，默认为 manifest 中的 appname
+    "groupname": "hello_fnos_appcenter"     // 应用专用用户组名，默认为 manifest 中的 appname
 }
 ```
 
 > [!NOTE]
-> ãæ´å¤`åºç¨æé`é
-> ç½®æ¹æ³ï¼å¯ç¹ [**æ­¤å¤**](../core-concepts/privilege.md) è·³è½¬è¿è¡å­¦ä¹ ã
+> 更多`应用权限`配置方法，可点 [**此处**](../core-concepts/privilege.md) 跳转进行学习。
 
-### 7. éç½®åºç¨å¥å£ï¼å¹¶å¶ä½ CGI ç¨åº
+### 7. 配置应用入口，并制作 CGI 程序
 
 **app/ui/config**
 
@@ -301,87 +295,84 @@ App.Native.HelloFnosAppCenter
 {
     ".url": {
         "App.Native.HelloFnosAppCenter.Application": {
-            "title": "åºç¨ä¸­å¿æ¡ä¾",             // åºç¨å¥å£çæ¾ç¤ºæ é¢ï¼æ¡é¢å¾æ åç§°ï¼
-            "icon": "images/icon-{0}.png",      // å¾æ æä»¶è·¯å¾ï¼ç¸å¯¹äº UI ç®å½
-            "type": "iframe",                   // å¥å£ç±»åï¼æ¡é¢çªå£æ¨¡å¼
-            "protocol": "http",                 // è®¿é®åè®®ç±»åï¼http
+            "title": "应用中心案例",             // 应用入口的显示标题（桌面图标名称）
+            "icon": "images/icon-{0}.png",      // 图标文件路径，相对于 UI 目录
+            "type": "iframe",                   // 入口类型，桌面窗口模式
+            "protocol": "http",                 // 访问协议类型，http
             "url": "/cgi/ThirdParty/App.Native.HelloFnosAppCenter/index.cgi/",
-            "allUsers": true                    // ææç¨æ·é½å¯ä»¥è®¿é®
+            "allUsers": true                    // 所有用户都可以访问
         }
     }
 }
 ```
 
-#### å­æ®µè¯´æï¼
+#### 字段说明：
 
-- title - å¥å£çæ¾ç¤ºæ é¢ï¼ç¨æ·çå°çåç§°
-- icon - å¾æ æä»¶è·¯å¾ï¼ç¸å¯¹äº UI ç®å½
-    - {0} ä¼è¢«ç³»ç»æ¿æ¢ä¸ºå¾æ å°ºå¯¸ï¼64 æ 256ï¼
-    - ä¾å¦ï¼images/icon-{0}.png â images/icon-64.png æ images/icon-256.png
-- type - å¥å£ç±»å
-    - url - å¨æµè§å¨æ°æ ç­¾é¡µä¸­æå¼
-    - iframe - å¨æ¡é¢çªå£ä¸­ä»¥ iframe æ¹å¼å è½½
-- protocol - è®¿é®åè®®ï¼éå¸¸ä¸º http æ https
-- url - è®¿é®è·¯å¾ï¼åºç¨åé¨çç¸å¯¹è·¯å¾ï¼æ¡ä¾ä½¿ç¨ CGI æ¹æ¡ï¼CGI æå¡æ å°è·¯å¾ï¼/cgi/ThirdParty/[åºç¨åç§°]/**.cgiï¼
-- allUsers - è®¿é®æéæ§å¶
-    - true - ææç¨æ·é½å¯ä»¥è®¿é®
-    - false - ä»
-  ç®¡çåå¯ä»¥è®¿é®
+- title - 入口的显示标题，用户看到的名称
+- icon - 图标文件路径，相对于 UI 目录
+    - {0} 会被系统替换为图标尺寸（64 或 256）
+    - 例如：images/icon-{0}.png → images/icon-64.png 或 images/icon-256.png
+- type - 入口类型
+    - url - 在浏览器新标签页中打开
+    - iframe - 在桌面窗口中以 iframe 方式加载
+- protocol - 访问协议，通常为 http 或 https
+- url - 访问路径，应用内部的相对路径（案例使用 CGI 方案，CGI 服务映射路径：/cgi/ThirdParty/[应用名称]/**.cgi）
+- allUsers - 访问权限控制
+    - true - 所有用户都可以访问
+    - false - 仅管理员可以访问
 
 > [!NOTE]
-> ãæ´å¤`åºç¨å
-> ¥å£`é
-> ç½®æ¹æ³ï¼å¯ç¹ [**æ­¤å¤**](../core-concepts/app-entry.md) è·³è½¬è¿è¡å­¦ä¹ ã
+> 更多`应用入口`配置方法，可点 [**此处**](../core-concepts/app-entry.md) 跳转进行学习。
 
-#### å¶ä½ CGI ç¨åºï¼æ¨èï¼
+#### 制作 CGI 程序（推荐）
 
-- å¨app/uiç®å½ä¸åå»ºindex.cgiæä»¶ï¼åºäº linux ç³»ç» bash èæ¬å®ç°ï¼ï¼ä½¿å¶å¯ä»¥å¤çè§£æ html æä»¶åå®¹åéæèµæºè½¬åï¼æ·»å å¦ä¸åå®¹ï¼
+- 在app/ui目录下创建index.cgi文件（基于 linux 系统 bash 脚本实现），使其可以处理解析 html 文件内容及静态资源转发，添加如下内容：
 
 **app/ui/index.cgi**
 
 ```bash
 #!/bin/bash
 
-# èæ¬åç§°: index.cgi
-# ããçæ¬: 1.0.0
-# ããä½è: FNOSP/xieguanru
-# ãåä½è: FNOSP/MR_XIAOBO
-# åå»ºæ¥æ: 2025-11-18
-# æåä¿®æ¹: 2025-11-19
-# ããæè¿°: è¿ä¸ªèæ¬ç¨äºæ¼ç¤º Shell èæ¬çåç§æ³¨éæ¹å¼
-# ä½¿ç¨æ¹å¼: æä»¶éå½åï¼ä» linux_shell_cgi_index.sh æ¹æ index.cgi,
-# ãããããæ¾ç½®åºç¨å /ui è·¯å¾ä¸ï¼è®°å¾ chmod +x index.cgi èµæ
-# ãè®¸å¯è¯: MIT
+# 脚本名称: index.cgi
+# 　　版本: 1.0.0
+# 　　作者: FNOSP/xieguanru
+# 　协作者: FNOSP/MR_XIAOBO
+# 创建日期: 2025-11-18
+# 最后修改: 2025-11-19
+# 　　描述: 这个脚本用于演示 Shell 脚本的各种注释方式
+# 使用方式: 文件重命名，从 linux_shell_cgi_index.sh 改成 index.cgi,
+# 　　　　　放置应用包 /ui 路径下，记得 chmod +x index.cgi 赋权
+# 　许可证: MIT
 
-# ãæ³¨æãä¿®æ¹ä½ èªå·±çéææä»¶æ ¹ç®å½ï¼ä»¥æ¬åºç¨ä¸ºä¾ï¼
+# 【注意】修改你自己的静态文件根目录，以本应用为例：
 BASE_PATH="/var/apps/App.Native.HelloFnosAppCenter/target/www"
 
-# 1. ä» REQUEST_URI éæ¿å° index.cgi åé¢çè·¯å¾
-#    ä¾å¦ï¼/cgi/ThirdParty/App.Native.HelloFnosAppCenter/index.cgi/index.html?foo=bar
-#    åå»æ ? åé¢ç query string
+# 1. 从 REQUEST_URI 里拿到 index.cgi 后面的路径
+#    例如：/cgi/ThirdParty/App.Native.HelloFnosAppCenter/index.cgi/index.html?foo=bar
+#    先去掉 ? 后面的 query string
 URI_NO_QUERY="${REQUEST_URI%%\?*}"
 
-# é»è®¤å¼ï¼å¦ææ²¡å¹éå° index.cgiï¼
+# 默认值（如果没匹配到 index.cgi）
 REL_PATH="/"
 
-# ç¨ index.cgi ä½ä¸ºåå²ç¹ï¼ååé¢çé¨å
+# 用 index.cgi 作为切割点，取后面的部分
 case "$URI_NO_QUERY" in
     *index.cgi*)
-        # å»æåé¢ææç´å° index.cgi ä¸ºæ­¢çåå®¹ï¼ä¿çåé¢ç
+        # 去掉前面所有直到 index.cgi 为止的内容，保留后面的
         # /cgi/ThirdParty/App.Native.HelloFnosAppCenter/index.cgi/index.html -> /index.html
         REL_PATH="${URI_NO_QUERY#*index.cgi}"
         ;;
 esac
 
-# å¦æä¸ºç©ºæåªæ /ï¼å°±é»è®¤ /index.html
+# 如果为空或只有 /，就默认 /index.html
 if [ -z "$REL_PATH" ] || [ "$REL_PATH" = "/" ]; then
     REL_PATH="/index.html"
 fi
 
-# æ¼åºçå®æä»¶è·¯å¾ï¼basePath + /ui + index.cgi åé¢çè·¯å¾
+# 拼出真实文件路径：basePath + /ui + index.cgi 后面的路径
 TARGET_FILE="${BASE_PATH}${REL_PATH}"
 
-# ç®åé²å¾¡ï¼ç¦æ­¢ .. è¶çº§è®¿é®
+# 简单防御：禁止 .. 越级访问
 if echo "$TARGET_FILE" | grep -q '\.\.'; then
     echo "Status: 400 Bad Request"
     echo "Content-Type: text/plain; charset=utf-8"
@@ -390,7 +381,7 @@ if echo "$TARGET_FILE" | grep -q '\.\.'; then
     exit 0
 fi
 
-# 2. å¤æ­æä»¶æ¯å¦å­å¨
+# 2. 判断文件是否存在
 if [ ! -f "$TARGET_FILE" ]; then
     echo "Status: 404 Not Found"
     echo "Content-Type: text/plain; charset=utf-8"
@@ -399,7 +390,7 @@ if [ ! -f "$TARGET_FILE" ]; then
     exit 0
 fi
 
-# 3. æ ¹æ®æ©å±åç®åå¤æ­ Content-Type
+# 3. 根据扩展名简单判断 Content-Type
 ext="${TARGET_FILE##*.}"
 case "$ext" in
     html|htm)
@@ -431,7 +422,7 @@ case "$ext" in
         ;;
 esac
 
-# 4. è¾åºå¤´ + æä»¶åå®¹
+# 4. 输出头 + 文件内容
 echo "Content-Type: $mime"
 echo ""
 
@@ -439,32 +430,30 @@ cat "$TARGET_FILE"
 ```
 
 > [!NOTE]
-> æ´å¤å¼åè¯­è¨`CGI ç¨åº`å®ç°æ¡ä¾ï¼è¯·åå¾ç¤¾åºå
-> ±å»ºå¢å¼æ¾å¹³å° **FNOSP** ä»£ç ä»åºä¸­`åºç¨ä¸­å¿éç¨ç½å
-> ³ CGI éå`é¡¹ç®è·åã
+> 更多开发语言`CGI 程序`实现案例，请前往社区共建团开放平台 **FNOSP** 代码仓库中`应用中心通用网关 CGI 集合`项目获取。
 >
-> å¯ç¹ [**æ­¤å¤**](https://github.com/FNOSP/fnosAppCenterCgiCollection) è·³è½¬è¿è¡è·åã
+> 可点 [**此处**](https://github.com/FNOSP/fnosAppCenterCgiCollection) 跳转进行获取。
 
-#### æ¿æ¢åºç¨ icon å¾æ ï¼éåæä»¶ icon å¾æ ï¼æ­¥éª¤3 å¦å·²è¿è¡æ¿æ¢è¯·å¿½ç¥ï¼
+#### 替换应用 icon 图标（非包文件 icon 图标，步骤3 如已进行替换请忽略）
 
-- å¨app/ui/imagesç®å½ä¸åå»ºicon_64.pngåicon_256.pngæä»¶ï¼æ³¨ææä»¶åå°åï¼ï¼åå«æ¿æ¢é»è®¤çåºç¨iconå¾æ ã
-- å¾æ å°ºå¯¸è¦æ±ï¼
-    - icon_64.png - 64x64 åç´
-    - icon_256.png - 256x256 åç´
-- å¾æ æ ¼å¼è¦æ±ï¼PNG æ ¼å¼
-- å¾æ éæåº¦è¦æ±ï¼ä¸éæ
-- å¾æ æä»¶åç§°è¦æ±ï¼icon_64.png å icon_256.pngï¼æ³¨ææä»¶åå°åï¼
-- å¾æ æä»¶è·¯å¾è¦æ±ï¼app/ui/images ç®å½ä¸
+- 在app/ui/images目录下创建icon_64.png和icon_256.png文件（注意文件名小写），分别替换默认的应用icon图标。
+- 图标尺寸要求：
+    - icon_64.png - 64x64 像素
+    - icon_256.png - 256x256 像素
+- 图标格式要求：PNG 格式
+- 图标透明度要求：不透明
+- 图标文件名称要求：icon_64.png 和 icon_256.png（注意文件名小写）
+- 图标文件路径要求：app/ui/images 目录下
 
-### 8. ç¼ååºç¨çå½å¨æç®¡çèæ¬
+### 8. 编写应用生命周期管理脚本
 
-ããç³»ç»éè¦åç¡®ç¥éæ¨çåºç¨å¨é¨çå½å¨æç¶æãä¸ºæ­¤ï¼ç³»ç»ä¼å®æè°ç¨ cmd/main èæ¬ï¼éè¿ä¼ å¥ä¸éåæ°ï¼æ¥æä½/æ£æ¥åºç¨ç¶æï¼
+系统需要准确知道您的应用全部生命周期状态。为此，系统会定期调用 cmd/main 脚本（通过传入不通参数）来操作/检查应用状态：
 
-- èæ¬è¿å exit 0 è¡¨ç¤ºæåæåºç¨è¿è¡ä¸­
-- èæ¬è¿å exit 1 è¡¨ç¤ºå¤±è´¥æåºç¨å·²åæ­¢
-- èæ¬è¿å exit 3 è¡¨ç¤ºåºç¨æªè¿è¡
+- 脚本返回 exit 0 表示成功或应用运行中
+- 脚本返回 exit 1 表示失败或应用已停止
+- 脚本返回 exit 3 表示应用未运行
 
-#### å½åæå­¦æ¡ä¾ä¸ºéæé¡µé¢é¡¹ç®ï¼èæ¬ä¸æ¶ååå°ç¨åºè°ç¨ãå¯å¨åè¿è¡ç¶æå¤æ­ï¼ç³»ç»è°ç¨æ¶æ éæ§è¡å·ä½æä½ï¼ä¿®æ¹å¦ä¸ï¼
+#### 当前教学案例为静态页面项目，脚本不涉及后台程序调用、启动及运行状态判断，系统调用时无需执行具体操作，修改如下：
 
 **cmd/main**
 
@@ -473,15 +462,15 @@ cat "$TARGET_FILE"
 
 case $1 in
 start)
-    # å¯å¨åºç¨çå½ä»¤ï¼æåè¿å 0ï¼å¤±è´¥è¿å 1
+    # 启动应用的命令，成功返回 0，失败返回 1
     exit 0
     ;;
 stop)
-    # åæ­¢åºç¨çå½ä»¤ï¼æåè¿å 0ï¼å¤±è´¥è¿å 1
+    # 停止应用的命令，成功返回 0，失败返回 1
     exit 0
     ;;
 status)
-    # æ£æ¥åºç¨è¿è¡ç¶æï¼è¿è¡ä¸­è¿å 0ï¼æªè¿è¡è¿å 3
+    # 检查应用运行状态，运行中返回 0，未运行返回 3
     exit 0
     ;;
 *)
@@ -491,37 +480,34 @@ esac
 ```
 
 > [!NOTE]
-> ãæ´å¤`åºç¨çå½å¨æèæ¬`é
-> ç½®æ¹æ³ï¼å¯ç¹ [**æ­¤å¤**](../core-concepts/framework.md#%E5%BA%94%E7%94%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%AE%A1%E7%90%86) è·³è½¬è¿è¡å­¦ä¹ ã
+> 更多`应用生命周期脚本`配置方法，可点 [**此处**](../core-concepts/framework.md#%E5%BA%94%E7%94%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%AE%A1%E7%90%86) 跳转进行学习。
 
-### 9. ç¼è¯åºç¨åæä»¶
+### 9. 编译应用包文件
 
-- ä½¿ç¨ fnpack å·¥å·ï¼å¯ç¹ **æ­¤å¤** è·³è½¬è·åï¼ç¼è¯åºç¨ï¼çæåºç¨åæä»¶ã
+- 使用 fnpack 工具（可点 **此处** 跳转获取）编译应用，生成应用包文件。
 
 ```bash
-# åå¾æ ¹ç®å½ App.Native.HelloFnosAppCenter ä¸æ§è¡
+# 前往根目录 App.Native.HelloFnosAppCenter 下执行
 fnpack build
 ```
 
-- æ³¨æï¼é¨åç¨æ·å¼åç¯å¢çµèæªéç½®ç³»ç»ç¯å¢åéï¼å¯å° fnpack å·¥å·æ¾ç½®æ ¹ç®å½ä¸ç¶åæ§è¡ï¼
+- 注意：部分用户开发环境电脑未配置系统环境变量，可将 fnpack 工具放置根目录下然后执行：
 
 ```bash
-# Linux ç¯å¢ï¼æ³¨ææä»¶çæ¬å·ï¼
+# Linux 环境（注意文件版本号）
 ./fnpack-1.0.4-linux-amd64 build
 
-# MacOS ç¯å¢ï¼æ³¨ææä»¶çæ¬å·ï¼
+# MacOS 环境（注意文件版本号）
 ./fnpack-1.0.4-darwin-amd64 build
 
-# Windows ç¯å¢ï¼æ³¨ææä»¶çæ¬å·ï¼
+# Windows 环境（注意文件版本号）
 .\fnpack-1.0.4-windows-amd64 build
 ```
 
 > [!NOTE]
-> ãæ´å¤åºç¨å¼åæè½åé
-> ç½®æ¹æ³ï¼å¯ç¹å·¦ä¾§ **å¼åæå** åç±»å®æã**åºç¡**ãé¨åå
-> å®¹å­¦ä¹ ä»¥ä¾¿äºè§£æ´ä¸ªåºç¨ä¸­å¿å¼åè¿ç¨ã
+> 更多应用开发技能及配置方法，可点左侧 **开发指南** 分类完成【**基础**】部分内容学习以便了解整个应用中心开发过程。
 
 ---
 
-- Previous: [ðãåå¤å·¥ä½](prerequisites.md)
-- Next: [ð§ªãæµè¯åºç¨](test-application.md)
+- 上一页: [📋　准备工作](prerequisites.md)
+- 下一页: [🧪　测试应用](test-application.md)

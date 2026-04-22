@@ -1,51 +1,51 @@
-# fnOS Developer Docs
+# 飞牛开发文档镜像
 
-Auto-generated from `https://developer.fnnas.com/docs/guide/`.
+该目录由脚本自动从 `https://developer.fnnas.com/docs/guide/` 抓取并转换为 GitHub 友好的 Markdown。
 
-- Combined file: [../ALL_DOCS.md](../ALL_DOCS.md)
+- 单文件合集: [../ALL_DOCS.md](../ALL_DOCS.md)
 
-## Index
+## 目录
 
-### Categories
+### 分类页
 
-- [ð§ãCLI å¼åå·¥å·](category/cli-开发工具.md)
-- [ðãå¼åæå](category/开发指南.md)
-- [ðãå¿«éå¼å§](category/快速开始.md)
-- [ðãææ¡£æ´æ°æ¥å¿](category/文档更新日志.md)
+- [🔧　CLI 开发工具](category/cli-开发工具.md)
+- [📘　开发指南](category/开发指南.md)
+- [🚀　快速开始](category/快速开始.md)
+- [🔄　文档更新日志](category/文档更新日志.md)
 
-### CLI Tools
+### CLI 开发工具
 
-- [âï¸ãappcenter-cli](cli/appcentercli.md)
-- [ð¦ãfnpack](cli/fnpack.md)
+- [⚙️　appcenter-cli](cli/appcentercli.md)
+- [📦　fnpack](cli/fnpack.md)
 
-### Core Concepts
+### 开发指南
 
-- [ð ãåºç¡ãåºç¨å¥å£](core-concepts/app-entry.md)
-- [ð¥ ãè¿é¶ãåºç¨ä¾èµå³ç³»](core-concepts/dependency.md)
-- [ð» ãå®æãDocker åºç¨æå»º](core-concepts/docker.md)
-- [ð ãåºç¡ãç¯å¢åé](core-concepts/environment-variables.md)
-- [ð ãåºç¡ãæ¶ææ¦è¿°](core-concepts/framework.md)
-- [ð ãè§èãå¾æ  Icon](core-concepts/icon.md)
-- [ð ãåºç¡ãManifest](core-concepts/manifest.md)
-- [ð¥ ãè¿é¶ãä¸­é´ä»¶æå¡](core-concepts/middleware.md)
-- [ð» ãå®æãNative åºç¨æå»º](core-concepts/native.md)
-- [ð ãåºç¡ãåºç¨æé](core-concepts/privilege.md)
-- [ð ãåºç¡ãåºç¨èµæº](core-concepts/resource.md)
-- [ð¥ ãè¿é¶ãè¿è¡æ¶ç¯å¢](core-concepts/runtime.md)
-- [ð ãåºç¡ãç¨æ·åå¯¼](core-concepts/wizard.md)
+- [📚 【基础】应用入口](core-concepts/app-entry.md)
+- [🔥 【进阶】应用依赖关系](core-concepts/dependency.md)
+- [💻 【实战】Docker 应用构建](core-concepts/docker.md)
+- [📚 【基础】环境变量](core-concepts/environment-variables.md)
+- [📚 【基础】架构概述](core-concepts/framework.md)
+- [📜 【规范】图标 Icon](core-concepts/icon.md)
+- [📚 【基础】Manifest](core-concepts/manifest.md)
+- [🔥 【进阶】中间件服务](core-concepts/middleware.md)
+- [💻 【实战】Native 应用构建](core-concepts/native.md)
+- [📚 【基础】应用权限](core-concepts/privilege.md)
+- [📚 【基础】应用资源](core-concepts/resource.md)
+- [🔥 【进阶】运行时环境](core-concepts/runtime.md)
+- [📚 【基础】用户向导](core-concepts/wizard.md)
 
-### Entry
+### 入口
 
-- [æ¬¢è¿å å¥é£çåºç¨å¼åèå¹³å°](guide.md)
+- [欢迎加入飞牛应用开发者平台](guide.md)
 
-### Quick Start
+### 快速开始
 
-- [â¨ãåå»ºåºç¨](quick-started/create-application.md)
-- [ðãåå¤å·¥ä½](quick-started/prerequisites.md)
-- [ð¤ãä¸æ¶åºç¨](quick-started/publish-application.md)
-- [ð§ªãæµè¯åºç¨](quick-started/test-application.md)
+- [✨　创建应用](quick-started/create-application.md)
+- [📋　准备工作](quick-started/prerequisites.md)
+- [📤　上架应用](quick-started/publish-application.md)
+- [🧪　测试应用](quick-started/test-application.md)
 
-### Update Logs
+### 文档更新日志
 
-- [20251216 æ´æ°æ¥å¿](update-log/20251216.md)
-- [20251231 æ´æ°æ¥å¿](update-log/20251231.md)
+- [20251216 更新日志](update-log/20251216.md)
+- [20251231 更新日志](update-log/20251231.md)

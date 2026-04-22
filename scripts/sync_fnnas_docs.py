@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import json
 import re
 import shutil
 import sys
@@ -20,15 +21,16 @@ DOCS_ROOT = REPO_ROOT / "docs"
 ASSETS_ROOT = REPO_ROOT / "assets"
 ALL_DOCS_PATH = REPO_ROOT / "ALL_DOCS.md"
 DOCS_INDEX_PATH = DOCS_ROOT / "README.md"
+SUMMARY_PATH = REPO_ROOT / "sync-summary.json"
 USER_AGENT = "fnnas-docs-sync/1.0 (+https://github.com/your-name/your-repo)"
 
 SECTION_LABELS = {
-    "guide": "Entry",
-    "quick-started": "Quick Start",
-    "core-concepts": "Core Concepts",
-    "cli": "CLI Tools",
-    "update-log": "Update Logs",
-    "category": "Categories",
+    "guide": "入口",
+    "quick-started": "快速开始",
+    "core-concepts": "开发指南",
+    "cli": "CLI 开发工具",
+    "update-log": "文档更新日志",
+    "category": "分类页",
 }
 
 ALERT_MAP = {
@@ -144,8 +146,7 @@ def make_session() -> requests.Session:
 def fetch_sitemap_routes(session: requests.Session) -> list[str]:
     response = session.get(SITEMAP_URL, timeout=30)
     response.raise_for_status()
-
-    root = ET.fromstring(response.text)
+    root = ET.fromstring(response.content.decode("utf-8", errors="replace"))
     routes: list[str] = []
     seen: set[str] = set()
 
@@ -164,8 +165,7 @@ def fetch_sitemap_routes(session: requests.Session) -> list[str]:
 def load_soup(session: requests.Session, url: str) -> BeautifulSoup:
     response = session.get(url, timeout=30)
     response.raise_for_status()
-    response.encoding = response.encoding or "utf-8"
-    text = response.text.replace("\x00", "")
+    text = response.content.decode("utf-8", errors="replace").replace("\x00", "")
     return BeautifulSoup(text, "lxml")
 
 
@@ -206,7 +206,7 @@ class MarkdownConverter:
         lines = [
             f"# {page.title}",
             "",
-            f"> Source: [{page.source_url}]({page.source_url})",
+            f"> 原始页面: [{page.source_url}]({page.source_url})",
             "",
             body.rstrip(),
         ]
@@ -244,13 +244,13 @@ class MarkdownConverter:
                 cards.append(f"- [{title}]({href})")
 
         if cards:
-            parts.extend(["## Pages", "", *cards])
+            parts.extend(["## 本页内容", "", *cards])
 
         return collapse_blank_lines("\n".join(parts))
 
     def render_pagination(self, soup: BeautifulSoup, current_output: Path, current_source_url: str) -> str:
         items = []
-        for label, selector in (("Previous", ".pagination-nav__link--prev"), ("Next", ".pagination-nav__link--next")):
+        for label, selector in (("上一页", ".pagination-nav__link--prev"), ("下一页", ".pagination-nav__link--next")):
             node = soup.select_one(selector)
             if not node:
                 continue
@@ -312,7 +312,7 @@ class MarkdownConverter:
             summary_text = (
                 self.render_inline_children(summary, current_output, current_source_url).strip()
                 if summary
-                else "Details"
+                else "详情"
             )
             blocks = []
             for child in node.children:
@@ -674,13 +674,13 @@ def write_docs_index(pages: list[Page]) -> None:
         grouped.setdefault(key, []).append(page)
 
     lines = [
-        "# fnOS Developer Docs",
+        "# 飞牛开发文档镜像",
         "",
-        "Auto-generated from `https://developer.fnnas.com/docs/guide/`.",
+        "该目录由脚本自动从 `https://developer.fnnas.com/docs/guide/` 抓取并转换为 GitHub 友好的 Markdown。",
         "",
-        f"- Combined file: [../{ALL_DOCS_PATH.name}](../{ALL_DOCS_PATH.name})",
+        f"- 单文件合集: [../{ALL_DOCS_PATH.name}](../{ALL_DOCS_PATH.name})",
         "",
-        "## Index",
+        "## 目录",
         "",
     ]
 
@@ -697,13 +697,13 @@ def write_docs_index(pages: list[Page]) -> None:
 
 def write_all_docs(pages: list[Page]) -> None:
     lines = [
-        "# fnOS Developer Docs",
+        "# 飞牛开发文档合集",
         "",
-        "This file is auto-generated. It concatenates the Markdown pages into a single document.",
+        "这个文件由脚本自动生成，用于把整套 Markdown 文档合并成单文件版本，方便全文检索、归档或导入知识库。",
         "",
-        "- Index: [docs/README.md](docs/README.md)",
+        "- 文档索引: [docs/README.md](docs/README.md)",
         "",
-        "## Contents",
+        "## 目录",
         "",
     ]
 
@@ -713,7 +713,7 @@ def write_all_docs(pages: list[Page]) -> None:
 
     for page in pages:
         content = page.output_path.read_text(encoding="utf-8")
-        body = re.sub(r"^# .+\n\n> Source: .+\n\n", "", content, count=1)
+        body = re.sub(r"^# .+\n\n> 原始页面: .+\n\n", "", content, count=1)
         lines.extend(
             [
                 "",
@@ -743,6 +743,20 @@ def run() -> None:
 
         write_docs_index(pages)
         write_all_docs(pages)
+
+    markdown_files = sorted(DOCS_ROOT.rglob("*.md"))
+    asset_files = sorted(ASSETS_ROOT.rglob("*"))
+    summary = {
+        "pages": len(pages),
+        "markdown_files": len(markdown_files),
+        "asset_files": len([p for p in asset_files if p.is_file()]),
+        "docs_index": str(DOCS_INDEX_PATH.relative_to(REPO_ROOT)),
+        "all_docs": str(ALL_DOCS_PATH.relative_to(REPO_ROOT)),
+    }
+    SUMMARY_PATH.write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
     log(f"Wrote {len(pages)} pages into {DOCS_ROOT}")
 

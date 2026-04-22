@@ -1,21 +1,21 @@
-# ð ãè§èãå¾æ  Icon
+# 📜 【规范】图标 Icon
 
-> Source: [https://developer.fnnas.com/docs/core-concepts/icon/](https://developer.fnnas.com/docs/core-concepts/icon/)
+> 原始页面: [https://developer.fnnas.com/docs/core-concepts/icon/](https://developer.fnnas.com/docs/core-concepts/icon/)
 
-## æ åè®¾è®¡è§è
+## 标准设计规范
 
-- å°ºå¯¸è§æ ¼ï¼256 * 256 åç´ ã64 * 64 åç´
-- æä»¶æ ¼å¼ï¼PNGãJPG
-- é¢è²ç©ºé´ï¼sRGB
-- æä»¶å¤§å°ï¼â¤ 1024 KB
-- å½¢ç¶è§èï¼å®æ´æ­£æ¹å½¢ç´è§å¾æ 
+- 尺寸规格：256 * 256 像素、64 * 64 像素
+- 文件格式：PNG、JPG
+- 颜色空间：sRGB
+- 文件大小：≤ 1024 KB
+- 形状规范：完整正方形直角图标
 
 ![](../../assets/static/appcenter-marketing/20250904101525414.png)
 
 > [!NOTE]
-> ãå«åè§ç©å½¢èæ¯å¾å±å¾æ  PSD æºæä»¶ï¼å¯ç¹ [**æ­¤å¤**](https://static.fnnas.com/appcenter-marketing/fnpack_ICON_256.zip) è¿è¡ä¸è½½ã
+> 含圆角矩形背景图层图标 PSD 源文件，可点 [**此处**](https://static.fnnas.com/appcenter-marketing/fnpack_ICON_256.zip) 进行下载。
 
 ---
 
-- Previous: [ð» ãå®æãNative åºç¨æå»º](native.md)
-- Next: [ð§ãCLI å¼åå·¥å·](https://developer.fnnas.com/docs/category/cli-å¼åå·¥å·)
+- 上一页: [💻 【实战】Native 应用构建](native.md)
+- 下一页: [🔧　CLI 开发工具](../category/cli-开发工具.md)

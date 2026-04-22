@@ -1,14 +1,14 @@
-# ð§ãCLI å¼åå·¥å·
+# 🔧　CLI 开发工具
 
-> Source: [https://developer.fnnas.com/docs/category/cli-开发工具/](https://developer.fnnas.com/docs/category/cli-开发工具/)
+> 原始页面: [https://developer.fnnas.com/docs/category/cli-开发工具/](https://developer.fnnas.com/docs/category/cli-开发工具/)
 
-äºè§£åä½¿ç¨é£çå®æ¹æä¾ç CLI å·¥å·é¾ï¼å¸®å©ä½ å¿«éå¼ååé¨ç½²åºç¨ã
-## Pages
+了解和使用飞牛官方提供的 CLI 工具链，帮助你快速开发和部署应用。
+## 本页内容
 
-- [ðï¸ ð¦ãfnpack](../cli/fnpack.md): åºç¨æåå·¥å·
-- [ðï¸ âï¸ãappcenter-cli](../cli/appcentercli.md): åºç¨ä¸­å¿å½ä»¤è¡ç®¡çå·¥å·
+- [📦　fnpack](../cli/fnpack.md): 应用打包工具
+- [⚙️　appcenter-cli](../cli/appcentercli.md): 应用中心命令行管理工具
 
 ---
 
-- Previous: [ð ãè§èãå¾æ  Icon](../core-concepts/icon.md)
-- Next: [ð¦ãfnpack](../cli/fnpack.md)
+- 上一页: [📜 【规范】图标 Icon](../core-concepts/icon.md)
+- 下一页: [📦　fnpack](../cli/fnpack.md)

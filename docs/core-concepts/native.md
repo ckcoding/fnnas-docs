@@ -1,108 +1,108 @@
-# ð» ãå®æãNative åºç¨æå»º
+# 💻 【实战】Native 应用构建
 
-> Source: [https://developer.fnnas.com/docs/core-concepts/native/](https://developer.fnnas.com/docs/core-concepts/native/)
+> 原始页面: [https://developer.fnnas.com/docs/core-concepts/native/](https://developer.fnnas.com/docs/core-concepts/native/)
 
-## ä¸ä¸ªç®åç Notepad åºç¨
+## 一个简单的 Notepad 应用
 
 > [!TIP]
-> ç¤ºä¾ä»£ç å¯ä»¥ç¹å» [æ­¤å¤](https://static.fnnas.com/appcenter-marketing/20250917183504284.zip) ä¸è½½
+> 示例代码可以点击 [此处](https://static.fnnas.com/appcenter-marketing/20250917183504284.zip) 下载
 
-æä»¬ä½¿ç¨ Vide Coding å®ç°äºä¸ä¸ªç®æç Notepad ç¨åºï¼å®æ¯æå¨æå¡ç«¯ä¿å­ç¬è®°åå®¹ï¼å¨æµè§å¨ä¸­è¿è¡æ¥çåç¼è¾ã
+我们使用 Vide Coding 实现了一个简易的 Notepad 程序，它支持在服务端保存笔记内容，在浏览器中进行查看和编辑。
 
-ç¸å³ææ¯æ å¦ä¸ï¼
+相关技术栈如下：
 
-- åç«¯ä½¿ç¨ NodeJS + express å¼å
-- åç«¯ä½¿ç¨ React + vite å¼å
+- 后端使用 NodeJS + express 开发
+- 前端使用 React + vite 开发
 
-ä¸è½½è§£ååï¼å¯ä»¥çå°ä»£ç ç®å½ç»æå¦ä¸ï¼
+下载解压后，可以看到代码目录结构如下：
 
 ```text
 notepad/
-âââ backend/
-â   âââ server.js
-â   âââ package.json
-âââ frontend/
-â   âââ public/
-â   â   âââ styles.css
-â   âââ src/
-â   â   âââ main.jsx
-â   âââ index.html
-â   âââ package.json
-â   âââ vite.config.mjs
-âââ scripts/
-â   âââ build-combined.js
-âââ package-lock.json
-âââ package.json
-âââ README.md
+├── backend/
+│   ├── server.js
+│   └── package.json
+├── frontend/
+│   ├── public/
+│   │   └── styles.css
+│   ├── src/
+│   │   └── main.jsx
+│   ├── index.html
+│   ├── package.json
+│   └── vite.config.mjs
+├── scripts/
+│   └── build-combined.js
+├── package-lock.json
+├── package.json
+└── README.md
 ```
 
-è¯·èªè¡åå¤å¥½ NodeJS ç¯å¢ï¼ç¶åå¨ç»ç«¯æ§è¡å¦ä¸å½ä»¤ï¼ä»¥å®ææ¬å°è¿è¡
+请自行准备好 NodeJS 环境，然后在终端执行如下命令，以完成本地运行
 
 ```shell
 npm install --workspaces
 npm run start
 ```
 
-ä¸åé¡ºå©çè¯ï¼ä½ å·²ç»å¯ä»¥å¨æµè§å¨è®¿é® [http://localhost:5001](http://localhost:5001) æ¥ä½éªè¯¥åºç¨äº
+一切顺利的话，你已经可以在浏览器访问 [http://localhost:5001](http://localhost:5001) 来体验该应用了
 
-ä¸ºäºå¨é£ç fnOS ä¸è¿è¡ï¼æä»¬è¿éè¦å°åºç¨çåç«¯ååç«¯éè¿ä»¥ä¸å½ä»¤è¿è¡æåï¼å®æåï¼ä½ å°±è½å¨ `dist/` çå°æç»çå¯æ§è¡æä»¶äº
+为了在飞牛 fnOS 上运行，我们还需要将应用的前端和后端通过以下命令进行打包，完成后，你就能在 `dist/` 看到最终的可执行文件了
 
 ```shell
 npm run build
 ```
 
-æ¥ä¸æ¥ï¼æä»¬éè¦å°è¿è¡åºç¨æå
+接下来，我们需要将进行应用打包
 
-## åå»ºé£ç fnOS åºç¨æåç®å½
+## 创建飞牛 fnOS 应用打包目录
 
-å¨ `notepad/` ç®å½ä¸æ§è¡ `fnpack create fnnas.notepad` å½ä»¤åå»ºåºç¨æåç®å½ï¼è¿æ¶åçç®å½ç»æåºè¯¥å¦ä¸ï¼
+在 `notepad/` 目录下执行 `fnpack create fnnas.notepad` 命令创建应用打包目录，这时候的目录结构应该如下：
 
 ```text
 notepad/
-âââ backend/
-âââ dist/
-â   âââ node_modules/
-â   âââ public/
-â   â   âââ assets/
-â   â   âââ index.html
-â   â   âââ styles.css
-â   âââ server.js
-â   âââ package.json
-â   âââ package-lock.json
-âââ fnnas.notepad/
-â   âââ app/
-â   âââ manifest
-â   âââ cmd/
-â   â   âââ main
-â   â   âââ install_init
-â   â   âââ install_callback
-â   â   âââ uninstall_init
-â   â   âââ uninstall_callback
-â   â   âââ upgrade_init
-â   â   âââ upgrade_callback
-â   â   âââ config_init
-â   â   âââ config_callback
-â   âââ config/
-â   â   âââ privilege
-â   â   âââ resource
-â   âââ wizard/
-â   âââ LICENSE
-â   âââ ICON.PNG
-â   âââ ICON_256.PNG
-âââ frontend/
-âââ scripts/
-âââ package-lock.json
-âââ package.json
-âââ README.md
+├── backend/
+├── dist/
+│   ├── node_modules/
+│   ├── public/
+│   │   ├── assets/
+│   │   ├── index.html
+│   │   └── styles.css
+│   ├── server.js
+│   ├── package.json
+│   └── package-lock.json
+├── fnnas.notepad/
+│   ├── app/
+│   ├── manifest
+│   ├── cmd/
+│   │   ├── main
+│   │   ├── install_init
+│   │   ├── install_callback
+│   │   ├── uninstall_init
+│   │   ├── uninstall_callback
+│   │   ├── upgrade_init
+│   │   ├── upgrade_callback
+│   │   ├── config_init
+│   │   └── config_callback
+│   ├── config/
+│   │   ├── privilege
+│   │   └── resource
+│   ├── wizard/
+│   ├── LICENSE
+│   ├── ICON.PNG
+│   └── ICON_256.PNG
+├── frontend/
+├── scripts/
+├── package-lock.json
+├── package.json
+└── README.md
 ```
 
-### å¤å¶ç¼è¯äº§ç©
+### 复制编译产物
 
-`notepad/fnnas.notepad/app/` ç®å½ç¨æ¥å­æ¾åºç¨çå¨é¨å¯æ§è¡æä»¶åä¾èµã
+`notepad/fnnas.notepad/app/` 目录用来存放应用的全部可执行文件和依赖。
 
-å¨ `notepad/fnnas.notepad/app/` ç®å½ä¸åå»º `server/`ï¼å¹¶å¤å¶ `notepad/dist/` ç®å½ä¸çå¨é¨åå®¹å° `server/` ç®å½ä¸
+在 `notepad/fnnas.notepad/app/` 目录下创建 `server/`，并复制 `notepad/dist/` 目录下的全部内容到 `server/` 目录下
 
-### ç¼è¾åºç¨åºæ¬ä¿¡æ¯
+### 编辑应用基本信息
 
 **notepad/fnnas.notepad/manifest**
 
@@ -119,9 +119,9 @@ desktop_applaunchname=fnnas.notepad.Application
 source=thirdparty
 ```
 
-### ç¼è¾åºç¨æé
+### 编辑应用权限
 
-å®ä¹åºç¨è¿è¡çæéï¼åºç¨å°ä»¥ `fnnas.notepad` ç¨æ·èº«ä»½è¿è¡
+定义应用运行的权限，应用将以 `fnnas.notepad` 用户身份运行
 
 **notepad/fnnas.notepad/config/privilege**
 
@@ -135,9 +135,9 @@ source=thirdparty
 }
 ```
 
-### ç¼è¾åºç¨éç½®
+### 编辑应用配置
 
-æä»¬å¸æå°ç¬è®°åå®¹æ¾å¨ç¨æ·å¯ä»¥æ¥çåç¼è¾çå±äº«ç®å½ï¼æä»¥å®ä¹data-shareå±æ§ï¼å¦ä¸ï¼
+我们希望将笔记内容放在用户可以查看和编辑的共享目录，所以定义data-share属性，如下：
 
 **notepad/fnnas.notepad/config/resource**
 
@@ -158,9 +158,9 @@ source=thirdparty
 }
 ```
 
-### ç¼è¾åºç¨å¯åèæ¬
+### 编辑应用启停脚本
 
-å®ä¹åºç¨çå¯å¨ååæ­¢é»è¾
+定义应用的启动和停止逻辑
 
 **notepad/fnnas.notepad/cmd/main**
 
@@ -279,35 +279,35 @@ status)
 esac
 ```
 
-### ç¼è¾æ¡é¢å¾æ 
+### 编辑桌面图标
 
 ```text
 notepad/
-âââ backend/
-âââ dist/
-âââ fnnas.notepad/
-â   âââ app/
-â   â   âââ server/
-â   â   âââ ui
-â   â       âââ images
-â   â       â   âââ icon_64.png
-â   â       â   âââ icon_256.png
-â   â       âââ config
-â   âââ manifest
-â   âââ cmd/
-â   âââ config/
-â   âââ wizard/
-â   âââ LICENSE
-â   âââ ICON.PNG
-â   âââ ICON_256.PNG
-âââ frontend/
-âââ scripts/
-âââ package-lock.json
-âââ package.json
-âââ README.md
+├── backend/
+├── dist/
+├── fnnas.notepad/
+│   ├── app/
+│   │   ├── server/
+│   │   └── ui
+│   │       ├── images
+│   │       │   ├── icon_64.png
+│   │       │   └── icon_256.png
+│   │       └── config
+│   ├── manifest
+│   ├── cmd/
+│   ├── config/
+│   ├── wizard/
+│   ├── LICENSE
+│   ├── ICON.PNG
+│   └── ICON_256.PNG
+├── frontend/
+├── scripts/
+├── package-lock.json
+├── package.json
+└── README.md
 ```
 
-configæä»¶è¯´æï¼
+config文件说明：
 
 **notepad/fnnas.notepad/app/ui/config**
 
@@ -325,24 +325,24 @@ configæä»¶è¯´æï¼
 }
 ```
 
-æ°å¢ä¸¤ä¸ªå¾æ æä»¶ï¼åè¾¨çåå«æ¯ 64x64 å 256x256ã
+新增两个图标文件，分辨率分别是 64x64 和 256x256。
 
-## æåæ fpk
+## 打包成 fpk
 
-ä½¿ç¨ `fnpack` CLI å·¥å·æååºç¨
+使用 `fnpack` CLI 工具打包应用
 
 ```bash
 cd fnnas.notepad
 fnpack build
 ```
 
-ç¶åä½ å¯ä»¥å¨ `fnnas.notepad` ç®å½ä¸çå° `fnnas.notepad.fpk` æä»¶ï¼æ¥ä¸æ¥ä½ å°±å¯ä»¥å°é£ç fnOS ä¸æµè¯åºç¨äº
+然后你可以在 `fnnas.notepad` 目录下看到 `fnnas.notepad.fpk` 文件，接下来你就可以到飞牛 fnOS 上测试应用了
 
-### éæç¼è¾
+### 集成编辑
 
-å¦ææä»¬å¸ææ¯æ¬¡ `npm run build` ç¼è¯é¡¹ç®æ¶ï¼é½èªå¨åå»º `fpk` æä»¶ï¼åå¯ä»¥å¨ç¼è¯èæ¬ä¸­è¡¥å `fnpack build` é»è¾ã
+如果我们希望每次 `npm run build` 编译项目时，都自动创建 `fpk` 文件，则可以在编译脚本中补充 `fnpack build` 逻辑。
 
-å¨æ¬é¡¹ç®ä¸­ï¼å¯ä»¥å¨ `notepad/scripts/build-combined.js` çæåè¡¥å `fnpack build` é»è¾ï¼å¦ä¸æç¤º:
+在本项目中，可以在 `notepad/scripts/build-combined.js` 的最后补充 `fnpack build` 逻辑，如下所示:
 
 ```javascript
 const packDir = path.join(root, 'fnnas.notepad')
@@ -355,5 +355,5 @@ run(`fnpack build -d ${packDir}`)
 
 ---
 
-- Previous: [ð» ãå®æãDocker åºç¨æå»º](docker.md)
-- Next: [ð ãè§èãå¾æ  Icon](icon.md)
+- 上一页: [💻 【实战】Docker 应用构建](docker.md)
+- 下一页: [📜 【规范】图标 Icon](icon.md)

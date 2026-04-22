@@ -1,130 +1,129 @@
-# ð¦ãfnpack
+# 📦　fnpack
 
-> Source: [https://developer.fnnas.com/docs/cli/fnpack/](https://developer.fnnas.com/docs/cli/fnpack/)
+> 原始页面: [https://developer.fnnas.com/docs/cli/fnpack/](https://developer.fnnas.com/docs/cli/fnpack/)
 
-`fnpack` æ¯é£ç fnOS åºç¨æåçä¾¿å©å·¥å·ï¼å®å¸®å©æ¨å¿«éåå»ºåºç¨é¡¹ç®ç»æå¹¶å°åºç¨æåæå¯å®è£ç `fpk` æä»¶ãæ è®ºæ¨æ¯åå­¦èè¿æ¯ç»éªä¸°å¯çå¼åèï¼è¿ä¸ªå·¥å·é½è½è®©åºç¨å¼ååå¾æ´å ç®åé«æã
+`fnpack` 是飞牛 fnOS 应用打包的便利工具，它帮助您快速创建应用项目结构并将应用打包成可安装的 `fpk` 文件。无论您是初学者还是经验丰富的开发者，这个工具都能让应用开发变得更加简单高效。
 
 > [!NOTE]
-> ããæ¬ææ¡£äº **2025-12-31** æ°å¢äºé¨åå
-> å®¹ã
+> 本文档于 **2025-12-31** 新增了部分内容。
 
-## å·¥å·ä¸è½½ Update!
+## 工具下载 Update!
 
-`fnpack` å·²é¢ç½®å°é£ç fnOS ä¸­ï¼åæ¶ä¹æ¯æå¨æ¬å°ä½¿ç¨ï¼å¯æ ¹æ®æä½ç³»ç»è¿è¡ä¸è½½ï¼
+`fnpack` 已预置到飞牛 fnOS 中，同时也支持在本地使用，可根据操作系统进行下载：
 
 - Windows x86: fnpack-1.2.1-windows-amd64
 - Linux x86: fnpack-1.2.1-linux-amd64
 - Linux ARM: fnpack-1.2.1-linux-arm64
 - Mac Intel: fnpack-1.2.1-darwin-amd64
-- Mac Mç³»å: fnpack-1.2.1-darwin-arm64
+- Mac M系列: fnpack-1.2.1-darwin-arm64
 
-## åå»ºåºç¨é¡¹ç®
+## 创建应用项目
 
-### åºæ¬åå»ºå½ä»¤
+### 基本创建命令
 
-ä½¿ç¨ `fnpack create` å½ä»¤å¯ä»¥å¿«éåå»ºåºç¨é¡¹ç®ï¼
+使用 `fnpack create` 命令可以快速创建应用项目：
 
 ```bash
-# åå»ºç¬ç«é¡¹ç®
+# 创建独立项目
 fnpack create <appname>
-# ä¸å¸¦åºç¨è®¿é®å¥å£ï¼ä½¿ç¨çº¯æå¡ç±»åçé¡¹ç®
+# 不带应用访问入口，使用纯服务类型的项目
 fnpack create <appname> --without-ui true
 
-# åå»º Docker åºç¨é¡¹ç®
+# 创建 Docker 应用项目
 fnpack create <appname> --template docker
-# æ åºç¨è®¿é®å¥å£Dockeråºç¨ï¼ä½¿ç¨çº¯æå¡ç±»åçé¡¹ç®
+# 无应用访问入口Docker应用，使用纯服务类型的项目
 fnpack create <appname> --template docker --without-ui true
 ```
 
-### å³äº Docker åºç¨æ¨¡æ¿
+### 关于 Docker 应用模板
 
-- èªå¨çæ docker-compose.yaml æä»¶ï¼éæå¨ç¼è¾
-- èªå¨çæ shares/data ç®å½çæè½½æ å°éç½®ï¼å¯èªè¡ä¿®æ¹
-- èªå¨çæ cmd/main ç status æ£æ¥ä»£ç ï¼å¯èªè¡ä¿®æ¹
+- 自动生成 docker-compose.yaml 文件，需手动编辑
+- 自动生成 shares/data 目录的挂载映射配置，可自行修改
+- 自动生成 cmd/main 的 status 检查代码，可自行修改
 
-### é¡¹ç®ç»æç¤ºä¾
+### 项目结构示例
 
-åå»ºåçé¡¹ç®ç»æå¦ä¸ï¼
+创建后的项目结构如下：
 
 ```text
 myapp/
-âââ app/                            # åºç¨å¯æ§è¡æä»¶ç®å½
-â   âââ ui/
-â   â   âââ images/
-â   â   âââ config
-â   âââ docker/                     # Docker éç½®ï¼Docker åºç¨æ¨¡æ¿ï¼
-â       âââ docker-compose.yaml
-âââ cmd/                            # åºç¨çå½å¨æç®¡çèæ¬
-â   âââ main
-â   âââ install_init
-â   âââ install_callback
-â   âââ uninstall_init
-â   âââ uninstall_callback
-â   âââ upgrade_init
-â   âââ upgrade_callback
-â   âââ config_init
-â   âââ config_callback
-âââ config/
-â   âââ privilege                   # åºç¨æééç½®
-â   âââ resource                    # åºç¨èµæºéç½®
-âââ wizard/
-â   âââ install                     # å®è£åå¯¼éç½®
-â   âââ uninstall                   # å¸è½½åå¯¼éç½®
-â   âââ config                      # éç½®åå¯¼
-âââ manifest                        # åºç¨åºæ¬ä¿¡æ¯
-âââ LICENSE                         # è®¸å¯è¯æä»¶
-âââ ICON.PNG                        # åºç¨å¾æ ï¼64x64ï¼
-âââ ICON_256.PNG                    # åºç¨å¾æ ï¼256x256ï¼
+├── app/                            # 应用可执行文件目录
+│   ├── ui/
+│   │   ├── images/
+│   │   └── config
+│   └── docker/                     # Docker 配置（Docker 应用模板）
+│       └── docker-compose.yaml
+├── cmd/                            # 应用生命周期管理脚本
+│   ├── main
+│   ├── install_init
+│   ├── install_callback
+│   ├── uninstall_init
+│   ├── uninstall_callback
+│   ├── upgrade_init
+│   ├── upgrade_callback
+│   ├── config_init
+│   └── config_callback
+├── config/
+│   ├── privilege                   # 应用权限配置
+│   └── resource                    # 应用资源配置
+├── wizard/
+│   ├── install                     # 安装向导配置
+│   ├── uninstall                   # 卸载向导配置
+│   └── config                      # 配置向导
+├── manifest                        # 应用基本信息
+├── LICENSE                         # 许可证文件
+├── ICON.PNG                        # 应用图标（64x64）
+└── ICON_256.PNG                    # 应用图标（256x256）
 ```
 
-## æååºç¨é¡¹ç®
+## 打包应用项目
 
-### åºæ¬æåå½ä»¤
+### 基本打包命令
 
-ä½¿ç¨ `fnpack build` å½ä»¤å°åºç¨æåæ `fpk` æä»¶
+使用 `fnpack build` 命令将应用打包成 `fpk` 文件
 
 ```bash
-# å¨åºç¨ç®å½ä¸­æ§è¡æå
+# 在应用目录中执行打包
 cd myapp
 fnpack build
 
-## æå®æåçç®å½
+## 指定打包的目录
 fnpack build --directory <path>
 ```
 
-æåæ ¡éªè§åï¼
+打包校验规则：
 
-| è·¯å¾ | ç±»å | æ ¡éªè§å |
+| 路径 | 类型 | 校验规则 |
 | --- | --- | --- |
-| `manifest` | æä»¶ | å¿é¡»å­å¨ï¼ä¸å¿éå­æ®µå­å¨ |
-| `config/privilege` | æä»¶ | å¿é¡»å­å¨ï¼ä¸ç¬¦å `JSON` æ ¼å¼ |
-| `config/resource` | æä»¶ | å¿é¡»å­å¨ï¼ä¸ç¬¦å `JSON` æ ¼å¼ |
-| `ICON.PNG` | æä»¶ | å¿é¡»å­å¨ |
-| `ICON_256.PNG` | æä»¶ | å¿é¡»å­å¨ |
-| `app/` | ç®å½ | å¿é¡»å­å¨ |
-| `cmd/` | ç®å½ | å¿é¡»å­å¨ |
-| `wizard/` | ç®å½ | å¿é¡»å­å¨ |
-| `app/{manifest.desktop_uidir}/` | ç®å½ | è¥æå®ä¹ï¼åç®å½å¿é¡»å­å¨ |
+| `manifest` | 文件 | 必须存在，且必选字段存在 |
+| `config/privilege` | 文件 | 必须存在，且符合 `JSON` 格式 |
+| `config/resource` | 文件 | 必须存在，且符合 `JSON` 格式 |
+| `ICON.PNG` | 文件 | 必须存在 |
+| `ICON_256.PNG` | 文件 | 必须存在 |
+| `app/` | 目录 | 必须存在 |
+| `cmd/` | 目录 | 必须存在 |
+| `wizard/` | 目录 | 必须存在 |
+| `app/{manifest.desktop_uidir}/` | 目录 | 若有定义，则目录必须存在 |
 
-### æ¬å°å®è£å·¥å·æ¹æ³
+### 本地安装工具方法
 
 ```bash
-# Linux/macOS å®è£
+# Linux/macOS 安装
 chmod +x fnpack-1.2.1-linux-amd64
 sudo mv fnpack-1.2.1-linux-amd64 /usr/local/bin/fnpack
 
-# éªè¯å®è£
+# 验证安装
 fnpack --help
 ```
 
-## æä½³å®è·µ
+## 最佳实践
 
-1. æ¨¡æ¿éæ©ï¼æ ¹æ®åºç¨ç±»åéæ©åéçæ¨¡æ¿
-2. éæç¼è¯ï¼å°æåç®å½åå»ºäºä»£ç ç®å½ä¸ï¼å¹¶å° `fnpack build` å½ä»¤éæå°ä»£ç ç¼è¯èæ¬ä¸­
+1. 模板选择：根据应用类型选择合适的模板
+2. 集成编译：将打包目录创建于代码目录下，并将 `fnpack build` 命令集成到代码编译脚本中
 
-éè¿åçä½¿ç¨ **fnpack**ï¼æ¨å¯ä»¥æ´é«æå°å¼ååç®¡çé£ç **fnOS** åºç¨ï¼ä¸æ³¨äºåºç¨åè½æ¬èº«èä¸æ¯ç¹ççéç½®å·¥ä½ã
+通过合理使用 **fnpack**，您可以更高效地开发和管理飞牛 **fnOS** 应用，专注于应用功能本身而不是繁琐的配置工作。
 
 ---
 
-- Previous: [ð§ãCLI å¼åå·¥å·](https://developer.fnnas.com/docs/category/cli-å¼åå·¥å·)
-- Next: [âï¸ãappcenter-cli](appcentercli.md)
+- 上一页: [🔧　CLI 开发工具](../category/cli-开发工具.md)
+- 下一页: [⚙️　appcenter-cli](appcentercli.md)
