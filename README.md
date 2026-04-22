@@ -1,6 +1,6 @@
-# 飞牛开发文档镜像
+# 飞牛应用开放平台开发文档
 
-这个仓库会自动从 `https://developer.fnnas.com/docs/guide/` 抓取飞牛开发文档，转换成适合 GitHub 阅读的 Markdown，并把图片资源一并本地化。
+飞牛应用开放平台开发文档，同步自官方文档 `https://developer.fnnas.com/docs/guide`，每晚 8 点自动同步更新。
 
 ## 入口
 
@@ -29,7 +29,7 @@ python scripts/sync_fnnas_docs.py
 
 ## 自动同步
 
-工作流会在每天北京时间 `09:30` 自动运行一次。
+工作流会在每天北京时间 `20:00` 自动运行一次。
 
 如果要让 GitHub Actions 正常自动提交，请确认：
 
