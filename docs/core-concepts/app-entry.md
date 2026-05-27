@@ -45,8 +45,8 @@ myapp/
 ├── app/
 │   └── ui/
 │       ├── images/
-│       │   ├── icon-64.png   # 64x64 像素的图标
-│       │   └── icon-256.png  # 256x256 像素的图标
+│       │   ├── icon_64.png   # 64x64 像素的图标
+│       │   └── icon_256.png  # 256x256 像素的图标
 │       └── config            # 入口配置文件
 ├── manifest
 ├── cmd/
@@ -68,7 +68,7 @@ myapp/
     ".url": {
         "myapp.main": {
             "title": "我的应用",                   // 应用入口显示标题（桌面图标名称）
-            "icon": "images/icon-{0}.png",        // 图标文件路径，相对于 UI 目录
+            "icon": "images/icon_{0}.png",        // 图标文件路径，相对于 UI 目录
             "type": "url",                        // 入口方式：url/iframe
             "protocol": "http",                   // 访问协议：http/https
             "port": "8080",                       // 应用端口，CGI方案无需声明
@@ -77,7 +77,7 @@ myapp/
         },
         "myapp.admin": {
             "title": "管理后台",                   // 应用入口显示标题（桌面图标名称）
-            "icon": "images/admin-icon-{0}.png",  // 图标文件路径，相对于 UI 目录
+            "icon": "images/admin_icon_{0}.png",  // 图标文件路径，相对于 UI 目录
             "type": "url",                        // 入口方式：url/iframe
             "protocol": "http",                   // 访问协议：http/https
             "port": "8080",                       // 应用端口，CGI方案无需声明
@@ -129,7 +129,7 @@ myapp/
 - `title` - 入口的显示标题，用户看到的名称
 - `icon` - 图标文件路径，相对于 UI 目录
     - {0} 会被替换为图标尺寸（64 或 256）
-    - 例如：images/icon-{0}.png → images/icon-64.png 或 images/icon-256.png
+    - 例如：images/icon_{0}.png → images/icon_64.png 或 images/icon_256.png
 - `type` - 入口类型
     - url - 在浏览器新标签页中打开
     - iframe - 在桌面窗口中以 iframe 方式加载

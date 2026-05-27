@@ -296,7 +296,7 @@ App.Native.HelloFnosAppCenter
     ".url": {
         "App.Native.HelloFnosAppCenter.Application": {
             "title": "应用中心案例",             // 应用入口的显示标题（桌面图标名称）
-            "icon": "images/icon-{0}.png",      // 图标文件路径，相对于 UI 目录
+            "icon": "images/icon_{0}.png",      // 图标文件路径，相对于 UI 目录
             "type": "iframe",                   // 入口类型，桌面窗口模式
             "protocol": "http",                 // 访问协议类型，http
             "url": "/cgi/ThirdParty/App.Native.HelloFnosAppCenter/index.cgi/",
@@ -311,7 +311,7 @@ App.Native.HelloFnosAppCenter
 - title - 入口的显示标题，用户看到的名称
 - icon - 图标文件路径，相对于 UI 目录
     - {0} 会被系统替换为图标尺寸（64 或 256）
-    - 例如：images/icon-{0}.png → images/icon-64.png 或 images/icon-256.png
+    - 例如：images/icon_{0}.png → images/icon_64.png 或 images/icon_256.png
 - type - 入口类型
     - url - 在浏览器新标签页中打开
     - iframe - 在桌面窗口中以 iframe 方式加载

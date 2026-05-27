@@ -105,7 +105,7 @@
 
 - [20251216 更新日志](../update-log/20251216.md): - 修复暗色主题模式下首页及Footer显示不友好的问题
 - [20251231 更新日志](../update-log/20251231.md): - 文档加入New! 及 Update! 等徽标样式，方便快速查阅新增特性
-- [20260509 更新日志](../update-log/20260509.md): - 开发指南 >【进阶】新增 统一网关注册 文档，介绍应用在 fnOS V1.1.31 及以上版本接入统一网关的方式
+- [20260509 更新日志](../update-log/20260509.md): - 开发指南 >【进阶】新增 统一网关注册 文档，介绍应用在 fnOS V1.1.3100 及以上版本接入统一网关的方式
 
 ---
 
@@ -412,8 +412,8 @@ myapp/
 ├── app/
 │   └── ui/
 │       ├── images/
-│       │   ├── icon-64.png   # 64x64 像素的图标
-│       │   └── icon-256.png  # 256x256 像素的图标
+│       │   ├── icon_64.png   # 64x64 像素的图标
+│       │   └── icon_256.png  # 256x256 像素的图标
 │       └── config            # 入口配置文件
 ├── manifest
 ├── cmd/
@@ -435,7 +435,7 @@ myapp/
     ".url": {
         "myapp.main": {
             "title": "我的应用",                   // 应用入口显示标题（桌面图标名称）
-            "icon": "images/icon-{0}.png",        // 图标文件路径，相对于 UI 目录
+            "icon": "images/icon_{0}.png",        // 图标文件路径，相对于 UI 目录
             "type": "url",                        // 入口方式：url/iframe
             "protocol": "http",                   // 访问协议：http/https
             "port": "8080",                       // 应用端口，CGI方案无需声明
@@ -444,7 +444,7 @@ myapp/
         },
         "myapp.admin": {
             "title": "管理后台",                   // 应用入口显示标题（桌面图标名称）
-            "icon": "images/admin-icon-{0}.png",  // 图标文件路径，相对于 UI 目录
+            "icon": "images/admin_icon_{0}.png",  // 图标文件路径，相对于 UI 目录
             "type": "url",                        // 入口方式：url/iframe
             "protocol": "http",                   // 访问协议：http/https
             "port": "8080",                       // 应用端口，CGI方案无需声明
@@ -496,7 +496,7 @@ myapp/
 - `title` - 入口的显示标题，用户看到的名称
 - `icon` - 图标文件路径，相对于 UI 目录
     - {0} 会被替换为图标尺寸（64 或 256）
-    - 例如：images/icon-{0}.png → images/icon-64.png 或 images/icon-256.png
+    - 例如：images/icon_{0}.png → images/icon_64.png 或 images/icon_256.png
 - `type` - 入口类型
     - url - 在浏览器新标签页中打开
     - iframe - 在桌面窗口中以 iframe 方式加载
@@ -1208,7 +1208,7 @@ esac
 应用通过统一网关注册后，用户访问时，网关会负责校验用户登录态，并将当前用户信息透传给应用。
 
 > [!WARNING]
-> 登录认证能力需要 fnOS **V1.1.31** 及以上版本支持。
+> 登录认证能力需要 fnOS **V1.1.3100** 及以上版本支持。
 
 ## 认证规则
 
@@ -1223,7 +1223,7 @@ esac
 
 | Header | 说明 | 示例 |
 | --- | --- | --- |
-| `X-Trim-Uid` | 当前登录用户的 UID | 1000 |
+| `X-Trim-Userid` | 当前登录用户的 UID | 1000 |
 | `X-Trim-Isadmin` | 当前用户是否为管理员 | true/false |
 | `X-Trim-Username` | 当前登录用户名 | admin |
 
@@ -1233,7 +1233,7 @@ esac
 
 ```http
 GET /app/trim.app/list HTTP/1.1
-X-Trim-Uid: 1000
+X-Trim-Userid: 1000
 X-Trim-Isadmin: true
 X-Trim-Username: admin
 ```
@@ -1245,7 +1245,7 @@ X-Trim-Username: admin
 ```js
 function getGatewayUser(req) {
   return {
-    uid: req.headers["x-trim-uid"],
+    uid: req.headers["x-trim-Userid"],
     isAdmin: req.headers["x-trim-isadmin"] === "true",
     username: req.headers["x-trim-username"]
   };
@@ -1266,7 +1266,7 @@ function getGatewayUser(req) {
 
 WebSocket 服务也应通过统一网关访问。连接建立时，网关会先校验登录态，再将用户信息透传给应用。
 
-应用建立连接后，应将连接与 `X-Trim-Uid` 绑定，后续消息不要信任客户端主动上报的用户 ID。
+应用建立连接后，应将连接与 `X-Trim-Userid` 绑定，后续消息不要信任客户端主动上报的用户 ID。
 
 ## 静态文件
 
@@ -1305,7 +1305,7 @@ WebSocket 服务也应通过统一网关访问。连接建立时，网关会先�
 例如当前系统 Web UI 访问地址是 `http://192.168.1.10:5666/`，则应用访问地址可以是 `http://192.168.1.10:5666/app/{appname}`
 
 > [!WARNING]
-> 统一网关注册能力需要 fnOS **V1.1.31** 及以上版本支持。
+> 统一网关注册能力需要 fnOS **V1.1.3100** 及以上版本支持。
 
 > [!NOTE]
 > 统一网关会在转发请求前完成登录态校验，自动拒绝非法访问。HTTP 和 WebSocket 请求均可通过统一网关接入。
@@ -3400,7 +3400,7 @@ App.Native.HelloFnosAppCenter
     ".url": {
         "App.Native.HelloFnosAppCenter.Application": {
             "title": "应用中心案例",             // 应用入口的显示标题（桌面图标名称）
-            "icon": "images/icon-{0}.png",      // 图标文件路径，相对于 UI 目录
+            "icon": "images/icon_{0}.png",      // 图标文件路径，相对于 UI 目录
             "type": "iframe",                   // 入口类型，桌面窗口模式
             "protocol": "http",                 // 访问协议类型，http
             "url": "/cgi/ThirdParty/App.Native.HelloFnosAppCenter/index.cgi/",
@@ -3415,7 +3415,7 @@ App.Native.HelloFnosAppCenter
 - title - 入口的显示标题，用户看到的名称
 - icon - 图标文件路径，相对于 UI 目录
     - {0} 会被系统替换为图标尺寸（64 或 256）
-    - 例如：images/icon-{0}.png → images/icon-64.png 或 images/icon-256.png
+    - 例如：images/icon_{0}.png → images/icon_64.png 或 images/icon_256.png
 - type - 入口类型
     - url - 在浏览器新标签页中打开
     - iframe - 在桌面窗口中以 iframe 方式加载
@@ -3763,8 +3763,8 @@ appcenter-cli manual-install enable
 
 ## 20260509 更新日志
 
-- 开发指南 >【进阶】新增 统一网关注册 文档，介绍应用在 fnOS V1.1.31 及以上版本接入统一网关的方式
-- 开发指南 >【进阶】新增 登录认证 文档，介绍 fnOS V1.1.31 及以上版本的统一网关登录态校验和用户信息 Header 透传机制
+- 开发指南 >【进阶】新增 统一网关注册 文档，介绍应用在 fnOS V1.1.3100 及以上版本接入统一网关的方式
+- 开发指南 >【进阶】新增 登录认证 文档，介绍 fnOS V1.1.3100 及以上版本的统一网关登录态校验和用户信息 Header 透传机制
 
 ---
 

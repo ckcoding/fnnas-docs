@@ -5,7 +5,7 @@
 应用通过统一网关注册后，用户访问时，网关会负责校验用户登录态，并将当前用户信息透传给应用。
 
 > [!WARNING]
-> 登录认证能力需要 fnOS **V1.1.31** 及以上版本支持。
+> 登录认证能力需要 fnOS **V1.1.3100** 及以上版本支持。
 
 ## 认证规则
 
@@ -20,7 +20,7 @@
 
 | Header | 说明 | 示例 |
 | --- | --- | --- |
-| `X-Trim-Uid` | 当前登录用户的 UID | 1000 |
+| `X-Trim-Userid` | 当前登录用户的 UID | 1000 |
 | `X-Trim-Isadmin` | 当前用户是否为管理员 | true/false |
 | `X-Trim-Username` | 当前登录用户名 | admin |
 
@@ -30,7 +30,7 @@
 
 ```http
 GET /app/trim.app/list HTTP/1.1
-X-Trim-Uid: 1000
+X-Trim-Userid: 1000
 X-Trim-Isadmin: true
 X-Trim-Username: admin
 ```
@@ -42,7 +42,7 @@ X-Trim-Username: admin
 ```js
 function getGatewayUser(req) {
   return {
-    uid: req.headers["x-trim-uid"],
+    uid: req.headers["x-trim-Userid"],
     isAdmin: req.headers["x-trim-isadmin"] === "true",
     username: req.headers["x-trim-username"]
   };
@@ -63,7 +63,7 @@ function getGatewayUser(req) {
 
 WebSocket 服务也应通过统一网关访问。连接建立时，网关会先校验登录态，再将用户信息透传给应用。
 
-应用建立连接后，应将连接与 `X-Trim-Uid` 绑定，后续消息不要信任客户端主动上报的用户 ID。
+应用建立连接后，应将连接与 `X-Trim-Userid` 绑定，后续消息不要信任客户端主动上报的用户 ID。
 
 ## 静态文件
 
