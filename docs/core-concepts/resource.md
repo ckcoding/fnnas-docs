@@ -1,111 +1,95 @@
-# 📚 【基础】应用资源
+# 应用资源
 
 > 原始页面: [https://developer.fnnas.com/docs/core-concepts/resource/](https://developer.fnnas.com/docs/core-concepts/resource/)
 
-资源就像是应用的"能力清单"，告诉系统您的应用需要哪些额外的功能和权限。在 `config/resource` 文件中，您可以声明应用需要的扩展能力，比如数据共享、系统集成、容器支持等。
+`config/resource` 用于声明应用需要的系统资源和集成能力。这个文件应只包含应用实际使用的能力。
 
-## 数据共享 (data-share)
+## 共享数据目录
 
-数据共享功能允许您的应用与用户共享特定的数据目录，让用户可以直接在文件管理器中访问和管理这些数据。
-
-![](../../assets/static/appcenter-marketing/20250829154226142.png)
-
-### 功能特点
-
-- 共享目录仅在系统管理员的文件管理 - 应用文件中可见
-- 可以设置不同的访问权限：只读、读写
-- 支持多级目录结构
-- 应用可以实时访问这些共享数据
-
-### 配置示例
+当应用需要提供可由用户在文件管理器中访问的共享目录时，使用 `data-share`。
 
 **config/resource**
 
 ```json
 {
-    "data-share": {
-        "shares": [
-            {
-                "name": "documents",
-                "permission": {
-                    "rw": ["myapp_user"]
-                }
-            },
-            {
-                "name": "documents/backups",
-                "permission": {
-                    "ro": ["myapp_user"]
-                }
-            }
-        ]
-    }
+  "data-share": {
+    "shares": [
+      {
+        "name": "myapp/documents"
+      },
+      {
+        "name": "myapp/backups"
+      }
+    ]
+  }
 }
 ```
 
-### 权限类型说明
+- `name`：共享路径名称。
+- `permission`：可选字段，用于给其他用户或应用配置访问权限。大多数共享目录不需要配置。
 
-- rw - 读写权限：应用可以读取和修改文件
-- ro - 只读权限：应用只能读取文件，不能修改
+安装应用时，飞牛 fnOS 会自动创建声明的共享目录。这些目录使用 Windows ACL 权限模型，而不是 POSIX ACL。系统会自动为应用运行用户授予所需的 ACL 访问权限。
 
-### 使用场景
+应用可以通过 `TRIM_DATA_SHARE_PATHS` 环境变量获取已创建的共享目录路径，也可以通过 `/var/apps/myapp/share/` 下的软链访问对应目录，例如 `/var/apps/myapp/share/documents`。
 
-- 文档管理应用：共享文档目录，让用户直接编辑
-- 备份应用：共享备份目录，让用户查看备份文件
-- 媒体应用：共享媒体库，让用户管理音乐、视频等
+适合将用户需要查看、导入、导出或在应用外管理的内容放入共享目录。建议使用应用名称作为统一的顶级目录，例如 `myapp`，再按用途定义子目录，例如 `myapp/documents`、`myapp/backups`。这样用户看到的共享内容更集中，也能减少和其他应用的命名冲突。
 
-## 系统集成 (usr-local-linker)
-
-系统集成功能允许您的应用在启动时创建软链接到系统目录，让其他应用或系统工具能够直接访问您的应用提供的功能。
-
-### 功能特点
-
-- 应用启动时自动创建软链接
-- 应用停止时自动移除软链接
-- 支持 bin、lib、etc 三个系统目录
-- 无需手动管理链接的创建和删除
-
-### 配置示例
+只有在其他应用或系统用户需要访问该共享目录时，才需要配置 `permission`：
 
 **config/resource**
 
 ```json
 {
-    "usr-local-linker": {
-        "bin": [
-            "bin/myapp-cli",
-            "bin/myapp-server"
-        ],
-        "lib": [
-            "lib/mylib.so",
-            "lib/mylib.a"
-        ],
-        "etc": [
-            "etc/myapp.conf",
-            "etc/myapp.d/default.conf"
-        ]
-    }
+  "data-share": {
+    "shares": [
+      {
+        "name": "myapp/documents",
+        "permission": {
+          "rw": ["other_app_user"],
+          "ro": ["report_reader"]
+        }
+      }
+    ]
+  }
 }
 ```
 
-### 链接说明
+- `rw`：拥有读写权限的用户。
+- `ro`：拥有只读权限的用户。
 
-- bin - 可执行文件链接到 /usr/local/bin/
-- lib - 库文件链接到 /usr/local/lib/
-- etc - 配置文件链接到 /usr/local/etc/
+## 系统链接
 
-### 使用场景
+当应用需要将命令、库或配置文件暴露到标准系统位置时，使用 `usr-local-linker`。
 
-- 命令行工具：提供 CLI 工具供其他应用使用
-- 开发库：提供共享库供其他应用调用
-- 配置文件：提供标准配置文件供系统使用
+**config/resource**
 
-## Docker 项目支持 (docker-project)
+```json
+{
+  "usr-local-linker": {
+    "bin": [
+      "bin/myapp-cli"
+    ],
+    "lib": [
+      "lib/mylib.so"
+    ],
+    "etc": [
+      "etc/myapp.conf"
+    ]
+  }
+}
+```
 
-Docker 项目支持让您的应用可以基于 Docker Compose 运行，支持复杂的容器编排和多服务架构。
+- `bin`：链接到 /usr/local/bin/。
+- `lib`：链接到 /usr/local/lib/。
+- `etc`：链接到 /usr/local/etc/。
 
-### 项目结构
+只应暴露其他命令或应用确实需要使用的稳定接口。对于可执行文件，应避免使用 `cli`、`server`、`tool` 等通用名称。建议使用带有应用标识的命令名，例如 `myapp-cli`，以减少和系统命令或其他应用的注册冲突。
 
-首先需要在应用项目中创建 Docker 相关文件：
+## Docker 项目
+
+当应用通过 Docker Compose 运行时，使用 `docker-project`。
+
+项目结构：
 
 ```text
 myapp/
@@ -114,76 +98,40 @@ myapp/
 │       └── docker-compose.yaml
 ├── manifest
 ├── cmd/
-│   ├── main
-│   ├── install_init
-│   └── ...
-├── config/
-│   ├── privilege
-│   └── resource
-└── ...
+└── config/
+    └── resource
 ```
 
-### Docker Compose 文件示例
-
-**app/docker/docker-compose.yaml**
-
-```yaml
-version: '3.8'
-
-services:
-  web:
-    build: .
-    ports:
-      - "8080:80"
-    volumes:
-      - ./data:/app/data
-    environment:
-      - DB_HOST=db
-      - DB_PORT=3306
-    depends_on:
-      - db
-
-  db:
-    image: mysql:8.0
-    environment:
-      - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=myapp
-    volumes:
-      - db_data:/var/lib/mysql
-
-volumes:
-  db_data:
-```
-
-### 资源配置
+资源声明：
 
 **config/resource**
 
 ```json
 {
-    "docker-project": {
-        "projects": [
-            {
-                "name": "myapp-stack",
-                "path": "docker"
-            }
-        ]
-    }
+  "docker-project": {
+    "projects": [
+      {
+        "name": "myapp-stack",
+        "path": "docker"
+      }
+    ]
+  }
 }
 ```
 
-### 配置说明
+- `name`：Docker Compose 项目名称。
+- `path`：相对于 app 目录的路径，该目录应包含 docker-compose.yaml。
 
-- name - Docker Compose 项目的名称，用于标识和管理
-- path - 相对于 app 目录的路径，指向包含 docker-compose.yaml 的文件夹
+Docker 项目适合多服务应用、依赖数据库或缓存的应用，以及需要受控运行环境的应用。
 
-### 使用场景
+## 建议
 
-- 微服务应用：包含多个相互依赖的服务
-- 数据库应用：需要数据库、缓存等多个组件
-- 复杂应用：需要特定的运行环境和依赖
+- 只声明应用实际需要的资源。
+- 资源名称应在版本之间保持稳定。
+- 不要将内部工具或内部数据目录作为共享资源暴露。
+- 用户可见的共享目录应在应用界面或更新说明中说明。
 
 ---
 
-- 上一页: [📚 【基础】应用权限](privilege.md)
-- 下一页: [📚 【基础】应用入口](app-entry.md)
+- 上一页: [应用权限](privilege.md)
+- 下一页: [应用入口](app-entry.md)

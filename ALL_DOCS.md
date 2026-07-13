@@ -6,3037 +6,37 @@
 
 ## 目录
 
-- [🔧　CLI 开发工具](docs/category/cli-开发工具.md)
-- [📘　开发指南](docs/category/开发指南.md)
-- [🚀　快速开始](docs/category/快速开始.md)
-- [🔄　文档更新日志](docs/category/文档更新日志.md)
-- [⚙️　appcenter-cli](docs/cli/appcentercli.md)
-- [📦　fnpack](docs/cli/fnpack.md)
-- [📚 【基础】应用入口](docs/core-concepts/app-entry.md)
-- [🔥 【进阶】应用依赖关系](docs/core-concepts/dependency.md)
-- [💻 【实战】Docker 应用构建](docs/core-concepts/docker.md)
-- [📚 【基础】环境变量](docs/core-concepts/environment-variables.md)
-- [📚 【基础】架构概述](docs/core-concepts/framework.md)
-- [🔥 【进阶】登录认证](docs/core-concepts/gateway-authentication.md)
-- [🔥 【进阶】统一网关注册](docs/core-concepts/gateway-registration.md)
-- [📜 【规范】图标 Icon](docs/core-concepts/icon.md)
-- [📚 【基础】Manifest](docs/core-concepts/manifest.md)
-- [🔥 【进阶】中间件服务](docs/core-concepts/middleware.md)
-- [💻 【实战】Native 应用构建](docs/core-concepts/native.md)
-- [📚 【基础】应用权限](docs/core-concepts/privilege.md)
-- [📚 【基础】应用资源](docs/core-concepts/resource.md)
-- [🔥 【进阶】运行时环境](docs/core-concepts/runtime.md)
-- [📚 【基础】用户向导](docs/core-concepts/wizard.md)
 - [欢迎加入飞牛应用开发者平台](docs/guide.md)
-- [✨　创建应用](docs/quick-started/create-application.md)
-- [📋　准备工作](docs/quick-started/prerequisites.md)
-- [📤　上架应用](docs/quick-started/publish-application.md)
-- [🧪　测试应用](docs/quick-started/test-application.md)
-- [20251216 更新日志](docs/update-log/20251216.md)
-- [20251231 更新日志](docs/update-log/20251231.md)
-- [20260509 更新日志](docs/update-log/20260509.md)
-
----
-
-## 🔧　CLI 开发工具
-
-了解和使用飞牛官方提供的 CLI 工具链，帮助你快速开发和部署应用。
-## 本页内容
-
-- [📦　fnpack](../cli/fnpack.md): 应用打包工具
-- [⚙️　appcenter-cli](../cli/appcentercli.md): 应用中心命令行管理工具
-
----
-
-- 上一页: [📜 【规范】图标 Icon](../core-concepts/icon.md)
-- 下一页: [📦　fnpack](../cli/fnpack.md)
-
----
-
-## 📘　开发指南
-
-学习应用的架构与运行机制、应用设计规范以及实战教学案例，以便更好地掌握 fnOS 开发应用。
-## 本页内容
-
-- [📚 【基础】架构概述](../core-concepts/framework.md): 了解飞牛 fnOS 应用目录和生命周期
-- [📚 【基础】Manifest](../core-concepts/manifest.md): 定义你的应用信息和运行方式
-- [📚 【基础】环境变量](../core-concepts/environment-variables.md): 根据环境变量组织应用的运行方式
-- [📚 【基础】应用权限](../core-concepts/privilege.md): 定义应用运行时的权限
-- [📚 【基础】应用资源](../core-concepts/resource.md): 声明和定义应用的能力
-- [📚 【基础】应用入口](../core-concepts/app-entry.md): 声明和定义用户访问应用的入口
-- [📚 【基础】用户向导](../core-concepts/wizard.md): 为用户设计安装和卸载等向导界面
-- [🔥 【进阶】统一网关注册](../core-concepts/gateway-registration.md): 通过统一网关注册应用访问入口
-- [🔥 【进阶】登录认证](../core-concepts/gateway-authentication.md): 统一网关的登录态校验和用户信息透传机制
-- [🔥 【进阶】应用依赖关系](../core-concepts/dependency.md): 了解应用的依赖逻辑
-- [🔥 【进阶】中间件服务](../core-concepts/middleware.md): 如何使用中间件服务
-- [🔥 【进阶】运行时环境](../core-concepts/runtime.md): 如何使用运行时环境
-- [💻 【实战】Native 应用构建](../core-concepts/native.md): 如何创建飞牛fnOS原生应用
-- [💻 【实战】Docker 应用构建](../core-concepts/docker.md): 如何创建一个 Docker 应用
-- [📜 【规范】图标 Icon](../core-concepts/icon.md): 标准设计规范
-
----
-
-- 上一页: [📤　上架应用](../quick-started/publish-application.md)
-- 下一页: [📚 【基础】架构概述](../core-concepts/framework.md)
-
----
-
-## 🚀　快速开始
-
-跟随以下步骤，快速实现一个应用开发和测试发布
-## 本页内容
-
-- [📋　准备工作](../quick-started/prerequisites.md): 了解开发前的准备工作
-- [✨　创建应用](../quick-started/create-application.md): 按照步骤实现你的第一个飞牛 fnOS 应用
-- [🧪　测试应用](../quick-started/test-application.md): 在飞牛 fnOS 上测试你的应用
-- [📤　上架应用](../quick-started/publish-application.md): 发布你的飞牛 fnOS 应用
-
----
-
-- 上一页: [👋　欢迎加入](../guide.md)
-- 下一页: [📋　准备工作](../quick-started/prerequisites.md)
-
----
-
-## 🔄　文档更新日志
-
-记录文档版本更新日志
-## 本页内容
-
-- [20251216 更新日志](../update-log/20251216.md): - 修复暗色主题模式下首页及Footer显示不友好的问题
-- [20251231 更新日志](../update-log/20251231.md): - 文档加入New! 及 Update! 等徽标样式，方便快速查阅新增特性
-- [20260509 更新日志](../update-log/20260509.md): - 开发指南 >【进阶】新增 统一网关注册 文档，介绍应用在 fnOS V1.1.3100 及以上版本接入统一网关的方式
-
----
-
-- 上一页: [⚙️　appcenter-cli](../cli/appcentercli.md)
-- 下一页: [20251216 更新日志](../update-log/20251216.md)
-
----
-
-## ⚙️　appcenter-cli
-
-`appcenter-cli` 是飞牛 fnOS 系统预装的应用中心管理工具，它让您能够通过命令行来管理应用的安装、配置和系统设置。无论您是开发者还是系统管理员，这个工具都能帮助您更高效地管理应用。
-
-## 安装应用
-
-### 通过 fpk 文件安装
-
-使用 `appcenter-cli install-fpk` 命令可以安装打包好的应用文件：
-
-```bash
-# 基本安装命令
-appcenter-cli install-fpk myapp.fpk
-
-# 指定环境变量文件进行静默安装
-appcenter-cli install-fpk myapp.fpk --env config.env
-```
-
-#### 环境变量文件格式
-
-当应用包含安装向导时，您可以通过环境变量文件来跳过交互式配置。环境变量文件使用简单的键值对格式：
-
-**config.env**
-
-```yaml
-# 应用配置
-wizard_admin_username=admin
-wizard_admin_password=mypassword123
-wizard_database_type=sqlite
-wizard_app_port=8080
-
-# 系统设置
-wizard_agree_terms=true
-```
-
-#### 设置默认安装位置
-
-如果您的系统有多个存储空间，可以设置默认的安装位置：
-
-```bash
-# 查看当前默认存储空间
-appcenter-cli default-volume
-
-# 设置存储空间1为默认安装位置
-appcenter-cli default-volume 1
-
-# 设置存储空间2为默认安装位置
-appcenter-cli default-volume 2
-```
-
-### 从本地目录安装
-
-当您在开发环境中测试应用时，可以直接从应用目录安装，无需先打包成 fpk 文件：
-
-```bash
-# 在应用开发目录中执行
-cd /path/to/myapp
-appcenter-cli install-local
-```
-
-这个命令会自动完成打包和安装过程，大大提升开发测试效率。
-
-## 系统管理
-
-### 手动安装功能
-
-当您需要与团队成员分享应用时，可以临时开启手动安装功能：
-
-```bash
-# 查看当前状态
-appcenter-cli manual-install
-
-# 开启手动安装功能
-appcenter-cli manual-install enable
-
-# 关闭手动安装功能
-appcenter-cli manual-install disable
-```
-
-开启后，其他用户就可以通过应用中心的手动安装入口来安装您分享的 fpk 文件。
-
-### 应用管理
-
-```bash
-# 查看已安装的应用列表
-appcenter-cli list
-
-# 启动应用
-appcenter-cli start myapp
-
-# 停止应用
-appcenter-cli stop myapp
-```
-
-## 最佳实践
-
-### 安装前准备
-
-1. 检查存储空间：确保有足够的存储空间安装应用
-2. 准备配置文件：为包含向导的应用准备环境变量文件
-3. 验证 fpk 文件：确保 fpk 文件完整且未损坏
-
-### 开发工作流
-
-1. 本地开发：使用 install-local 快速测试
-2. 打包测试：使用 install-fpk 测试打包版本
-3. 配置管理：使用环境变量文件管理不同环境的配置
-
-### 安全考虑
-
-- 手动安装功能仅在需要时开启，使用完毕后及时关闭
-- 环境变量文件包含敏感信息，注意文件权限管理
-- 生产环境安装前先在测试环境验证
-
-通过合理使用 `appcenter-cli`，您可以更高效地管理飞牛 fnOS 应用，提升开发和部署效率。
-
----
-
-- 上一页: [📦　fnpack](fnpack.md)
-- 下一页: [🔄　文档更新日志](../category/文档更新日志.md)
-
----
-
-## 📦　fnpack
-
-`fnpack` 是飞牛 fnOS 应用打包的便利工具，它帮助您快速创建应用项目结构并将应用打包成可安装的 `fpk` 文件。无论您是初学者还是经验丰富的开发者，这个工具都能让应用开发变得更加简单高效。
-
-> [!NOTE]
-> 本文档于 **2025-12-31** 新增了部分内容。
-
-## 工具下载 Update!
-
-`fnpack` 已预置到飞牛 fnOS 中，同时也支持在本地使用，可根据操作系统进行下载：
-
-- Windows x86: fnpack-1.2.1-windows-amd64
-- Linux x86: fnpack-1.2.1-linux-amd64
-- Linux ARM: fnpack-1.2.1-linux-arm64
-- Mac Intel: fnpack-1.2.1-darwin-amd64
-- Mac M系列: fnpack-1.2.1-darwin-arm64
-
-## 创建应用项目
-
-### 基本创建命令
-
-使用 `fnpack create` 命令可以快速创建应用项目：
-
-```bash
-# 创建独立项目
-fnpack create <appname>
-# 不带应用访问入口，使用纯服务类型的项目
-fnpack create <appname> --without-ui true
-
-# 创建 Docker 应用项目
-fnpack create <appname> --template docker
-# 无应用访问入口Docker应用，使用纯服务类型的项目
-fnpack create <appname> --template docker --without-ui true
-```
-
-### 关于 Docker 应用模板
-
-- 自动生成 docker-compose.yaml 文件，需手动编辑
-- 自动生成 shares/data 目录的挂载映射配置，可自行修改
-- 自动生成 cmd/main 的 status 检查代码，可自行修改
-
-### 项目结构示例
-
-创建后的项目结构如下：
-
-```text
-myapp/
-├── app/                            # 应用可执行文件目录
-│   ├── ui/
-│   │   ├── images/
-│   │   └── config
-│   └── docker/                     # Docker 配置（Docker 应用模板）
-│       └── docker-compose.yaml
-├── cmd/                            # 应用生命周期管理脚本
-│   ├── main
-│   ├── install_init
-│   ├── install_callback
-│   ├── uninstall_init
-│   ├── uninstall_callback
-│   ├── upgrade_init
-│   ├── upgrade_callback
-│   ├── config_init
-│   └── config_callback
-├── config/
-│   ├── privilege                   # 应用权限配置
-│   └── resource                    # 应用资源配置
-├── wizard/
-│   ├── install                     # 安装向导配置
-│   ├── uninstall                   # 卸载向导配置
-│   └── config                      # 配置向导
-├── manifest                        # 应用基本信息
-├── LICENSE                         # 许可证文件
-├── ICON.PNG                        # 应用图标（64x64）
-└── ICON_256.PNG                    # 应用图标（256x256）
-```
-
-## 打包应用项目
-
-### 基本打包命令
-
-使用 `fnpack build` 命令将应用打包成 `fpk` 文件
-
-```bash
-# 在应用目录中执行打包
-cd myapp
-fnpack build
-
-## 指定打包的目录
-fnpack build --directory <path>
-```
-
-打包校验规则：
-
-| 路径 | 类型 | 校验规则 |
-| --- | --- | --- |
-| `manifest` | 文件 | 必须存在，且必选字段存在 |
-| `config/privilege` | 文件 | 必须存在，且符合 `JSON` 格式 |
-| `config/resource` | 文件 | 必须存在，且符合 `JSON` 格式 |
-| `ICON.PNG` | 文件 | 必须存在 |
-| `ICON_256.PNG` | 文件 | 必须存在 |
-| `app/` | 目录 | 必须存在 |
-| `cmd/` | 目录 | 必须存在 |
-| `wizard/` | 目录 | 必须存在 |
-| `app/{manifest.desktop_uidir}/` | 目录 | 若有定义，则目录必须存在 |
-
-### 本地安装工具方法
-
-```bash
-# Linux/macOS 安装
-chmod +x fnpack-1.2.1-linux-amd64
-sudo mv fnpack-1.2.1-linux-amd64 /usr/local/bin/fnpack
-
-# 验证安装
-fnpack --help
-```
-
-## 最佳实践
-
-1. 模板选择：根据应用类型选择合适的模板
-2. 集成编译：将打包目录创建于代码目录下，并将 `fnpack build` 命令集成到代码编译脚本中
-
-通过合理使用 **fnpack**，您可以更高效地开发和管理飞牛 **fnOS** 应用，专注于应用功能本身而不是繁琐的配置工作。
-
----
-
-- 上一页: [🔧　CLI 开发工具](../category/cli-开发工具.md)
-- 下一页: [⚙️　appcenter-cli](appcentercli.md)
-
----
-
-## 📚 【基础】应用入口
-
-> [!NOTE]
-> 本文档于 **2025-12-31** 重新调整了内容结构，并新增了部分内容。
-
-应用入口就像是应用的"大门"，用户通过这些入口来访问您的应用。一个应用可以定义多个入口，每个入口都有不同的功能、图标和访问方式，让用户能够方便地使用应用的各种功能。
-
-## 入口类型
-
-飞牛 fnOS 支持两种主要的应用入口类型：
-
-### 桌面图标入口
-
-桌面图标入口让用户能够通过点击图标直接访问您的应用。您可以为应用配置多个桌面图标入口，每个入口对应不同的功能模块。
-
-> [!NOTE]
-> - 在应用中心和应用设置中显示为可点击的图标
-> - 点击后直接打开应用的 Web 界面
-> - 可以设置不同的图标、标题和访问权限
-
-![](../../assets/static/appcenter-marketing/20250829154904479.png)
-
-### 文件右键入口
-
-文件右键入口允许用户右键点击文件时使用您的应用来打开或编辑文件。
-
-> [!NOTE]
-> - 在文件管理器中右键文件时显示
-> - 允许用户使用您的应用来查看或编辑特定类型的文件
-> - 支持多种文件格式
-> - 打开文件时会在 URL 后自动拼接 path 参数，包含文件的完整路径
-
-![](../../assets/static/appcenter-marketing/20250829154518415.png)
-
-## 入口配置文件 Update!
-
-应用入口通过 `config` 文件定义，该文件需要放在 UI 目录下。假设您的 `manifest` 中 `desktop_uidir` 设置为 `ui`，那么配置文件路径就是 `app/ui/config`。
-
-### 项目结构示例
-
-```text
-myapp/
-├── app/
-│   └── ui/
-│       ├── images/
-│       │   ├── icon_64.png   # 64x64 像素的图标
-│       │   └── icon_256.png  # 256x256 像素的图标
-│       └── config            # 入口配置文件
-├── manifest
-├── cmd/
-├── config/
-├── wizard/
-├── LICENSE
-├── ICON.PNG
-└── ICON_256.PNG
-```
-
-### 桌面图标配置示例
-
-入口定义在 `.url` key值下，并必须使用 `appname` 为前缀，如下所示：
-
-**app/ui/config**
-
-```json
-{
-    ".url": {
-        "myapp.main": {
-            "title": "我的应用",                   // 应用入口显示标题（桌面图标名称）
-            "icon": "images/icon_{0}.png",        // 图标文件路径，相对于 UI 目录
-            "type": "url",                        // 入口方式：url/iframe
-            "protocol": "http",                   // 访问协议：http/https
-            "port": "8080",                       // 应用端口，CGI方案无需声明
-            "url": "/",                           // 应用访问路径（相对路径）
-            "allUsers": true                      // 是否所有用户可见
-        },
-        "myapp.admin": {
-            "title": "管理后台",                   // 应用入口显示标题（桌面图标名称）
-            "icon": "images/admin_icon_{0}.png",  // 图标文件路径，相对于 UI 目录
-            "type": "url",                        // 入口方式：url/iframe
-            "protocol": "http",                   // 访问协议：http/https
-            "port": "8080",                       // 应用端口，CGI方案无需声明
-            "url": "/admin",                      // 应用访问路径（相对路径）
-            "allUsers": false                     // 是否所有用户可见
-        }
-    }
-}
-```
-
-### 文件右键配置示例
-
-**app/ui/config**
-
-```json
-{
-    ".url": {
-        "myapp.editor": {
-            "title": "文本编辑器",                        // 应用入口显示标题（右键菜单名称）
-            "icon": "images/editor-{0}.png",            // 图标文件路径，相对于 UI 目录
-            "type": "url",                              // 入口方式：url/iframe
-            "protocol": "http",                         // 访问协议：http/https
-            "port": "8080",                             // 应用端口，CGI方案无需声明
-            "url": "/edit",                             // 应用访问路径（相对路径）
-            "allUsers": true,                           // 是否所有用户可见
-            "fileTypes": ["txt", "md", "json", "xml"],  // 文件右键入口关联文件类型
-            "noDisplay": true                           // 是否在桌面隐藏
-        },
-        "myapp.viewer": {
-            "title": "文件查看器",                        // 应用入口显示标题（右键菜单名称）
-            "icon": "images/viewer-{0}.png",            // 图标文件路径，相对于 UI 目录
-            "type": "iframe",                           // 入口方式：url/iframe
-            "protocol": "http",                         // 访问协议：http/https
-            "port": "8080",                             // 应用端口，CGI方案无需声明
-            "url": "/view",                             // 应用访问路径（相对路径）
-            "allUsers": true,                           // 是否所有用户可见
-            "fileTypes": ["pdf", "doc", "docx"],        // 文件右键入口关联文件类型
-            "noDisplay": true                           // 是否在桌面隐藏
-        }
-    }
-}
-```
-
-### 基础字段说明
-
-> [!NOTE]
-> 允许使用 `${variable_name}` 语法动态获取向导中配置参数。系统要求：**V1.1.8+**
-
-- `title` - 入口的显示标题，用户看到的名称
-- `icon` - 图标文件路径，相对于 UI 目录
-    - {0} 会被替换为图标尺寸（64 或 256）
-    - 例如：images/icon_{0}.png → images/icon_64.png 或 images/icon_256.png
-- `type` - 入口类型
-    - url - 在浏览器新标签页中打开
-    - iframe - 在桌面窗口中以 iframe 方式加载
-- `protocol` - 访问协议Update!
-    - 通常为 http 或 https
-    - 为空字符串时为自适应协议（⚠️注：不声明 `protocol` 字段默认缺省值为 http，而非自适应）
-    - 范例：protocol: "http" 、 protocol: "https" 、 protocol: ""
-- `port` - 应用监听的端口号Update!
-    - 如果应用使用 CGI 方案，则不需要声明端口号
-    - 如果需要使用动态端口配置，请使用环境变量占位符声明，例如：${wizard_port}V1.1.8+
-- `url` - 访问路径，应用内部的相对路径Update!
-    - 如果需要使用动态路径配置，请使用环境变量占位符声明，例如：${wizard_url}V1.1.8+
-- `allUsers` - 访问权限控制
-    - true - 所有用户都可以访问
-    - false - 仅管理员可以访问
-
-### 文件相关字段说明
-
-- `fileTypes` - 文件右键入口关联文件类型
-    - 可以包含多个文件扩展名
-    - 例如：["txt", "md", "json", "xml"]表示仅支持这些文件类型
-- `noDisplay` - 是否在桌面隐藏
-    - true - 不在桌面显示，只在右键菜单中显示
-    - false - 同时在桌面和右键菜单中显示
-
-### 文件路径参数
-
-当用户通过右键菜单打开文件时，系统会自动在 URL 后添加 `path` 参数，包含文件的完整路径。例如：
-
-- 原始 URL：http://localhost:8080/edit
-- 打开文件后：http://localhost:8080/edit?path=/vol1/Users/admin/Documents/example.txt
-
-您的应用可以通过解析这个 `path` 参数来获取要处理的文件路径。
-
-### 控制字段说明
-
-> [!NOTE]
-> **应用中心　》　应用设置　》　控制字段**
-
-![应用设置控制字段示例](../../assets/site/assets/images/2025-12-29_211754_351-defbda49be681a082cd3f4f7bc5cd5b7.png)
-
-- `accessPerm` - 桌面访问的设置权限，默认为 readonly
-    - editable - 可编辑
-    - readonly - 只读
-    - hidden - 隐藏
-- **`portPerm`** - 访问端口的设置权限，默认为 `readonly`废弃V1.1.8+
-    - `editable` - 可编辑
-    - `readonly` - 只读
-    - `hidden` - 隐藏
-- **`pathPerm`** - 访问路径的设置权限，默认为 `readonly`废弃V1.1.8+
-    - `editable` - 可编辑
-    - `readonly` - 只读
-    - `hidden` - 隐藏
-
-> [!NOTE]
-> 您可以通过 `control` 字段（代码块深色部分）来控制入口对用户的显示和编辑权限：
-
-**app/ui/config**
-
-```json
-{
-    ".url": {
-        "myapp.advanced": {
-            "title": "高级功能",
-            "icon": "images/advanced-{0}.png",
-            "type": "iframe",
-            "protocol": "http",
-            "port": "8080",
-            "url": "/advanced",
-            "allUsers": false,
-            "control": {
-                "accessPerm": "readonly",
-                "portPerm": "readonly",     // V1.1.8版本及以上该字段属性已废弃
-                "pathPerm": "readonly"      // V1.1.8版本及以上该字段属性已废弃
-            },
-            "fileTypes": ["pdf", "doc", "docx"],
-            "noDisplay": true
-        }
-    }
-}
-```
-
-## 最佳实践
-
-### 入口设计原则
-
-1. 功能明确 - 每个入口对应一个明确的功能
-2. 用户友好 - 使用清晰的标题和描述
-3. 权限合理 - 根据功能设置适当的访问权限
-4. 图标统一 - 保持图标风格的一致性
-
-### 文件类型支持
-
-- 只声明应用真正支持的文件类型
-- 考虑文件类型的关联性
-- 提供清晰的描述说明
-
-### 打开方式选择
-
-- url 类型：适合需要完整浏览器功能的场景，如复杂的编辑界面
-- iframe 类型：适合轻量级的查看和简单操作，提供更好的集成体验
-
-### 权限控制
-
-- 管理功能设置为管理员专用
-- 普通功能对所有用户开放
-- 使用 control 字段进行精细控制
-
-通过合理配置应用入口，您可以为用户提供便捷的访问方式，让应用的使用体验更加友好。
-
----
-
-- 上一页: [📚 【基础】应用资源](resource.md)
-- 下一页: [📚 【基础】用户向导](wizard.md)
-
----
-
-## 🔥 【进阶】应用依赖关系
-
-在飞牛 fnOS 应用生态中，应用之间可能存在依赖关系。理解和管理这些依赖关系对于应用的正确运行至关重要。
-
-## 声明依赖关系
-
-应用依赖是指一个应用需要其他应用先安装并运行才能正常工作。在 `manifest` 文件中，通过 `install_dep_apps` 字段来声明应用依赖。
-
-**manifest**
-
-```yaml
-version=1.0.0
-install_dep_apps=dep2:dep1
-```
-
-## 依赖管理
-
-### 依赖检查逻辑
-
-应用中心在应用安装、启用、停用、卸载、更新等流程中，会自动检查依赖关系：
-
-1. 安装和启用流程：检查依赖应用是否已安装和已启用，如果未安装则自动安装，如果未启用则自动启用
-2. 停用和卸载流程：检查是否有其他应用依赖当前应用，如果有则提示自动停用
-3. 更新流程： 检查是否有其他应用依赖当前应用，如果有则提示更新期间自动停用
-
-### 依赖顺序
-
-当存在多个依赖时，执行自动安装和自动启用的顺序是从后往前一个一个执行。
-
-```yaml
-# 正确的依赖顺序，安装时将先安装dep1，后安装dep2
-install_dep_apps=dep2:dep1
-
-# 错误的依赖顺序，如果dep2依赖于dep1，可能导致问题
-install_dep_apps=dep1:dep2
-```
-
-### 嵌套依赖处理
-
-应用中心仅对一层依赖进行检查，不做递归检查。如果 **应用A** 依赖 **应用B**，但不直接依赖于 **应用C**，同时 **应用B** 又依赖 **应用C**，则需要在 **应用A** 中同时声明依赖 **应用B** 和 **应用C**：
-
-```yaml
-# 嵌套依赖的平铺定义
-install_dep_apps=depB:depC
-```
-
----
-
-- 上一页: [🔥 【进阶】登录认证](gateway-authentication.md)
-- 下一页: [🔥 【进阶】中间件服务](middleware.md)
-
----
-
-## 💻 【实战】Docker 应用构建
-
-## 创建应用
-
-使用 `fnpack create my-app -t docker` 命令创建应用目录，my-app 请自行替换为你的应用名。
-创建后的应用目录结构如下：
-
-```text
-my-app/
-├── app/                            # 🗂️ 应用可执行文件目录
-│   ├── docker/                     # 🗂️ Docker 资源目录
-│   │   └── docker-compose.yaml     # Docker Compose 编排文件
-│   ├── ui/                         # 🗂️ 应用入口及视图
-│   │   ├── images/                 # 🗂️ 应用图标及图片资源目录
-│   │   └── config                  # 应用入口配置文件
-├── manifest                        # 应用包基本信息描述文件
-├── cmd/                            # 🗂️ 应用生命周期管理脚本
-│   ├── main                        # 应用主脚本，用于启动、停止、检查应用状态
-│   ├── install_init                # 应用安装初始化脚本
-│   ├── install_callback            # 应用安装回调脚本
-│   ├── uninstall_init              # 应用卸载初始化脚本
-│   ├── uninstall_callback          # 应用卸载回调脚本
-│   ├── upgrade_init                # 应用更新初始化脚本
-│   ├── upgrade_callback            # 应用更新回调脚本
-│   ├── config_init                 # 应用配置初始化脚本
-│   └── config_callback             # 应用配置回调脚本
-├── config/                         # 🗂️ 应用配置目录
-│   ├── privilege                   # 应用权限配置
-│   └── resource                    # 应用资源配置
-├── wizard/                         # 🗂️ 应用向导目录
-├── LICENSE                         # 应用许可证文件
-├── ICON.PNG                        # 应用包 64*64 图标文件
-└── ICON_256.PNG                    # 应用包 256*256 图标文件
-```
-
-## 1. 编辑 manifest 文件
-
-定义必须字段：
-
-- appname - 应用的唯一标识符，就像人的身份证号一样，在整个系统中必须是唯一的
-- version - 应用版本号，格式为 x[.y[.z]][-build]，例如：1.0.0、2.1.3-beta
-- display_name - 在应用中心和应用设置中显示的名称，用户看到的就是这个名字
-- desc - 应用的详细介绍，支持 HTML 格式，可以包含链接、图片等
-
-其他字段可参考 [manifest指南](manifest.md) ，按需进行定义
-
-## 2. 编辑 docker-compose.yaml 文件
-
-系统将根据 `docker-compose.yaml` 创建和启动容器编排。详细 compose 使用方法可移步 [Docker Compose Quickstart](https://docs.docker.com/compose/gettingstarted/)
-
-`docker-compose.yaml` 允许使用环境变量，在执行前将进行替换，相关环境变量可参考 [环境变量指南](environment-variables.md)
-
-## 3. 检查应用启停状态
-
-默认情况下，无需定义启停逻辑，因为 Docker 应用的启停均由应用中心执行 compose 来管理。
-
-然而，依然需要定义 Docker 应用是否在运行中，脚本中默认选择第一个容器的状态作为应用的启停状态，如不符合期望，可自行修改高亮部分。
-
-**/cmd/main**
-
-```shell
-#!/bin/bash
-
-FILE_PATH="${TRIM_APPDEST}/docker/docker-compose.yaml"
-
-is_docker_running () {
-    DOCKER_NAME=""
-
-    if [ -f "$FILE_PATH" ]; then
-        DOCKER_NAME=$(cat $FILE_PATH | grep "container_name" | awk -F ':' '{print $2}' | xargs)
-        echo "DOCKER_NAME is set to: $DOCKER_NAME"
-    fi
-
-    if [ -n "$DOCKER_NAME" ]; then
-        docker inspect $DOCKER_NAME | grep -q "\"Status\": \"running\"," || exit 1
-        return
-    fi
-}
-
-case $1 in
-start)
-    # run start command. exit 0 if success, exit 1 if failed
-    # do nothing, docker application will be started by appcenter
-    exit 0
-    ;;
-stop)
-    # run stop command. exit 0 if success, exit 1 if failed
-    # do nothing, docker application will be stopped by appcenter
-    exit 0
-    ;;
-status)
-    # check application status command. exit 0 if running, exit 3 if not running
-    # check first container by default, you cound modify it by yourself
-    if is_docker_running; then
-        exit 0
-    else
-        exit 3
-    fi
-    ;;
-*)
-    exit 1
-    ;;
-esac%
-```
-
-## 4. 定义用户入口
-
-即定义在飞牛 fnOS 上的桌面图标，详情可参考 [用户入口指南](app-entry.md)
-
-## 5. 执行打包和测试
-
-在根目录，使用 `fnpack build` 命令进行打包，获得 `fpk` 文件，参考 [测试应用指南](../quick-started/test-application.md) 进行实机测试
-
----
-
-- 上一页: [💻 【实战】Native 应用构建](native.md)
-- 下一页: [📜 【规范】图标 Icon](icon.md)
-
----
-
-## 📚 【基础】环境变量
-
-> [!NOTE]
-> 本文档于 **2025-12-31** 新增了部分内容。
-
-环境变量就像是应用运行时的"工具箱"，里面装着各种有用的信息。当您的应用在飞牛 fnOS 系统中运行时，系统会自动提供这些环境变量，让您能够了解应用的状态、获取系统信息、访问各种路径等。
-
-环境变量主要来自两个地方：
-
-- manifest 文件：您在 manifest 中定义的字段会自动转换为环境变量
-- 用户向导：用户在安装、配置等向导中的选择也会变成环境变量
-
-## 应用相关变量
-
-这些变量告诉您关于当前应用的各种信息：
-
-### 基本信息
-
-- TRIM_APPNAME - 应用的名称（来自 manifest 中的 appname）
-- TRIM_APPVER - 应用的版本号（来自 manifest 中的 version）
-- TRIM_OLD_APPVER - 应用升级前的版本号（仅在升级时可用）
-
-### 路径信息
-
-- TRIM_APPDEST - 应用可执行文件目录路径（target 文件夹）
-- TRIM_PKGETC - 配置文件目录路径（etc 文件夹）
-- TRIM_PKGVAR - 动态数据目录路径（var 文件夹）
-- TRIM_PKGTMP - 临时文件目录路径（tmp 文件夹）
-- TRIM_PKGHOME - 用户数据目录路径（home 文件夹）
-- TRIM_PKGMETA - 元数据目录路径（meta 文件夹）
-- TRIM_APPDEST_VOL - 应用安装的存储空间路径
-
-### 网络和端口
-
-- TRIM_SERVICE_PORT - 应用监听的端口号（来自 manifest 中的 service_port）
-
-### 用户和权限
-
-- TRIM_USERNAME - 应用专用用户名
-- TRIM_GROUPNAME - 应用专用用户组名
-- TRIM_UID - 应用用户 ID
-- TRIM_GID - 应用用户组 ID
-- TRIM_RUN_USERNAME - 当前执行脚本的用户名（可能是 root 或应用用户）
-- TRIM_RUN_GROUPNAME - 当前执行脚本的用户组名
-- TRIM_RUN_UID - 当前执行脚本的用户 ID
-- TRIM_RUN_GID - 当前执行脚本的用户组 ID
-
-### 数据共享
-
-- TRIM_DATA_SHARE_PATHS - 数据共享路径列表，多个路径用冒号分隔
-
-### 临时日志 Update!
-
-- TRIM_TEMP_LOGFILE - 系统日志文件路径（用户可见的日志）
-    - 该日志路径变量在 cmd/** 下的 `生命周期脚本` 及 `运行状态管理脚本` 执行过程中有效，包括：cmd/main、cmd/install_*、cmd/upgrade_*。配置和卸载暂不支持，即cmd/config_*、cmd/uninstall_*。
-    - 应用中心执行调用对应脚本时，可以直接向 ${TRIM_TEMP_LOGFILE} 变量对应的临时路径写入日志信息，当脚本执行 `exit 1` 时，应用中心会将${TRIM_TEMP_LOGFILE}中日志信息传递给前台页面，通过Dialog对话框展示给用户New!V1.1.8+
-
-> [!NOTE]
-> - 如需了解更多关于`生命周期脚本` 及 `运行状态管理脚本` 的信息，请参考 [架构概述](framework.md) 章节内容进行学习
-
-- TRIM_TEMP_UPGRADE_FOLDER - 升级过程的临时目录
-- TRIM_PKGINST_TEMP_DIR - 安装包解压的临时目录
-- TRIM_TEMP_TPKFILE - fpk 包解压目录
-
-### CMD 脚本
-
-- TRIM_APP_STATUS - 当前状态(INSTALL、START、UPGRADE、UNINSTALL、STOP、CONFIG等)
-
-### 获取授权目录列表 New! V1.1.8+
-
-- TRIM_DATA_ACCESSIBLE_PATHS - 可访问路径列表，多个路径用冒号分隔，仅返回读写/只读的目录
-    - 当变更时，通过 cmd/config_init 和 cmd/config_callback应用配置流程来通知变化。应用脚本内开发者自行结合实际业务场景将路径信息通知应用进程
-
-> [!WARNING]
-> - 系统最低版本：V1.1.8
-> - 注意：应用自身仍需要单独自行判断是否拥有子目录和文件的读写权限
-
-## 系统相关变量
-
-这些变量提供关于飞牛 fnOS 系统的信息：
-
-### 版本信息
-
-- TRIM_SYS_VERSION - 完整的系统版本号
-- TRIM_SYS_VERSION_MAJOR - 系统主版本号
-- TRIM_SYS_VERSION_MINOR - 系统次版本号
-- TRIM_SYS_VERSION_BUILD - 系统构建版本号
-
-### 系统特征
-
-- TRIM_SYS_ARCH - 系统 CPU 架构（如 x86_64）
-- TRIM_KERNEL_VERSION - 系统内核版本号
-- TRIM_SYS_MACHINE_ID - 设备的唯一标识符
-- TRIM_SYS_LANGUAGE - 系统语言设置
-
-## 向导相关变量
-
-当用户通过安装向导、配置向导等进行操作时，他们的选择会变成环境变量。这些变量没有 `TRIM_` 前缀，完全由您的向导配置决定。
-
-例如，如果您在向导中定义了：
-
-- 数据库端口：db_port
-- 管理员密码：admin_password
-- 安装路径：install_path
-
-那么这些就会变成环境变量：
-
-- db_port
-- admin_password
-- install_path
-
-## 使用示例
-
-下面是一个典型的应用启动脚本示例，展示了如何使用这些环境变量：
-
-**cmd/main**
-
-```bash
-#!/bin/bash
-
-case $1 in
-start)
-    echo "启动应用: $TRIM_APPNAME 版本: $TRIM_APPVER"
-    echo "应用目录: $TRIM_APPDEST"
-    echo "配置文件目录: $TRIM_PKGETC"
-    echo "数据目录: $TRIM_PKGVAR"
-    echo "服务端口: $TRIM_SERVICE_PORT"
-
-    # 检查配置文件是否存在
-    if [ ! -f "$TRIM_PKGETC/config.conf" ]; then
-        echo "配置文件不存在，创建默认配置..."
-        cp "$TRIM_APPDEST/config.conf.example" "$TRIM_PKGETC/config.conf"
-    fi
-
-    # 启动应用
-    cd "$TRIM_APPDEST"
-    ./myapp --config "$TRIM_PKGETC/config.conf" \
-            --data "$TRIM_PKGVAR" \
-            --port "$TRIM_SERVICE_PORT" \
-            --user "$TRIM_USERNAME" \
-            --log "$TRIM_TEMP_LOGFILE" &
-
-    echo "应用启动完成"
-    exit 0
-    ;;
-
-status)
-    # 检查应用是否在运行
-    if pgrep -f "myapp.*$TRIM_SERVICE_PORT" > /dev/null; then
-        echo "应用正在运行"
-        exit 0
-    else
-        echo "应用未运行"
-        exit 3
-    fi
-    ;;
-
-stop)
-    echo "停止应用..."
-    pkill -f "myapp.*$TRIM_SERVICE_PORT"
-    exit 0
-    ;;
-
-*)
-    echo "未知命令: $1"
-    exit 1
-    ;;
-esac
-```
-
-## 注意事项
-
-1. 变量命名：系统提供的变量都以 TRIM_ 开头，您的向导变量不要使用这个前缀
-2. 路径安全：使用路径变量时，建议先检查目录是否存在
-3. 权限考虑：注意 TRIM_RUN_USERNAME 和 TRIM_USERNAME 的区别，前者是执行脚本的用户，后者是应用专用用户
-4. 版本兼容：使用系统版本变量时，注意检查版本兼容性
-
-这些环境变量让您的应用能够适应不同的安装环境，获取必要的系统信息，并响应用户的配置选择。
-
----
-
-- 上一页: [📚 【基础】Manifest](manifest.md)
-- 下一页: [📚 【基础】应用权限](privilege.md)
-
----
-
-## 📚 【基础】架构概述
-
-> [!NOTE]
-> 本文档于 **2025-12-31** 重新调整了内容结构，并新增了部分内容。
-
-## 应用目录结构
-
-当您的应用安装到飞牛 fnOS 系统后，会在系统中创建如下的目录结构：
-
-```text
-/var/apps/[appname]
-├── cmd
-│   ├── install_callback
-│   ├── install_init
-│   ├── main
-│   ├── uninstall_callback
-│   ├── uninstall_init
-│   ├── upgrade_init
-│   ├── upgrade_callback
-│   ├── config_init
-│   └── config_callback
-├── config
-│   ├──privilege
-│   └──resource
-├── ICON_256.PNG
-├── ICON.PNG
-├── LICENSE
-├── manifest
-├── etc->/vol[volume_number]/@appconf/[appname]
-├── home->/vol[volume_number]/@apphome/[appname]
-├── target->/vol[volume_number]/@appcenter/[appname]
-├── tmp->/vol[volume_number]/@apptemp/[appname]
-├── var->/vol[volume_number]/@appdata/[appname]
-├── shares
-│   ├──datashare1->/vol[volume_number]/@appshare/datashare1
-│   └──datashare2->/vol[volume_number]/@appshare/datashare2
-└── wizard
-    ├── install
-    ├── uninstall
-    ├── upgrade
-    └── config
-```
-
-### 核心文件说明
-
-**应用标识文件：**
-
-- manifest - 应用的"身份证"，定义了应用的基本信息和运行属性
-- config/privilege - 应用的"权限清单"，声明应用需要哪些系统权限
-- config/resource - 应用的"能力声明"，定义应用可以使用的扩展功能
-
-**界面资源：**
-
-- ICON.PNG - 应用中心显示的小图标（64x64 像素）
-- ICON_256.PNG - 应用详情页显示的大图标（256x256 像素）
-- LICENSE - 用户安装前需要同意的隐私协议（可选）
-
-### 目录功能说明
-
-**开发者定义目录：**
-
-- cmd - 存放应用生命周期管理的脚本文件
-- wizard - 存放用户交互向导的配置文件
-
-**系统自动创建目录：**
-
-- target - 应用可执行文件的存放位置
-- etc - 静态配置文件存放位置
-- var - 运行时动态数据存放位置
-- tmp - 临时文件存放位置
-- home - 用户数据文件存放位置
-- meta - 应用元数据存放位置
-- shares - 数据共享目录（根据 resource 配置自动创建）
-
-## 应用生命周期管理
-
-飞牛 fnOS 系统通过调用 `cmd` 目录中的脚本来管理您的应用。这些脚本就像是应用的"管家"，负责处理应用的安装、启动、停止、更新等各个阶段。
-
-### 应用安装流程
-
-安装过程分为三个阶段：安装前准备、文件解压、安装后处理。您可以在 `install_init` 和 `install_callback` 这两个节点添加自定义逻辑，比如环境检查、依赖安装等。如果配置了 `wizard/install` 向导，还可以获取用户的配置输入。
-
-### 应用卸载流程
-
-卸载应用时，系统会删除以下目录：`target`、`tmp`、`home`、`etc`，但会保留 `var` 和 `shares` 目录（保护用户数据）。
-
-如果您希望提供完全删除选项，可以在 `wizard/uninstall` 向导中让用户选择是否保留数据。当用户选择不保留时，您可以在 `cmd/uninstall_callback` 中清理剩余的数据和目录。
-
-如果卸载时应用仍在运行，系统会先停止应用，然后再执行卸载流程：
-
-### 应用更新流程
-
-更新流程与安装流程类似，同样提供了 `upgrade_init` 和 `upgrade_callback` 两个节点。您可以在这里处理数据库升级、配置迁移等逻辑。如果配置了 `wizard/upgrade` 向导，还可以获取用户的更新配置。
-
-如果更新时应用正在运行，系统会先停止应用，执行更新，然后重新启动应用：
-
-### 应用配置流程
-
-用户可以在 **系统设置** - **应用设置** 中查看和修改您的应用配置。可配置的范围由 `wizard/config` 文件定义。
-
-当用户修改配置并保存后，系统会更新环境变量。您可以在 `config_init` 和 `config_callback` 中监听这些变化，并相应地调整应用的运行逻辑。
-
-## 应用运行状态管理 Update!
-
-这是一个典型的应用运行状态管理脚本基本结构：
-
-**cmd/main**
-
-```bash
-#!/bin/bash
-
-case $1 in
-start)
-    # 启动应用的命令，成功返回 0，失败返回 1
-    exit 0
-    ;;
-stop)
-    # 停止应用的命令，成功返回 0，失败返回 1
-    exit 0
-    ;;
-status)
-    # 检查应用运行状态，运行中返回 0，未运行返回 3
-    exit 0
-    ;;
-*)
-    exit 1
-    ;;
-esac
-```
-
-### 应用状态监控
-
-系统需要准确知道您的应用是否正在运行。为此，系统会定期调用 `cmd/main` 脚本（传入 `status` 参数）来检查应用状态：
-
-- 脚本返回 exit 0 表示应用正在运行
-- 脚本返回 exit 3 表示应用未运行
-
-> [!NOTE]
-> **系统会在以下时机调用状态检查：**
->
-> - 应用启动前检查一次
-> - 应用运行期间定期轮询检查
-
-### 应用启动流程
-
-启动应用前，系统会先检查应用是否已经在运行。如果应用未运行，系统会调用 `cmd/main` 脚本（传入 `start` 参数）来启动应用。在这个阶段，您可以执行启动逻辑，比如检查配置文件、启动后台进程等。
-
-### 应用停止流程
-
-停止应用前，系统同样会先检查应用是否已经停止。如果应用仍在运行，系统会调用 `cmd/main` 脚本（传入 `stop` 参数）来停止应用。在这个阶段，您可以执行停止逻辑，比如保存当前状态、优雅地关闭后台进程等。
-
-## 应用错误异常展示处理 New! V1.1.8+
-
-> [!NOTE]
-> 通过向 **`TRIM_TEMP_LOGFILE`** 环境变量（用户可见系统日志文件路径）写入应用错误日志信息并返回通用错误代码时，系统会自动将错误日志在前端展示为用户可见的内容（Dialog对话框形式）。
-
-### 脚本中错误处理
-
-在应用启动、安装、更新等过程中遇到错误时，可以向 **`TRIM_TEMP_LOGFILE`** 写入错误信息，然后退出脚本并返回错误码 **`1`**。例如：
-
-**伪代码，实际脚本中需要结合应用具体业务逻辑场景！**
-
-```bash
-echo "Error: Something went wrong" > $TRIM_TEMP_LOGFILE
-exit 1
-```
-
-### 模拟自定义异常信息返回案例
-
-当应用启动过程中发生错误时，如：依赖配置文件缺失，可以按照以下方式处理：
-
-**cmd/main**
-
-```bash
-#!/bin/bash
-
-case $1 in
-start)
-    # 检查配置文件是否存在
-    if [ ! -f "$TRIM_PKGETC/config.conf" ]; then
-        echo "配置文件不存在, 应用启动失败！" > "${TRIM_TEMP_LOGFILE}"
-        exit 1
-    fi
-
-    # 启动应用
-    cd "$TRIM_APPDEST"
-    ./myapp --config "$TRIM_PKGETC/config.conf" \
-            --data "$TRIM_PKGVAR" \
-            --port "$TRIM_SERVICE_PORT" \
-            --user "$TRIM_USERNAME" \
-            --log "$TRIM_TEMP_LOGFILE" &
-
-    echo "应用启动完成"
-    exit 0
-    ;;
-stop)
-    echo "停止应用..."
-    pkill -f "myapp.*$TRIM_SERVICE_PORT"
-    exit 0
-    ;;
-status)
-    # 检查应用是否在运行
-    if pgrep -f "myapp.*$TRIM_SERVICE_PORT" > /dev/null; then
-        echo "应用正在运行"
-        exit 0
-    else
-        echo "应用未运行"
-        exit 3
-    fi
-    ;;
-*)
-    exit 1
-    ;;
-esac
-```
-
-> [!WARNING]
-> - 请不要使用 `echo` 命令直接输出错误信息，而是写入 `TRIM_TEMP_LOGFILE` 文件中。
-> - 请不要使用 `exit` 命令直接退出脚本，而是返回错误码 `1`。
-> - 如果不写入 `TRIM_TEMP_LOGFILE` 环境变量，直接 `exit 1` 则系统将展示标准错误信息：`执行XX脚本出错且原因未知`
-
-![标准错误信息对话框](../../assets/site/assets/images/2025-12-31_034412_167-16ee914b3707a322f000ddb96aaba839.png)
-
----
-
-- 上一页: [📘　开发指南](../category/开发指南.md)
-- 下一页: [📚 【基础】Manifest](manifest.md)
-
----
-
-## 🔥 【进阶】登录认证
-
-应用通过统一网关注册后，用户访问时，网关会负责校验用户登录态，并将当前用户信息透传给应用。
-
-> [!WARNING]
-> 登录认证能力需要 fnOS **V1.1.3100** 及以上版本支持。
-
-## 认证规则
-
-默认情况下，用户访问经过统一网关的业务请求需要携带有效的系统登录态。统一网关认证通过后，请求才会转发到应用。认证失败的请求不会进入应用服务。
-
-> [!WARNING]
-> 统一网关只能确认用户已经登录。应用仍然需要根据自己的业务规则判断用户是否有权限访问具体数据或执行具体操作。
-
-## 用户信息 Header
-
-认证通过后，网关会在转发请求中增加以下 Header：
-
-| Header | 说明 | 示例 |
-| --- | --- | --- |
-| `X-Trim-Userid` | 当前登录用户的 UID | 1000 |
-| `X-Trim-Isadmin` | 当前用户是否为管理员 | true/false |
-| `X-Trim-Username` | 当前登录用户名 | admin |
-
-应用可以使用这些 Header 识别当前用户。
-
-**转发到应用的请求示例**
-
-```http
-GET /app/trim.app/list HTTP/1.1
-X-Trim-Userid: 1000
-X-Trim-Isadmin: true
-X-Trim-Username: admin
-```
-
-## 应用侧示例
-
-**Node.js 示例**
-
-```js
-function getGatewayUser(req) {
-  return {
-    uid: req.headers["x-trim-Userid"],
-    isAdmin: req.headers["x-trim-isadmin"] === "true",
-    username: req.headers["x-trim-username"]
-  };
-}
-```
-
-应用可以基于 `uid`、`isAdmin` 和 `username` 做业务权限判断。
-
-## 权限判断
-
-应用应继续保留自己的权限判断逻辑。常见场景包括：
-
-- 用户数据隔离时，对应用户的请求只能访问自己的数据
-- 提供仅管理员才能访问的管理接口
-- 高风险操作需要单独增加校验权限
-
-## WebSocket
-
-WebSocket 服务也应通过统一网关访问。连接建立时，网关会先校验登录态，再将用户信息透传给应用。
-
-应用建立连接后，应将连接与 `X-Trim-Userid` 绑定，后续消息不要信任客户端主动上报的用户 ID。
-
-## 静态文件
-
-如果应用通过统一网关提供静态文件访问，仍需要在应用侧做好路径限制。
-
-建议：
-
-- 对请求路径做标准化处理
-- 禁止 .. 访问上级目录，避免目录穿透。
-- 限制可访问目录范围
-- 不暴露配置文件、密钥、数据库等敏感文件
-- 对可下载文件类型做白名单控制
-
-## 不鉴权接口
-
-公开资源、OAuth 回调等特殊接口如果确实不需要登录态，应单独设计路径，并保持最小暴露范围。
-
-不鉴权接口建议满足以下要求：
-
-- 只开放必要路径
-- 只允许必要 HTTP 方法
-- 不返回用户敏感信息
-- 不提供写入、删除等高风险能力
-
----
-
-- 上一页: [🔥 【进阶】统一网关注册](gateway-registration.md)
-- 下一页: [🔥 【进阶】应用依赖关系](dependency.md)
-
----
-
-## 🔥 【进阶】统一网关注册
-
-统一网关用于为应用提供稳定的访问入口。应用接入后，无需新增端口监听，用户可以通过系统地址和应用路径访问服务。
-
-例如当前系统 Web UI 访问地址是 `http://192.168.1.10:5666/`，则应用访问地址可以是 `http://192.168.1.10:5666/app/{appname}`
-
-> [!WARNING]
-> 统一网关注册能力需要 fnOS **V1.1.3100** 及以上版本支持。
-
-> [!NOTE]
-> 统一网关会在转发请求前完成登录态校验，自动拒绝非法访问。HTTP 和 WebSocket 请求均可通过统一网关接入。
-
-## 接入方式
-
-在应用入口配置 `app/ui/config` 中声明 `gatewayPrefix` 和 `gatewaySocket` 即可接入统一网关。
-
-满足以下条件时，系统会为该入口注册网关路由：
-
-- gatewayPrefix 不为空且符合格式规范
-- gatewaySocket 不为空
-
-## 字段说明
-
-- `gatewayPrefix` - 应用注册到网关的访问前缀
-    - 格式为 /app/{appname}/{customPath} 或 /app/{appname}
-    - {appname}为应用包名
-    - {customPath} 为自定义路径，非必须，推荐使用简短、稳定的业务路径
-    - 需确认本字段未包含 .，如有请使用 - 替换
-- `gatewaySocket` - 应用接收网关请求的 Socket 文件名
-    - 只填写文件名，例如 app.sock
-    - 不需要填写完整路径
-    - Socket 文件应放在应用 target 目录下，可使用环境变量 ${TRIM_APPDEST} 获取该路径
-
-## 配置示例
-
-**app/ui/config**
-
-```json
-{
-    ".url": {
-        "trim.app": {
-            "title": "应用A",
-            "desc": "应用A",
-            "icon": "images/icon_{0}.png",
-            "type": "iframe",
-            "protocol": "",
-            "gatewaySocket": "app.sock",
-            "gatewayPrefix": "/app/trim-app",
-            "url": "/app/trim-app",
-            "allUsers": true
-        }
-    }
-}
-```
-
-以上配置会注册访问入口：
-
-```text
-/app/trim-app
-```
-
-匹配该前缀的请求会转发到：
-
-```text
-/var/apps/trim.app/target/app.sock
-```
-
-## WebSocket 使用说明
-
-WebSocket 服务可以复用同一个 `gatewayPrefix` 和 `gatewaySocket`。网关会将匹配前缀的 WebSocket Upgrade 请求转发到应用 Socket，应用按普通 WebSocket 服务处理连接即可。
-
-建议将 WebSocket 路由放在应用网关前缀下的固定子路径中，例如：
-
-```text
-/app/trim-app/ws
-```
-
-### WebSocket 配置示例
-
-**app/ui/config**
-
-```json
-{
-    ".url": {
-        "trim.chat": {
-            "title": "聊天应用",
-            "desc": "聊天应用",
-            "icon": "images/icon_{0}.png",
-            "type": "iframe",
-            "protocol": "",
-            "gatewaySocket": "chat.sock",
-            "gatewayPrefix": "/app/trim-chat",
-            "url": "/app/trim-chat",
-            "allUsers": true
-        }
-    }
-}
-```
-
-以上配置中：
-
-- HTTP 访问入口为 /app/trim-chat
-- WebSocket 建议使用 /app/trim-chat/ws
-- 请求会转发到 /var/apps/trim.chat/target/chat.sock
-
-### 前端连接示例
-
-前端建议根据当前页面协议自动选择 `ws` 或 `wss`：
-
-**WebSocket 连接示例**
-
-```js
-const wsProtocol = window.location.protocol === "https:" ? "wss:" : "ws:";
-const wsUrl = `${wsProtocol}//${window.location.host}/app/trim-chat/ws`;
-
-const socket = new WebSocket(wsUrl);
-
-socket.onopen = () => {
-  socket.send(JSON.stringify({ type: "ping" }));
-};
-
-socket.onmessage = (event) => {
-  const message = JSON.parse(event.data);
-  console.log(message);
-};
-```
-
-### 应用侧要求
-
-- WebSocket 服务应监听 gatewaySocket 对应的 Unix Socket。
-- WebSocket 路由建议固定为网关前缀下的子路径，例如 /ws。
-- 不要使用客户端传入的用户 ID 判断身份，应使用登录认证中说明的 X-Trim-* Header。
-- 建立连接后，建议将连接与当前用户 UID 绑定，后续消息按该用户身份处理。
-
----
-
-- 上一页: [📚 【基础】用户向导](wizard.md)
-- 下一页: [🔥 【进阶】登录认证](gateway-authentication.md)
-
----
-
-## 📜 【规范】图标 Icon
-
-## 标准设计规范
-
-- 尺寸规格：256 * 256 像素、64 * 64 像素
-- 文件格式：PNG、JPG
-- 颜色空间：sRGB
-- 文件大小：≤ 1024 KB
-- 形状规范：完整正方形直角图标
-
-![](../../assets/static/appcenter-marketing/20250904101525414.png)
-
-> [!NOTE]
-> 含圆角矩形背景图层图标 PSD 源文件，可点 [**此处**](https://static.fnnas.com/appcenter-marketing/fnpack_ICON_256.zip) 进行下载。
-
----
-
-- 上一页: [💻 【实战】Docker 应用构建](docker.md)
-- 下一页: [🔧　CLI 开发工具](../category/cli-开发工具.md)
-
----
-
-## 📚 【基础】Manifest
-
-> [!NOTE]
-> 本文档于 **2025-12-31** 重新调整了内容结构，并新增了部分内容。
-
-manifest 文件就像是应用的"身份证"，它告诉飞牛 fnOS 系统您的应用是谁、需要什么、怎么运行。这个文件必须放在应用包的根目录下，文件名就叫 `manifest`（没有扩展名）。
-
-## 基本信息
-
-这些是每个应用都必须提供的基本信息：
-
-### 应用标识
-
-- `appname` - 应用的唯一标识符，就像人的身份证号一样，在整个系统中必须是唯一的
-- `version` - 应用版本号，格式为 x[.y[.z]][-build]，例如：1.0.0、2.1.3-beta
-- `display_name` - 在应用中心和应用设置中显示的名称，用户看到的就是这个名字
-- `desc` - 应用的详细介绍，支持 HTML 格式，可以包含链接、图片等
-
-### 系统要求 Update!
-
-- **`arch`** - 架构类型，目前固定为 `x86_64`废弃
-- `platform` - 架构类型，缺省时默认值： x86，（⚠️注意：不支持多个值填写）New!V1.1.8+
-    - 声明为 x86 时，应用仅支持 x86 架构
-    - 声明为 arm 时，应用仅支持 arm 架构
-    - 声明为 all 时，表示应用支持所有架构，不区分平台，所有平台都可以下载安装。例如Docker应用。
-- `source` - 应用来源，固定为 thirdparty
-
-## 开发者信息
-
-这些信息帮助用户了解应用的开发者和发布者：
-
-- `maintainer` - 应用开发者或开发团队名称
-- `maintainer_url` - 开发者网站或联系方式
-- `distributor` - 应用发布者（可能与开发者不同）
-- `distributor_url` - 发布者网站
-
-## 安装和运行控制
-
-### 系统兼容性
-
-- `os_min_version` - 支持的最低系统版本，例如：0.9.0
-- `os_max_version` - 支持的最高系统版本，例如：0.9.100
-
-### 应用控制
-
-- `ctl_stop` - 是否显示启动/停止功能，默认为 true
-    - 设置为 false 时，应用中心将隐藏启动、停止按钮和运行状态
-    - 适用于那些需要无进程应用或不应该被用户手动控制的应用
-
-### 安装位置
-
-- `install_type` - 安装类型，默认为空
-    - 设置为 root 时，应用会安装到系统分区 /usr/local/apps/@appcenter/
-    - 为空时，用户可以在安装向导中选择存储位置 /vol${x}/@appcenter/
-
-### 依赖管理
-
-- `install_dep_apps` - 依赖应用列表
-    - 格式：app1>2.2.2:app2:app3
-    - 系统会按照列表顺序自动安装依赖应用
-    - 版本号前的 > 表示最低版本要求
-
-## 用户界面
-
-### 桌面集成
-
-- `desktop_uidir` - UI 组件目录路径
-    - 相对于应用根目录的路径，默认为 ui
-    - 这个目录存放应用的 Web 界面文件
-- `desktop_applaunchname` - 应用中心启动入口
-    - 用户点击应用卡片上的"打开"按钮时，系统会启动这个 entry ID，对应 {desktop_uidir}/config 文件中定义的某个入口
-
-## 端口管理
-
-### 端口检查
-
-- `service_port` - 应用监听的端口号
-    - 系统会在启动应用前检查这个端口是否被占用
-    - 目前只支持单个端口设置
-- `checkport` - 是否启用端口检查，默认为 true
-    - 设置为 false 时，系统不会检查端口占用情况
-    - 适用于不需要固定端口的应用
-
-## 权限控制
-
-- `disable_authorization_path` - 是否禁用授权目录功能，默认为 false
-    - 设置为 true 时，应用设置页面不会显示授权目录操作
-    - 适用于不需要访问特定系统目录的应用
-
-## 应用更新
-
-- `changelog` - 应用更新日志
-    - 用于应用升级时展示更新日志内容
-    - 应用中心可用更新页面展示的更新日志内容，在应用详情页更新时将展示为"新功能"介绍
-
-## 示例
-
-下面是一个典型的 manifest 文件示例：
-
-```text
-appname=myapp
-version=1.0.0
-display_name=我的应用
-desc=这是一个示例应用，展示了 manifest 文件的基本用法
-arch=x86_64
-source=thirdparty
-
-maintainer=张三
-maintainer_url=https://example.com
-distributor=示例公司
-distributor_url=https://company.com
-
-os_min_version=0.9.0
-
-desktop_uidir=ui
-desktop_applaunchname=myapp.APPLICATION
-
-service_port=8080
-checkport=true
-
-install_dep_apps=mariaDB:redis
-```
-
-这个文件定义了应用的基本信息、开发者信息、系统要求、UI 配置、端口设置和依赖关系。系统会根据这些信息来正确安装、配置和运行您的应用。
-
----
-
-- 上一页: [📚 【基础】架构概述](framework.md)
-- 下一页: [📚 【基础】环境变量](environment-variables.md)
-
----
-
-## 🔥 【进阶】中间件服务
-
-## redis
-
-![](../../assets/static/appcenter-marketing/20250918175215505.png)
-
-如果你的应用需要依赖 redis，请在 `manifest` 的 `install_dep_apps` 字段中添加 redis，应用中心将确保您的应用安装和启动时 redis 服务已在运行。
-
-**manifest**
-
-```yaml
-install_dep_apps=redis
-```
-
-Python 使用示例
-
-```python
-import redis
-
-def main():
-    # 创建连接池，指定逻辑数据库（如 db=1），防止冲突
-    # 默认配置下的 redis 可通过 host 127.0.0.1 和 port 6739 连接
-    pool = redis.ConnectionPool(host='127.0.0.1', port=6379, db=1, decode_responses=True, max_connections=10)
-
-    # 从连接池获取连接
-    client = redis.Redis(connection_pool=pool)
-
-    # 使用连接
-    client.lpush('my_list', 'item1', 'item2')
-    items = client.lrange('my_list', 0, -1)
-    print(items)  # 输出: ['item2', 'item1']
-
-    # 不需要手动关闭连接，连接池会管理
-    # 但在程序退出前，可以关闭连接池
-    # pool.disconnect()
-    # 如需切换数据库，可重新创建连接池并指定不同的 db 参数
-
-if __name__ == "__main__":
-    main()
-```
-
-## MinIO
-
-![](../../assets/static/appcenter-marketing/20250918175141281.png)
-
-MinIO 是一个高性能、云原生的开源对象存储系统，完全兼容 Amazon S3 API，且支持私有化部署。
-
-如果你的应用需要依赖MinIO，请在 `manifest` 的 `install_dep_apps` 字段中添加 minio，应用中心将确保您的应用安装和启动时 MinIO 服务已在运行。
-
-**manifest**
-
-```yaml
-install_dep_apps=minio
-```
-
-Python 使用示例
-
-```python
-import minio
-from minio import Minio
-from minio.error import S3Error
-
-# 1. 初始化客户端
-# 默认配置下的 MinIO 可通过 host 127.0.0.1 和 port 9000 连接
-client = Minio(
-    endpoint="127.0.0.1:9000",
-    access_key="your_access_key",   # 替换为你的 MinIO 管理员用户名 或 Access Key
-    secret_key="your_secret_key",   # 替换为你的 MinIO 管理员密码 或 Secret Key
-    secure=False                    # 本地测试通常为 False
-)
-
-# 2. 定义桶名
-bucket_name = "my-bucket"
-
-# 创建 Bucket 示例
-def main():
-    try:
-        # 检查桶是否存在，如果不存在则创建它
-        if not client.bucket_exists(bucket_name):
-            client.make_bucket(bucket_name)
-            print(f"Bucket '{bucket_name}' 已创建.")
-        else:
-            print(f"Bucket '{bucket_name}' 已存在.")
-    except S3Error as err:
-        print("创建 Bucket 时发生错误:", err)
-
-if __name__ == "__main__":
-    main()
-```
-
-打开 MinIO 管理后台，确认 my-bucket 被成功创建：
-
-![](../../assets/static/appcenter-marketing/20250918185922659.png)
-
-## RabbitMQ
-
-![](../../assets/static/appcenter-marketing/20250923182750061.png)
-
-如果你的应用需要依赖 RabbitMQ，请在 `manifest` 的 `install_dep_apps` 字段中添加 rabbitmq，应用中心将确保您的应用安装和启动时 RabbitMQ 服务已在运行。
-
-**manifest**
-
-```yaml
-install_dep_apps=rabbitmq
-```
-
-Python 使用示例
-
-```python
-import sys
-import time
-import uuid
-import pika
-
-HOST = "127.0.0.1"
-PORT = 5672
-VHOST = "/"
-USERNAME = "guest"
-PASSWORD = "guest"
-QUEUE = "ai_rabbitmq_connectivity_test_queue"
-TIMEOUT_SECONDS = 8.0
-
-def run_demo() -> int:
-    connection = None
-    channel = None
-
-    print(f"连接: {HOST}:{PORT} vhost='{VHOST}' 用户='{USERNAME}'")
-    try:
-        credentials = pika.PlainCredentials(USERNAME, PASSWORD)
-        connection = pika.BlockingConnection(pika.ConnectionParameters(
-            host=HOST,
-            port=PORT,
-            virtual_host=VHOST,
-            credentials=credentials,
-            ssl_options=None,
-            connection_attempts=2,
-            retry_delay=1.0,
-            socket_timeout=max(5.0, TIMEOUT_SECONDS),
-            blocked_connection_timeout=max(5.0, TIMEOUT_SECONDS),
-            heartbeat=30,
-        ))
-        channel = connection.channel()
-
-        # 声明测试队列（非持久、自动删除）
-        channel.queue_declare(queue=QUEUE, durable=False, auto_delete=True)
-        print(f"队列已声明: {QUEUE}")
-
-        # 发送一条测试消息
-        correlation_id = str(uuid.uuid4())
-        body_text = f"rabbitmq demo - {correlation_id}"
-        channel.basic_publish(
-            exchange="",
-            routing_key=QUEUE,
-            body=body_text.encode("utf-8"),
-            properties=pika.BasicProperties(
-                content_type="text/plain",
-                delivery_mode=1,
-                correlation_id=correlation_id,
-            ),
-        )
-        print("消息已发送")
-
-        # 简单轮询拉取消息
-        deadline = time.monotonic() + TIMEOUT_SECONDS
-        while time.monotonic() < deadline:
-            method_frame, properties, body = channel.basic_get(queue=QUEUE, auto_ack=True)
-            if method_frame:
-                got = body.decode("utf-8", errors="replace") if body else ""
-                ok = (getattr(properties, "correlation_id", None) == correlation_id) and (got == body_text)
-                print("收到:", got)
-                print("校验:", "通过" if ok else "不匹配")
-                return 0 if ok else 1
-            time.sleep(0.2)
-
-        print(f"在 {TIMEOUT_SECONDS}s 内未收到消息", file=sys.stderr)
-        return 1
-    except Exception as exc:  # pragma: no cover
-        print("发生错误:", file=sys.stderr)
-        print(str(exc), file=sys.stderr)
-        return 1
-    finally:
-        try:
-            if channel and channel.is_open:
-                try:
-                    channel.queue_delete(queue=QUEUE)
-                except Exception:
-                    pass
-        finally:
-            if connection and connection.is_open:
-                try:
-                    connection.close()
-                except Exception:
-                    pass
-
-if __name__ == "__main__":
-    sys.exit(run_demo())
-```
-
-## MariaDB
-
-即将上线...
-
----
-
-- 上一页: [🔥 【进阶】应用依赖关系](dependency.md)
-- 下一页: [🔥 【进阶】运行时环境](runtime.md)
-
----
-
-## 💻 【实战】Native 应用构建
-
-## 一个简单的 Notepad 应用
-
-> [!TIP]
-> 示例代码可以点击 [此处](https://static.fnnas.com/appcenter-marketing/20250917183504284.zip) 下载
-
-我们使用 Vide Coding 实现了一个简易的 Notepad 程序，它支持在服务端保存笔记内容，在浏览器中进行查看和编辑。
-
-相关技术栈如下：
-
-- 后端使用 NodeJS + express 开发
-- 前端使用 React + vite 开发
-
-下载解压后，可以看到代码目录结构如下：
-
-```text
-notepad/
-├── backend/
-│   ├── server.js
-│   └── package.json
-├── frontend/
-│   ├── public/
-│   │   └── styles.css
-│   ├── src/
-│   │   └── main.jsx
-│   ├── index.html
-│   ├── package.json
-│   └── vite.config.mjs
-├── scripts/
-│   └── build-combined.js
-├── package-lock.json
-├── package.json
-└── README.md
-```
-
-请自行准备好 NodeJS 环境，然后在终端执行如下命令，以完成本地运行
-
-```shell
-npm install --workspaces
-npm run start
-```
-
-一切顺利的话，你已经可以在浏览器访问 [http://localhost:5001](http://localhost:5001) 来体验该应用了
-
-为了在飞牛 fnOS 上运行，我们还需要将应用的前端和后端通过以下命令进行打包，完成后，你就能在 `dist/` 看到最终的可执行文件了
-
-```shell
-npm run build
-```
-
-接下来，我们需要将进行应用打包
-
-## 创建飞牛 fnOS 应用打包目录
-
-在 `notepad/` 目录下执行 `fnpack create fnnas.notepad` 命令创建应用打包目录，这时候的目录结构应该如下：
-
-```text
-notepad/
-├── backend/
-├── dist/
-│   ├── node_modules/
-│   ├── public/
-│   │   ├── assets/
-│   │   ├── index.html
-│   │   └── styles.css
-│   ├── server.js
-│   ├── package.json
-│   └── package-lock.json
-├── fnnas.notepad/
-│   ├── app/
-│   ├── manifest
-│   ├── cmd/
-│   │   ├── main
-│   │   ├── install_init
-│   │   ├── install_callback
-│   │   ├── uninstall_init
-│   │   ├── uninstall_callback
-│   │   ├── upgrade_init
-│   │   ├── upgrade_callback
-│   │   ├── config_init
-│   │   └── config_callback
-│   ├── config/
-│   │   ├── privilege
-│   │   └── resource
-│   ├── wizard/
-│   ├── LICENSE
-│   ├── ICON.PNG
-│   └── ICON_256.PNG
-├── frontend/
-├── scripts/
-├── package-lock.json
-├── package.json
-└── README.md
-```
-
-### 复制编译产物
-
-`notepad/fnnas.notepad/app/` 目录用来存放应用的全部可执行文件和依赖。
-
-在 `notepad/fnnas.notepad/app/` 目录下创建 `server/`，并复制 `notepad/dist/` 目录下的全部内容到 `server/` 目录下
-
-### 编辑应用基本信息
-
-**notepad/fnnas.notepad/manifest**
-
-```yaml
-appname=fnnas.notepad
-version=0.0.1
-desc=A simple notepad
-arch=x86_64
-display_name=Notepad
-maintainer=someone
-distributor=someone
-desktop_uidir=ui
-desktop_applaunchname=fnnas.notepad.Application
-source=thirdparty
-```
-
-### 编辑应用权限
-
-定义应用运行的权限，应用将以 `fnnas.notepad` 用户身份运行
-
-**notepad/fnnas.notepad/config/privilege**
-
-```json
-{
-    "defaults": {
-        "run-as": "package"
-    },
-    "username": "fnnas.notepad",
-    "groupname": "fnnas.notepad"
-}
-```
-
-### 编辑应用配置
-
-我们希望将笔记内容放在用户可以查看和编辑的共享目录，所以定义data-share属性，如下：
-
-**notepad/fnnas.notepad/config/resource**
-
-```json
-{
-    "data-share": {
-        "shares": [
-            {
-                "name": "fnnas.notepad",
-                "permission": {
-                    "rw": [
-                        "fnnas.notepad"
-                    ]
-                }
-            }
-        ]
-    }
-}
-```
-
-### 编辑应用启停脚本
-
-定义应用的启动和停止逻辑
-
-**notepad/fnnas.notepad/cmd/main**
-
-```bash
-#!/bin/bash
-
-LOG_FILE="${TRIM_PKGVAR}/info.log"
-PID_FILE="${TRIM_PKGVAR}/app.pid"
-
-export PATH=/var/apps/nodejs_v22/target/bin:$PATH
-# data directory to write note.txt
-DATA_DIR="${TRIM_DATA_SHARE_PATHS%%:*}"
-# write the command to start your program here
-CMD="DATA_DIR=${DATA_DIR} PORT=5001 node ${TRIM_APPDEST}/server/server.js"
-
-log_msg() {
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> ${LOG_FILE}
-}
-
-start_process() {
-    if status; then
-        return 0
-    fi
-
-    log_msg "Starting process ..."
-    # env >> ${LOG_FILE}
-    # run the nodejs process
-    bash -c "${CMD}" >> ${LOG_FILE} 2>&1 &
-    # write pid to pidfile
-    printf "%s" "$!" > ${PID_FILE}
-    # log_msg "${CMD}"
-    # log_msg "pid = $!"
-    return 0
-}
-
-stop_process() {
-    log_msg "Stopping process ..."
-
-    if [ -r "${PID_FILE}" ]; then
-        pid=$(head -n 1 "${PID_FILE}" | tr -d '[:space:]')
-
-        log_msg "pid=${pid}"
-        if ! check_process "${pid}"; then
-            # process not exist, delete pidfile
-            rm -f "${PID_FILE}"
-            log_msg "remove pid file 1"
-            return
-        fi
-
-        log_msg "send TERM signal to PID:${pid}..."
-        kill -TERM ${pid} >> ${LOG_FILE} 2>&1
-
-        local count=0
-        while check_process "${pid}" && [ $count -lt 10 ]; do
-            sleep 1
-            count=$((count + 1))
-            log_msg "waiting process terminal... (${count}s/10s)"
-        done
-
-        if check_process "${pid}"; then
-            log_msg "send KILL signal to PID:${pid}..."
-            kill -KILL "${pid}"
-            sleep 1
-            rm -f "${PID_FILE}"
-        else
-            log_msg "process killed... "
-        fi
-    fi
-
-    return 0
-}
-
-check_process() {
-    local pid=$1
-    if kill -0 "${pid}" 2>/dev/null; then
-        return 0  # process exist
-    else
-        return 1  # process not exist
-    fi
-}
-
-status() {
-    if [ -f "${PID_FILE}" ]; then
-        pid=$(head -n 1 "${PID_FILE}" | tr -d '[:space:]')
-        if check_process "${pid}"; then
-            return 0
-        else
-            # Process is not running but pidfile exists - clean it up
-            rm -f "${PID_FILE}"
-        fi
-    fi
-
-    return 1
-}
-
-case $1 in
-start)
-    # run start command. exit 0 if success, exit 1 if failed
-    start_process
-    ;;
-stop)
-    # run stop command. exit 0 if success, exit 1 if failed
-    stop_process
-    ;;
-status)
-    # check application status command. exit 0 if running, exit 3 if not running
-    if status; then
-        exit 0
-    else
-        exit 3
-    fi
-    ;;
-*)
-    exit 1
-    ;;
-esac
-```
-
-### 编辑桌面图标
-
-```text
-notepad/
-├── backend/
-├── dist/
-├── fnnas.notepad/
-│   ├── app/
-│   │   ├── server/
-│   │   └── ui
-│   │       ├── images
-│   │       │   ├── icon_64.png
-│   │       │   └── icon_256.png
-│   │       └── config
-│   ├── manifest
-│   ├── cmd/
-│   ├── config/
-│   ├── wizard/
-│   ├── LICENSE
-│   ├── ICON.PNG
-│   └── ICON_256.PNG
-├── frontend/
-├── scripts/
-├── package-lock.json
-├── package.json
-└── README.md
-```
-
-config文件说明：
-
-**notepad/fnnas.notepad/app/ui/config**
-
-```json
-{
-    ".url": {
-        "fnnas.notepad.Application": {
-            "title": "Notepad",
-            "icon": "images/icon_{0}.png",
-            "type": "url",
-            "protocol": "http",
-            "port": "5001"
-        }
-    }
-}
-```
-
-新增两个图标文件，分辨率分别是 64x64 和 256x256。
-
-## 打包成 fpk
-
-使用 `fnpack` CLI 工具打包应用
-
-```bash
-cd fnnas.notepad
-fnpack build
-```
-
-然后你可以在 `fnnas.notepad` 目录下看到 `fnnas.notepad.fpk` 文件，接下来你就可以到飞牛 fnOS 上测试应用了
-
-### 集成编辑
-
-如果我们希望每次 `npm run build` 编译项目时，都自动创建 `fpk` 文件，则可以在编译脚本中补充 `fnpack build` 逻辑。
-
-在本项目中，可以在 `notepad/scripts/build-combined.js` 的最后补充 `fnpack build` 逻辑，如下所示:
-
-```javascript
-const packDir = path.join(root, 'fnnas.notepad')
-const packServerDir = path.join(packDir, 'app', 'server');
-run(`rm -rf ${packServerDir}`)
-run(`mkdir ${packServerDir}`)
-run(`cp -r ${outDir}/* ${packServerDir}/`)
-run(`fnpack build -d ${packDir}`)
-```
-
----
-
-- 上一页: [🔥 【进阶】运行时环境](runtime.md)
-- 下一页: [💻 【实战】Docker 应用构建](docker.md)
-
----
-
-## 📚 【基础】应用权限
-
-权限就像是应用的"权限清单"，决定了应用在系统中能做什么、不能做什么。在 `config/privilege` 文件中，您可以定义应用运行时的权限级别和用户身份。
-
-## 默认权限模式
-
-大多数应用都使用默认权限模式，这是最安全的运行方式：
-
-### 应用用户运行
-
-应用默认以**应用用户**的身份运行，这意味着：
-
-- 系统会为您的应用创建一个专用的用户和用户组
-- 所有应用进程都以这个专用用户身份运行
-- 应用文件的所有者也是这个专用用户
-- 应用只能访问自己的目录和系统允许的公共资源
-
-### 用户配置
-
-您可以通过以下字段自定义应用用户：
-
-**config/privilege**
-
-```json
-{
-    "defaults": {
-        "run-as": "package"
-    },
-    "username": "myapp_user",
-    "groupname": "myapp_group"
-}
-```
-
-- username - 应用专用用户名，默认为 manifest 中的 appname
-- groupname - 应用专用用户组名，默认为 manifest 中的 appname
-- run-as - 运行身份，默认为 package（应用用户）
-
-如果未指定用户名和组名，系统会自动使用应用名称（对应 `manifest` 中的 `appname` 字段）创建用户和用户组。
-
-## Root 权限模式
-
-> [!WARNING]
-> Root 权限模式仅适用于飞牛官方合作的企业开发者。第三方应用默认无法在应用中心发布需要 root 权限的应用。
-
-### 何时需要 Root 权限
-
-某些应用可能需要访问系统级资源或执行特权操作，比如：
-
-- 修改系统配置文件
-- 访问硬件设备
-- 管理其他用户或服务
-- 安装系统级软件包
-
-### 配置方式
-
-将 `run-as` 设置为 `root` 即可获得 root 权限：
-
-**config/privilege**
-
-```json
-{
-    "defaults": {
-        "run-as": "root"
-    },
-    "username": "myapp_user",
-    "groupname": "myapp_group"
-}
-```
-
-### Root 权限的影响
-
-启用 root 权限后：
-
-- 应用脚本以 root 身份执行
-- 应用进程可以以 root 身份或指定的应用用户身份运行
-- 应用文件的所有者变为 root 用户
-- 系统仍会创建应用专用用户和用户组（用于特定场景）
-
-## 外部文件访问权限
-
-### 默认限制
-
-出于安全考虑，应用默认无法访问用户的个人文件。用户需要在应用设置中明确授权后，应用用户才能访问特定目录。
-
-### 授权方式
-
-方式一：用户可以在**应用设置**页面中：
-
-![](../../assets/static/appcenter-marketing/20250829122923375.png)
-
-1. 选择要授权的目录或文件
-2. 设置访问权限类型：
-    - 读写权限：应用可以读取和修改文件
-    - 只读权限：应用只能读取文件，不能修改
-    - 禁止访问：应用无法访问该路径
-
-方式二：通过 `config/resource` 的 `data-share` 设置默认的共享目录
-
-## 权限最佳实践
-
-### 安全原则
-
-1. 默认安全：优先使用应用用户模式，避免不必要的 root 权限
-2. 明确授权：通过向导让用户明确了解应用需要的权限
-
-```text
-### 权限检查
-在应用脚本中，您可以检查当前运行的用户身份：
-
-```bash
-#!/bin/bash
-
-echo "当前运行用户: $TRIM_RUN_USERNAME"
-echo "应用专用用户: $TRIM_USERNAME"
-
-if [ "$TRIM_RUN_USERNAME" = "root" ]; then
-    echo "应用以 root 权限运行"
-else
-    echo "应用以应用用户权限运行"
-fi
-```
-
-通过合理的权限配置，您的应用既能够正常运行，又不会对系统安全造成威胁。
-
----
-
-- 上一页: [📚 【基础】环境变量](environment-variables.md)
-- 下一页: [📚 【基础】应用资源](resource.md)
-
----
-
-## 📚 【基础】应用资源
-
-资源就像是应用的"能力清单"，告诉系统您的应用需要哪些额外的功能和权限。在 `config/resource` 文件中，您可以声明应用需要的扩展能力，比如数据共享、系统集成、容器支持等。
-
-## 数据共享 (data-share)
-
-数据共享功能允许您的应用与用户共享特定的数据目录，让用户可以直接在文件管理器中访问和管理这些数据。
-
-![](../../assets/static/appcenter-marketing/20250829154226142.png)
-
-### 功能特点
-
-- 共享目录仅在系统管理员的文件管理 - 应用文件中可见
-- 可以设置不同的访问权限：只读、读写
-- 支持多级目录结构
-- 应用可以实时访问这些共享数据
-
-### 配置示例
-
-**config/resource**
-
-```json
-{
-    "data-share": {
-        "shares": [
-            {
-                "name": "documents",
-                "permission": {
-                    "rw": ["myapp_user"]
-                }
-            },
-            {
-                "name": "documents/backups",
-                "permission": {
-                    "ro": ["myapp_user"]
-                }
-            }
-        ]
-    }
-}
-```
-
-### 权限类型说明
-
-- rw - 读写权限：应用可以读取和修改文件
-- ro - 只读权限：应用只能读取文件，不能修改
-
-### 使用场景
-
-- 文档管理应用：共享文档目录，让用户直接编辑
-- 备份应用：共享备份目录，让用户查看备份文件
-- 媒体应用：共享媒体库，让用户管理音乐、视频等
-
-## 系统集成 (usr-local-linker)
-
-系统集成功能允许您的应用在启动时创建软链接到系统目录，让其他应用或系统工具能够直接访问您的应用提供的功能。
-
-### 功能特点
-
-- 应用启动时自动创建软链接
-- 应用停止时自动移除软链接
-- 支持 bin、lib、etc 三个系统目录
-- 无需手动管理链接的创建和删除
-
-### 配置示例
-
-**config/resource**
-
-```json
-{
-    "usr-local-linker": {
-        "bin": [
-            "bin/myapp-cli",
-            "bin/myapp-server"
-        ],
-        "lib": [
-            "lib/mylib.so",
-            "lib/mylib.a"
-        ],
-        "etc": [
-            "etc/myapp.conf",
-            "etc/myapp.d/default.conf"
-        ]
-    }
-}
-```
-
-### 链接说明
-
-- bin - 可执行文件链接到 /usr/local/bin/
-- lib - 库文件链接到 /usr/local/lib/
-- etc - 配置文件链接到 /usr/local/etc/
-
-### 使用场景
-
-- 命令行工具：提供 CLI 工具供其他应用使用
-- 开发库：提供共享库供其他应用调用
-- 配置文件：提供标准配置文件供系统使用
-
-## Docker 项目支持 (docker-project)
-
-Docker 项目支持让您的应用可以基于 Docker Compose 运行，支持复杂的容器编排和多服务架构。
-
-### 项目结构
-
-首先需要在应用项目中创建 Docker 相关文件：
-
-```text
-myapp/
-├── app/
-│   └── docker/
-│       └── docker-compose.yaml
-├── manifest
-├── cmd/
-│   ├── main
-│   ├── install_init
-│   └── ...
-├── config/
-│   ├── privilege
-│   └── resource
-└── ...
-```
-
-### Docker Compose 文件示例
-
-**app/docker/docker-compose.yaml**
-
-```yaml
-version: '3.8'
-
-services:
-  web:
-    build: .
-    ports:
-      - "8080:80"
-    volumes:
-      - ./data:/app/data
-    environment:
-      - DB_HOST=db
-      - DB_PORT=3306
-    depends_on:
-      - db
-
-  db:
-    image: mysql:8.0
-    environment:
-      - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=myapp
-    volumes:
-      - db_data:/var/lib/mysql
-
-volumes:
-  db_data:
-```
-
-### 资源配置
-
-**config/resource**
-
-```json
-{
-    "docker-project": {
-        "projects": [
-            {
-                "name": "myapp-stack",
-                "path": "docker"
-            }
-        ]
-    }
-}
-```
-
-### 配置说明
-
-- name - Docker Compose 项目的名称，用于标识和管理
-- path - 相对于 app 目录的路径，指向包含 docker-compose.yaml 的文件夹
-
-### 使用场景
-
-- 微服务应用：包含多个相互依赖的服务
-- 数据库应用：需要数据库、缓存等多个组件
-- 复杂应用：需要特定的运行环境和依赖
-
----
-
-- 上一页: [📚 【基础】应用权限](privilege.md)
-- 下一页: [📚 【基础】应用入口](app-entry.md)
-
----
-
-## 🔥 【进阶】运行时环境
-
-## Python 环境
-
-![](../../assets/static/appcenter-marketing/20250916211501441.png)
-
-通过 `manifest` 声明应用依赖指定版本的 Python 应用，应用中心将确保您的应用安装和启动时指定的 Python 环境已安装。
-
-**manifest**
-
-```yaml
-install_dep_apps=python312
-```
-
-在 `cmd` 相关脚本执行 python 命令前，需预先配置环境，将目标版本的 bin 路径置于 PATH 环境变量最前端，以确保当前命令行会话能正确调用指定版本的 python 及 pip 等命令。在此基础上，使用 Python 内置的 venv 模块为每个项目创建独立的虚拟环境，以隔离项目依赖，避免版本冲突。
-
-```shell
-# 可选版本：python312、python311、python310、python39、python38
-export PATH=/var/apps/python312/target/bin:$PATH
-
-# 创建虚拟环境
-python3 -m venv .venv
-
-# 激活虚拟环境
-source .venv/bin/activate
-
-# 安装 python 相关依赖到 .venv
-pip install -r requirements.txt
-```
-
-## Node.js 环境
-
-![](../../assets/static/appcenter-marketing/20250916211008763.png)
-
-通过 `manifest` 声明应用依赖指定版本的 Node.js 应用，应用中心将确保您的应用安装和启动时指定的 Node.js 环境已安装。
-
-**manifest**
-
-```yaml
-install_dep_apps=nodejs_v22
-```
-
-在 `cmd` 相关脚本执行前，需预先配置环境，将目标版本的 bin 路径置于 PATH 环境变量最前端，以确保当前命令行会话能正确调用指定版本的 node 及 npm 等命令。
-
-```shell
-# 可选版本：nodejs_v22、nodejs_v20、nodejs_v18、nodejs_v16、nodejs_v14
-export PATH=/var/apps/nodejs_v22/target/bin:$PATH
-
-# 确认node的版本
-node -v
-
-# 确认npm的版本
-npm -v
-```
-
-## Java 环境
-
-![](../../assets/static/appcenter-marketing/20250919153027253.png)
-
-通过 `manifest` 声明应用依赖指定版本的 Java 应用，应用中心将确保您的应用安装和启动时指定的 Java 环境已安装。
-
-**manifest**
-
-```yaml
-install_dep_apps=java-21-openjdk
-```
-
-在 `cmd` 相关脚本执行前，需预先配置环境，将目标版本的 bin 路径置于 PATH 环境变量最前端，以确保当前命令行会话能正确调用指定版本的 java 等命令。
-
-```shell
-# 可选版本：java-21-openjdk、java-17-openjdk、java-11-openjdk
-export PATH=/var/apps/java-21-openjdk/target/bin:$PATH
-
-# 确认java的版本
-java --version
-```
-
----
-
-- 上一页: [🔥 【进阶】中间件服务](middleware.md)
-- 下一页: [💻 【实战】Native 应用构建](native.md)
-
----
-
-## 📚 【基础】用户向导
-
-向导就像是应用的"引导员"，帮助用户一步步完成应用的安装、配置和卸载。通过设计友好的向导界面，您可以收集用户的选择和配置，让应用能够更好地满足用户的需求。
-
-## 向导类型
-
-飞牛 fnOS 支持四种类型的向导：
-
-- 安装向导 (wizard/install) - 应用安装时的配置界面
-- 卸载向导 (wizard/uninstall) - 应用卸载时的确认界面
-- 更新向导 (wizard/upgrade) - 应用更新时的配置界面
-- 配置向导 (wizard/config) - 应用设置时的配置界面
-
-![](../../assets/static/appcenter-marketing/20250829155039818.png)
-
-## 表单项类型
-
-向导界面由各种表单项组成，每种类型都有特定的用途：
-
-### 文本输入框 (text)
-
-用于收集用户的文本输入，如用户名、邮箱等。
-
-```json
-{
-    "type": "text",
-    "field": "wizard_username",
-    "label": "用户名",
-    "initValue": "admin",
-    "rules": [
-        {
-            "required": true,
-            "message": "请输入用户名"
-        },
-        {
-            "min": 3,
-            "max": 20,
-            "message": "用户名长度应在3-20个字符之间"
-        }
-    ]
-}
-```
-
-### 密码输入框 (password)
-
-用于收集密码等敏感信息，输入内容会以星号显示。
-
-```json
-{
-    "type": "password",
-    "field": "wizard_password",
-    "label": "管理员密码",
-    "rules": [
-        {
-            "required": true,
-            "message": "请输入密码"
-        },
-        {
-            "min": 6,
-            "message": "密码长度不能少于6位"
-        }
-    ]
-}
-```
-
-### 单选按钮 (radio)
-
-用于从多个选项中选择一个，如性别、安装类型等。
-
-```json
-{
-    "type": "radio",
-    "field": "wizard_install_type",
-    "label": "安装类型",
-    "initValue": "standard",
-    "options": [
-        {
-            "label": "标准安装",
-            "value": "standard"
-        },
-        {
-            "label": "自定义安装",
-            "value": "custom"
-        }
-    ],
-    "rules": [
-        {
-            "required": true,
-            "message": "请选择安装类型"
-        }
-    ]
-}
-```
-
-### 多选框 (checkbox)
-
-用于从多个选项中选择多个，如功能模块、插件等。
-
-```json
-{
-    "type": "checkbox",
-    "field": "wizard_modules",
-    "label": "安装模块",
-    "initValue": ["web", "api"],
-    "options": [
-        {
-            "label": "Web界面",
-            "value": "web"
-        },
-        {
-            "label": "API接口",
-            "value": "api"
-        },
-        {
-            "label": "数据库",
-            "value": "database"
-        }
-    ],
-    "rules": [
-        {
-            "required": true,
-            "message": "请至少选择一个模块"
-        }
-    ]
-}
-```
-
-### 下拉选择框 (select)
-
-用于从下拉列表中选择一个选项，如城市、版本等。
-
-```json
-{
-    "type": "select",
-    "field": "wizard_database_type",
-    "label": "数据库类型",
-    "initValue": "sqlite",
-    "options": [
-        {
-            "label": "SQLite (推荐)",
-            "value": "sqlite"
-        },
-        {
-            "label": "MySQL",
-            "value": "mysql"
-        },
-        {
-            "label": "PostgreSQL",
-            "value": "postgresql"
-        }
-    ],
-    "rules": [
-        {
-            "required": true,
-            "message": "请选择数据库类型"
-        }
-    ]
-}
-```
-
-### 开关 (switch)
-
-用于简单的开启/关闭选择，如是否启用某个功能。
-
-```json
-{
-    "type": "switch",
-    "field": "wizard_enable_backup",
-    "label": "启用自动备份",
-    "initValue": "true"
-}
-```
-
-### 提示文本 (tips)
-
-用于显示说明文字、链接或警告信息，不收集用户输入。
-
-```json
-{
-    "type": "tips",
-    "helpText": "请阅读 <a target=\"_blank\" href=\"https://example.com/privacy\">隐私政策</a> 了解我们如何处理您的数据。"
-}
-```
-
-## 验证规则
-
-验证规则确保用户输入的数据符合要求：
-
-### 必填验证
-
-```json
-{
-    "required": true,
-    "message": "此字段不能为空"
-}
-```
-
-### 长度限制
-
-```json
-{
-    "min": 3,
-    "max": 50,
-    "message": "长度应在3-50个字符之间"
-}
-```
-
-### 精确长度
-
-```json
-{
-    "len": 6,
-    "message": "请输入6位验证码"
-}
-```
-
-### 正则表达式验证
-
-```json
-{
-    "pattern": "^[a-zA-Z0-9_]+$",
-    "message": "只能包含字母、数字和下划线"
-}
-```
-
-## 向导文件结构
-
-每个向导文件都是一个 JSON 数组，包含多个步骤页面：
-
-```json
-[
-    {
-        "stepTitle": "第一步标题",
-        "items": [
-            // 表单项列表
-        ]
-    },
-    {
-        "stepTitle": "第二步标题",
-        "items": [
-            // 表单项列表
-        ]
-    }
-]
-```
-
-## 安装向导示例
-
-下面是一个典型的安装向导，包含隐私协议同意和账号初始化：
-
-**wizard/install**
-
-```json
-[
-    {
-        "stepTitle": "欢迎安装",
-        "items": [
-            {
-                "type": "tips",
-                "helpText": "欢迎使用我们的应用！在开始使用前，请阅读并同意我们的服务条款。"
-            },
-            {
-                "type": "tips",
-                "helpText": "请阅读 <a target=\"_blank\" href=\"https://example.com/privacy\">隐私政策</a> 和 <a target=\"_blank\" href=\"https://example.com/terms\">服务条款</a>。"
-            },
-            {
-                "type": "switch",
-                "field": "wizard_agree_terms",
-                "label": "我已阅读并同意服务条款",
-                "rules": [
-                    {
-                        "required": true,
-                        "message": "请同意服务条款"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "stepTitle": "创建管理员账号",
-        "items": [
-            {
-                "type": "text",
-                "field": "wizard_admin_username",
-                "label": "管理员用户名",
-                "initValue": "admin",
-                "rules": [
-                    {
-                        "required": true,
-                        "message": "请输入管理员用户名"
-                    },
-                    {
-                        "pattern": "^[a-zA-Z0-9_]+$",
-                        "message": "用户名只能包含字母、数字和下划线"
-                    }
-                ]
-            },
-            {
-                "type": "password",
-                "field": "wizard_admin_password",
-                "label": "管理员密码",
-                "rules": [
-                    {
-                        "required": true,
-                        "message": "请输入管理员密码"
-                    },
-                    {
-                        "min": 8,
-                        "message": "密码长度不能少于8位"
-                    }
-                ]
-            },
-            {
-                "type": "password",
-                "field": "wizard_admin_password_confirm",
-                "label": "确认密码",
-                "rules": [
-                    {
-                        "required": true,
-                        "message": "请确认密码"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "stepTitle": "应用配置",
-        "items": [
-            {
-                "type": "select",
-                "field": "wizard_database_type",
-                "label": "数据库类型",
-                "initValue": "sqlite",
-                "options": [
-                    {
-                        "label": "SQLite (推荐，无需额外配置)",
-                        "value": "sqlite"
-                    },
-                    {
-                        "label": "MySQL",
-                        "value": "mysql"
-                    }
-                ]
-            },
-            {
-                "type": "text",
-                "field": "wizard_app_port",
-                "label": "应用端口",
-                "initValue": "8080",
-                "rules": [
-                    {
-                        "required": true,
-                        "message": "请输入端口号"
-                    },
-                    {
-                        "pattern": "^[0-9]+$",
-                        "message": "端口号必须是数字"
-                    }
-                ]
-            }
-        ]
-    }
-]
-```
-
-## 卸载向导示例
-
-卸载向导通常用于确认用户的选择，特别是关于数据保留的决定：
-
-**wizard/uninstall**
-
-```json
-[
-    {
-        "stepTitle": "确认卸载",
-        "items": [
-            {
-                "type": "tips",
-                "helpText": "您即将卸载此应用。请选择如何处理应用数据："
-            },
-            {
-                "type": "radio",
-                "field": "wizard_data_action",
-                "label": "数据保留选项",
-                "initValue": "keep",
-                "options": [
-                    {
-                        "label": "保留数据（推荐）- 将来重新安装时可恢复",
-                        "value": "keep"
-                    },
-                    {
-                        "label": "删除所有数据 - 此操作不可恢复！",
-                        "value": "delete"
-                    }
-                ],
-                "rules": [
-                    {
-                        "required": true,
-                        "message": "请选择数据保留选项"
-                    }
-                ]
-            },
-            {
-                "type": "tips",
-                "helpText": "<strong>警告：</strong> 选择删除数据后，所有应用数据将永久丢失，无法恢复。"
-            }
-        ]
-    }
-]
-```
-
-## 获取用户输入
-
-用户在向导中的选择会变成环境变量，您可以在相应的脚本中获取：
-
-### 环境变量命名
-
-- 字段名直接作为环境变量名使用
-- 例如：wizard_admin_username 对应环境变量 wizard_admin_username
-
-### 在脚本中使用
-
-```bash
-#!/bin/bash
-
-# 获取用户在向导中的选择
-ADMIN_USERNAME="$wizard_admin_username"
-ADMIN_PASSWORD="$wizard_admin_password"
-DATABASE_TYPE="$wizard_database_type"
-APP_PORT="$wizard_app_port"
-
-echo "管理员用户名: $ADMIN_USERNAME"
-echo "数据库类型: $DATABASE_TYPE"
-echo "应用端口: $APP_PORT"
-
-# 根据用户选择执行相应逻辑
-if [ "$DATABASE_TYPE" = "mysql" ]; then
-    echo "配置MySQL数据库..."
-else
-    echo "使用SQLite数据库..."
-fi
-```
-
-## 最佳实践
-
-### 向导设计原则
-
-1. 简洁明了 - 每个步骤只收集必要的信息
-2. 用户友好 - 使用清晰的标签和帮助文本
-3. 合理验证 - 及时验证用户输入，避免后续错误
-4. 默认值 - 为常用选项提供合理的默认值
-
-### 安全考虑
-
-- 密码字段使用 password 类型
-- 敏感信息不要显示在界面上
-- 提供隐私政策和服务条款链接
-
-### 用户体验
-
-- 分步骤收集信息，避免一次性要求太多
-- 提供清晰的说明和帮助文本
-- 在卸载时明确说明数据删除的后果
-
-通过精心设计的向导，您可以为用户提供更好的安装和配置体验，同时收集到应用运行所需的配置信息。
-
----
-
-- 上一页: [📚 【基础】应用入口](app-entry.md)
-- 下一页: [🔥 【进阶】统一网关注册](gateway-registration.md)
+- [🚀　快速开始](docs/category/快速开始.md)
+- [📘　开发指南](docs/category/开发指南.md)
+- [🧩　应用案例](docs/category/应用案例.md)
+- [🛠️　开发工具](docs/category/️开发工具.md)
+- [📝　更新日志](docs/category/更新日志.md)
+- [准备工作](docs/quick-started/prerequisites.md)
+- [应用框架](docs/core-concepts/framework.md)
+- [fnpack](docs/cli/fnpack.md)
+- [创建应用](docs/quick-started/create-application.md)
+- [测试应用](docs/quick-started/test-application.md)
+- [上架应用](docs/quick-started/publish-application.md)
+- [Manifest](docs/core-concepts/manifest.md)
+- [环境变量](docs/core-concepts/environment-variables.md)
+- [应用权限](docs/core-concepts/privilege.md)
+- [应用资源](docs/core-concepts/resource.md)
+- [应用入口](docs/core-concepts/app-entry.md)
+- [index.cgi](docs/core-concepts/index-cgi.md)
+- [统一网关](docs/core-concepts/gateway-registration.md)
+- [用户向导](docs/core-concepts/wizard.md)
+- [应用依赖](docs/core-concepts/dependency.md)
+- [中间件服务](docs/core-concepts/middleware.md)
+- [运行时环境](docs/core-concepts/runtime.md)
+- [图标](docs/core-concepts/icon.md)
+- [Native 应用案例](docs/examples/native.md)
+- [Docker 应用案例](docs/examples/docker.md)
+- [appcenter-cli](docs/cli/appcentercli.md)
+- [2026-07-05](docs/update-log/20260705.md)
+- [2026-05-09](docs/update-log/20260509.md)
+- [2025-12-31](docs/update-log/20251231.md)
+- [2025-12-16](docs/update-log/20251216.md)
 
 ---
 
@@ -3104,668 +104,3510 @@ fi
 
 ---
 
-## ✨　创建应用
+## 🚀　快速开始
 
-## 从 "0" 开始构建应用中心基础应用
+跟随以下步骤，快速实现一个应用开发和测试发布
+## 本页内容
+
+- [准备工作](../quick-started/prerequisites.md): 在开发飞牛 fnOS 应用前，准备测试设备、开发机、访问权限和工具
+- [创建应用](../quick-started/create-application.md): 创建一个最小飞牛 fnOS 应用包
+- [测试应用](../quick-started/test-application.md): 安装并验证飞牛 fnOS 应用包
+- [上架应用](../quick-started/publish-application.md): 准备发布飞牛 fnOS 应用
+
+---
+
+- 上一页: [欢迎加入](../guide.md)
+- 下一页: [准备工作](../quick-started/prerequisites.md)
+
+---
+
+## 📘　开发指南
+
+学习应用的架构与运行机制、应用设计规范和核心开发概念。
+## 本页内容
+
+- [应用框架](../core-concepts/framework.md): 理解飞牛 fnOS 应用目录和生命周期
+- [Manifest](../core-concepts/manifest.md): 定义应用元数据、兼容范围和运行方式
+- [环境变量](../core-concepts/environment-variables.md): 使用运行时提供的环境变量
+- [应用权限](../core-concepts/privilege.md): 定义应用运行用户和权限模型
+- [应用资源](../core-concepts/resource.md): 声明应用资源和系统集成
+- [应用入口](../core-concepts/app-entry.md): 定义用户打开和访问应用的方式
+- [index.cgi](../core-concepts/index-cgi.md): 通过 index.cgi 提供轻量 UI
+- [统一网关](../core-concepts/gateway-registration.md): 通过统一网关注册应用路由并使用网关鉴权
+- [用户向导](../core-concepts/wizard.md): 定义安装、升级、卸载和配置表单
+- [应用依赖](../core-concepts/dependency.md): 声明应用依赖
+- [中间件服务](../core-concepts/middleware.md): 在飞牛 fnOS 应用中使用中间件服务
+- [运行时环境](../core-concepts/runtime.md): 使用打包运行时环境
+- [图标](../core-concepts/icon.md): 准备应用图标
+
+---
+
+- 上一页: [上架应用](../quick-started/publish-application.md)
+- 下一页: [应用框架](../core-concepts/framework.md)
+
+---
+
+## 🧩　应用案例
+
+通过完整案例学习如何构建、打包和测试应用。
+## 本页内容
+
+- [Native 应用案例](../examples/native.md): 从零创建一个可运行的 Native 应用包
+- [Docker 应用案例](../examples/docker.md): 从零创建一个可运行的 Docker 应用包
+
+---
+
+- 上一页: [图标](../core-concepts/icon.md)
+- 下一页: [Native 应用案例](../examples/native.md)
+
+---
+
+## 🛠️　开发工具
+
+了解飞牛 fnOS 应用开发常用命令行工具。
+## 本页内容
+
+- [fnpack](../cli/fnpack.md): 创建和打包飞牛 fnOS 应用
+- [appcenter-cli](../cli/appcentercli.md): 通过命令行管理应用安装和测试
+
+---
+
+- 上一页: [Docker 应用案例](../examples/docker.md)
+- 下一页: [fnpack](../cli/fnpack.md)
+
+---
+
+## 📝　更新日志
+
+查看开发者文档的主要更新记录。
+## 本页内容
+
+- [2026-07-05](../update-log/20260705.md): 2026-07-05 文档更新记录
+- [2026-05-09](../update-log/20260509.md): 2026-05-09 文档更新记录
+- [2025-12-31](../update-log/20251231.md): 2025-12-31 文档更新记录
+- [2025-12-16](../update-log/20251216.md): 2025-12-16 文档更新记录
+
+---
+
+- 上一页: [appcenter-cli](../cli/appcentercli.md)
+- 下一页: [2026-07-05](../update-log/20260705.md)
+
+---
+
+## 准备工作
+
+在创建第一个飞牛 fnOS 应用前，你需要准备两个环境：
+
+- 一台用于安装和运行应用的 飞牛 fnOS 测试设备
+- 一台用于编写代码、创建应用包并连接测试设备的 开发电脑
+
+这一页只关注创建和测试第一个应用所需的最小准备。
+
+---
+
+## 1. 准备并检查飞牛 fnOS 测试设备
+
+建议尽量使用专门的测试设备。开发过程中，你可能会频繁安装、卸载、重启和修改应用，因此不建议使用存放重要个人或业务数据的设备作为开发测试机。
 
 > [!TIP]
-> `App.Native.HelloFnosAppCenter` web 页面示例代码可以点击 [此处](https://static.fnnas.com/appcenter-marketing/App.Native.HelloFnosAppCenter.zip) 下载
+> 你可以从 [飞牛官网](https://www.fnnas.com/download?key=fnos) 下载最新安装镜像。安装步骤可参考 [飞牛 fnOS 安装指南](https://help.fnnas.com/articles/fnosV1/start/install-os)。
 
-> [!NOTE]
-> 该应用教程案例无实际用途仅为方便开发者快速了解应用开发及应用封包流程！
+开始应用开发前，请确保测试设备已完成初始化，并且可以通过浏览器访问。
 
-## 开发流程
+先确认几个必需项：
 
-一个应用的开发流程，可以分为以下几个步骤：
+- 初始化状态：设备已完成首次初始化流程
+- 管理员账号：可以使用管理员账号登录
+- 网络访问：开发电脑可以访问飞牛 fnOS 设备
+- 存储可用性：设备已有可用于安装应用的存储空间
 
-![流程图](../../assets/site/assets/images/image-1-601afe3743744f3eb951bb56fe35f8a2.png)
+飞牛 fnOS 支持主流 x86 和 ARM 架构硬件。对于第一个应用，你只需要知道当前用哪台设备测试。等到构建特定架构应用，或应用对资源有更高要求时，再根据目标设备选择构建目标和依赖。
 
-## 具体步骤
+## 2. 准备开发电脑
 
-### 1. 制作 web 页面
+你可以在自己的电脑上本地开发，然后将打包好的应用安装到飞牛 fnOS 上测试。需要更贴近目标设备环境时，也可以使用远程开发方式。
 
-为方便不同阶段的开发者更快速的了解飞牛 OS 应用中心开发流程，本教程案例将使用前端基础开发语言 `Html/Javascript/CSS` 制作一个简单的 web 页面，包含图片资源、CSS 样式表及 JS 文件，并将页面保存为 index.html 文件。
+开发电脑应准备：
 
-#### web 页面目录结构:
+- 代码编辑器或 IDE
+- 终端环境
+- 到飞牛 fnOS 测试设备的网络访问
 
-```text
-HelloFnosAppCenter
-├── css
-│   └── style.css
-├── images
-│   └── logo.png
-├── index.html
-└── js
-    └── main.js
-```
+应用需要的运行时可以按需安装，例如 Node.js、Python、Java、Go 或其他 Linux 兼容工具。
 
-**./index.html**
+## 3. 准备访问权限
 
-```html
-<!DOCTYPE html>
-<!-- 声明文档类型为 HTML5 -->
-<html lang="zh-CN">
-<head>
-    <!-- 字符编码：确保中文/特殊字符正常显示 -->
-    <meta charset="UTF-8">
-    <!-- 视口设置：适配移动端 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 页面标题：浏览器标签显示 -->
-    <title>应用中心教学演示</title>
+应用测试通常需要飞牛 fnOS 设备的管理员权限。
 
-    <!-- 引入外部 CSS 样式文件（核心知识点：外部样式引入） -->
-    <!-- 路径说明：./ 表示当前目录，css/style.css 是样式文件的相对路径 -->
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-    <!-- 1. Logo 展示区（核心知识点：图片引入） -->
-    <div class="logo-container">
-        <!-- src：图片路径；alt：图片加载失败时的替代文本（无障碍/SEO） -->
-        <img src="./images/logo.png" alt="教学演示Logo" class="logo">
-    </div>
+你可能需要管理员权限来完成：
 
-    <div class="hello-container">
-        <h1 id="helloText">Welcome to the fnOS AppCenter</h1>
-        <p class="tips">点击上方文字体验JS交互</p>
-    </div>
+- 安装和卸载本地应用包
+- 使用仅用于测试的安装入口
+- 查看日志并排查运行问题
 
-    <!-- 2. 引入外部 JS 文件（核心知识点：JS 文件引入） -->
-    <!-- 建议放在 body 底部：确保 DOM 加载完成后再执行 JS，避免获取不到元素 -->
-    <!-- 路径说明：./js/main.js 是JS文件的相对路径 -->
-    <script src="./js/main.js"></script>
-</body>
-</html>
-```
+如果是多人协作开发，请提前约定使用哪台测试设备、哪个账号以及哪个存储空间。
 
-**./css/style.css**
+## 4. 准备 CLI 工具
 
-```css
-/* 全局样式重置 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+飞牛 fnOS 应用开发主要会用到两个工具：
 
-/* 页面整体样式 */
-body {
-    font-family: "Microsoft YaHei", sans-serif; /* 字体设置 */
-    background: linear-gradient(120deg, #5f85ff, #48e08f); ; /* 页面蓝绿渐变背景*/
-    min-height: 100vh; /* 页面高度占满视口 */
-    display: flex; /* Flex布局：让内容垂直+水平居中 */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px; /* 元素之间的间距 */
-    /* 渐变背景防重复 */
-    background-repeat: no-repeat;
-}
+- fnpack：创建应用项目，并将应用打包为 .fpk 文件
+- appcenter-cli：在飞牛 fnOS 设备上安装本地包、管理应用测试，并处理应用中心相关流程
 
-/* Logo容器样式 */
-.logo-container {
-    width: 120px; /* 容器宽度 */
-    height: 120px; /* 容器高度 */
-    border-radius: 50%; /* 圆形容器 */
-    overflow: hidden; /* 裁剪超出容器的图片 */
-    border: 3px solid #2563eb; /* 边框样式 */
-    box-shadow: 0 0 15px rgba(37, 99, 235, 0.4); /* 阴影效果 */
-}
+常见流程是：
 
-/* Logo图片样式 */
-.logo {
-    width: 100%; /* 图片宽度占满容器 */
-    height: 100%; /* 图片高度占满容器 */
-    object-fit: cover; /* 图片等比缩放，填充容器 */
-    cursor: pointer; /* 鼠标悬浮显示手型 */
-    transition: transform 0.3s ease; /* 过渡动画（教学点：CSS动画） */
-}
+1. 在开发电脑上使用 fnpack 创建项目并打包应用
+2. 将 .fpk 包复制或部署到飞牛 fnOS 测试设备
+3. 使用 appcenter-cli 或应用中心安装并测试应用包
 
-/* Logo悬浮效果 */
-.logo:hover {
-    transform: scale(1.2); /* 鼠标悬浮放大1.2倍 */
-}
+## 检查清单
 
-.hello-container {
-    text-align: center; /* 文本居中 */
-}
+继续之前，请确认：
 
-#helloText {
-    font-size: 48px; /* 字体大小 */
-    color: #303133; /* 字体颜色 */
-    transition: all 0.3s ease; /* 过渡动画 */
-    cursor: pointer;
-}
+- 已准备飞牛 fnOS 测试设备
+- 设备已完成初始化
+- 至少一个存储空间可用
+- 你拥有管理员权限
+- 开发电脑可以通过网络访问设备
+- 已了解 fnpack 和 appcenter-cli
 
-/* 标题悬浮效果 */
-#helloText:hover {
-    color: #2563eb; /* 悬浮变色 */
-    transform: translateY(-5px); /* 悬浮上移 5px */
-    /* 新增文字阴影，增强视觉层次 */
-    text-shadow: 0 2px 8px rgba(37, 99, 235, 0.3)
-}
+准备完成后，继续阅读 [创建应用](create-application.md)。
 
-/* 提示文本样式 */
-.tips {
-    margin-top: 15px;
-    font-size: 16px;
-    color: #64748b;
-}
-```
+---
 
-**./js/main.js**
+- 上一页: [🚀　快速开始](../category/快速开始.md)
+- 下一页: [创建应用](create-application.md)
 
-```js
-// 教学点1：DOM 获取元素
-const helloText = document.getElementById('helloText');
+---
 
-// 教学点2：绑定点击事件（交互核心）
-helloText.addEventListener('click', function() {
-    // 教学点3：修改 DOM 内容（动态改变文本）
-    const originalText = 'Hello fnOS AppCenter !';
-    const newText = '👋 你好，飞牛应用中心先锋开发者！';
+## 应用框架
 
-    if (helloText.innerText === originalText) {
-        helloText.innerText = newText;
-        // 教学点4：弹出提示框（基础交互）
-        alert('🎉 JS交互生效啦！文本已修改～');
-    } else {
-        helloText.innerText = originalText; // 还原文本
-    }
-});
+飞牛 fnOS 应用包包含元数据、配置文件、生命周期脚本、UI 资源和应用运行文件。
 
-// 教学点5：控制台输出（调试常用）
-console.log('✅ 外部JS文件加载成功！');
-console.log('🔍 当前点击的元素：', helloText);
-```
+安装后，飞牛 fnOS 会在 `/var/apps/{appname}` 下创建应用目录结构。
 
-### 2. fnpack 工具创建应用项目
-
-使用 `fnpack` 工具创建应用项目，并将 web 页面迁移到 app 目录下。`fnpack` 工具使用方式 [点此了解](../cli/fnpack.md)。
-
-```bash
-# 创建独立项目
-fnpack create App.Native.HelloFnosAppCenter
-```
-
-- 创建完成后将会得到如下目录结构
+## 安装后的目录
 
 ```text
-App.Native.HelloFnosAppCenter
-├── app                         # 🗂️ 应用文件目录
-│   ├── server                  # 🗂️ 后台服务程序目录（本案例为静态页面不涉及）
-│   ├── ui                      # 🗂️ 应用入口及视图
-│   │   ├── config              # 🗂️ 应用入口配置文件
-│   │   └── images              # 🗂️ 应用图标资源
-│   │       ├── icon_256.png    # 应用图标（256x256）
-│   │       └── icon_64.png     # 应用图标（64x64）
-│   └── www                     # 🗂️ 应用 web 资源目录
-├── cmd                         # 🗂️ 应用生命周期管理脚本
-│   ├── config_callback         # 应用配置回调脚本
-│   ├── config_init             # 应用配置初始化脚本
-│   ├── install_callback        # 应用安装回调脚本
-│   ├── install_init            # 应用安装初始化脚本
-│   ├── main                    # 应用主脚本，用于启动、停止、检查应用状态
-│   ├── uninstall_callback      # 应用卸载回调脚本
-│   ├── uninstall_init          # 应用卸载初始化脚本
-│   ├── upgrade_callback        # 应用更新回调脚本
-│   └── upgrade_init            # 应用更新初始化脚本
-├── config                      # 🗂️ 应用配置目录
-│   ├── privilege               # 应用权限配置
-│   └── resource                # 应用资源配置
-├── ICON_256.PNG                # 应用包 256*256 图标文件
-├── ICON.PNG                    # 应用包 64*64 图标文件
-├── manifest                    # 应用包基本信息描述文件
-└── wizard                      # 🗂️ 应用向导目录
+/var/apps/{appname}
+├── cmd/
+│   ├── install_init
+│   ├── install_callback
+│   ├── main
+│   ├── upgrade_init
+│   ├── upgrade_callback
+│   ├── uninstall_init
+│   ├── uninstall_callback
+│   ├── config_init
+│   └── config_callback
+├── config/
+│   ├── privilege
+│   └── resource
+├── manifest
+├── ICON.PNG
+├── ICON_256.PNG
+├── target -> /vol{n}/@appcenter/{appname}
+├── etc    -> /vol{n}/@appconf/{appname}
+├── var    -> /vol{n}/@appdata/{appname}
+├── tmp    -> /vol{n}/@apptemp/{appname}
+├── home   -> /vol{n}/@apphome/{appname}
+├── meta
+├── shares/
+└── wizard/
+    ├── install
+    ├── upgrade
+    ├── uninstall
+    └── config
 ```
 
-### 3. 制作包文件 icon 图标
+## 关键目录
 
-- 制作 icon 图标，分别导出`256*256`和`64*64`的图标文件，并命名为`ICON_256.PNG`和`ICON.PNG`放置在项目根目录下，并将对应像素的图标文件额外复制一份放置在`app/ui/images`目录下（**注意：该路径图标文件的命名为小写！**）
-- 图标设计素材，可前往 [**iconfont**](https://www.iconfont.cn/) 进行素材搜寻查找，支持SVG/PNG格式导出。
+- `target`：已安装的应用文件和运行资源。
+- `etc`：应用配置。
+- `var`：需要在应用重启后保留的运行数据。
+- `tmp`：临时文件。
+- `home`：应用用户数据。
+- `shares`：在 config/resource 中声明的共享目录。
+- `cmd`：生命周期脚本。
+- `wizard`：安装、升级、卸载或配置时使用的用户表单。
 
-> [!NOTE]
-> 含圆角矩形背景图层图标 PSD 源文件，可点 [**此处**](https://static.fnnas.com/appcenter-marketing/fnpack_ICON_256.zip) 进行下载。
+请使用 `TRIM_APPDEST`、`TRIM_PKGETC`、`TRIM_PKGVAR` 等环境变量，不要硬编码路径。参考 [环境变量](environment-variables.md)。
 
-### 4. 编写 manifest 文件声明应用信息
+## 生命周期脚本
 
-```text
-appname               = App.Native.HelloFnosAppCenter
-version               = 1.0.0
-display_name          = 教学案例
-desc                  = 方便开发者快速了解应用开发及应用封包流程所制作的教学案例
-arch                  = x86_64
-source                = thirdparty
-maintainer            = MR_XIAOBO
-distributor           = MR_XIAOBO
-desktop_uidir         = ui
-desktop_applaunchname = App.Native.HelloFnosAppCenter.Application
-```
+飞牛 fnOS 会在安装、启动、更新、配置变更和卸载过程中调用 `cmd/` 下的脚本。
 
-> [!NOTE]
-> 更多 `manifest应用信息描述文件` 配置方法，可点 [**此处**](../core-concepts/manifest.md) 跳转进行学习。
+| 脚本 | 作用 |
+| --- | --- |
+| `install_init` | 安装文件应用前执行。 |
+| `install_callback` | 安装文件应用后执行。 |
+| `main` | 处理 `start`、`stop` 和 `status`。 |
+| `upgrade_init` | 升级前执行。 |
+| `upgrade_callback` | 升级后执行。 |
+| `uninstall_init` | 卸载前执行。 |
+| `uninstall_callback` | 卸载清理后执行。 |
+| `config_init` | 配置变更应用前执行。 |
+| `config_callback` | 配置变更应用后执行。 |
 
-### 5. 迁移 web 应用到 app 目录下
+脚本应尽量具备可重复执行能力。开发和恢复过程中，安装、升级和配置流程都可能被重新执行。
 
-- 复制 web 页面到app/www目录下，复制完的文件结构如下(参照深色部分)：
+## 安装流程
 
-```text
-App.Native.HelloFnosAppCenter
-├── app
-│   ├── .DS_Store
-│   ├── server
-│   ├── ui
-│   │   ├── config
-│   │   ├── .DS_Store
-│   │   └── images
-│   │       ├── .DS_Store
-│   │       ├── icon_256.png
-│   │       └── icon_64.png
-│   └── www                     # 🗂️ 应用 web 资源目录
-│       ├── css                 # 🗂️ 样式文件目录
-│       │   └── style.css       # 样式文件
-│       ├── images              # 🗂️ 图片文件目录
-│       │   └── logo.png        # 图片文件
-│       ├── index.html          # index 主页面文件
-│       └── js                  # 🗂️ 脚本文件目录
-│           └── main.js         # javascript 脚本文件
-······ # 其他路径层级略
-```
+需要在应用首次启动前完成的检查和初始化，可放在该流程中处理。
 
-### 6. 配置应用权限
+## 升级流程
 
-- 使用默认权限模式，以便应用程序以最安全的方式运行（减少高权限对 NAS 系统产生影响）
-- 在 config/ 目录下创建 privilege 文件（没有文件后缀），并添加如下内容：
+升级脚本适合处理数据迁移、配置迁移和兼容性检查。
 
-**config/privilege**
+如果应用正在运行，飞牛 fnOS 可能会在升级前停止应用，并在升级完成后重新启动。
 
-```json
-{
-    "defaults": {
-        "run-as": "package"                 // 运行身份，默认为 package（应用用户）
-    },
-    "username": "hello_fnos_appcenter",     // 应用专用用户名，默认为 manifest 中的 appname
-    "groupname": "hello_fnos_appcenter"     // 应用专用用户组名，默认为 manifest 中的 appname
-}
-```
+## 卸载流程
 
-> [!NOTE]
-> 更多`应用权限`配置方法，可点 [**此处**](../core-concepts/privilege.md) 跳转进行学习。
+卸载逻辑应尊重用户数据。如果应用允许用户选择保留或删除数据，可在 `wizard/uninstall` 中收集选择，并在卸载脚本中执行。
 
-### 7. 配置应用入口，并制作 CGI 程序
+## 配置流程
 
-**app/ui/config**
+当用户配置变更需要更新文件、重启服务或通知应用进程时，可使用该流程。
 
-```json
-{
-    ".url": {
-        "App.Native.HelloFnosAppCenter.Application": {
-            "title": "应用中心案例",             // 应用入口的显示标题（桌面图标名称）
-            "icon": "images/icon_{0}.png",      // 图标文件路径，相对于 UI 目录
-            "type": "iframe",                   // 入口类型，桌面窗口模式
-            "protocol": "http",                 // 访问协议类型，http
-            "url": "/cgi/ThirdParty/App.Native.HelloFnosAppCenter/index.cgi/",
-            "allUsers": true                    // 所有用户都可以访问
-        }
-    }
-}
-```
+## 运行控制
 
-#### 字段说明：
-
-- title - 入口的显示标题，用户看到的名称
-- icon - 图标文件路径，相对于 UI 目录
-    - {0} 会被系统替换为图标尺寸（64 或 256）
-    - 例如：images/icon_{0}.png → images/icon_64.png 或 images/icon_256.png
-- type - 入口类型
-    - url - 在浏览器新标签页中打开
-    - iframe - 在桌面窗口中以 iframe 方式加载
-- protocol - 访问协议，通常为 http 或 https
-- url - 访问路径，应用内部的相对路径（案例使用 CGI 方案，CGI 服务映射路径：/cgi/ThirdParty/[应用名称]/**.cgi）
-- allUsers - 访问权限控制
-    - true - 所有用户都可以访问
-    - false - 仅管理员可以访问
-
-> [!NOTE]
-> 更多`应用入口`配置方法，可点 [**此处**](../core-concepts/app-entry.md) 跳转进行学习。
-
-#### 制作 CGI 程序（推荐）
-
-- 在app/ui目录下创建index.cgi文件（基于 linux 系统 bash 脚本实现），使其可以处理解析 html 文件内容及静态资源转发，添加如下内容：
-
-**app/ui/index.cgi**
-
-```bash
-#!/bin/bash
-
-# 脚本名称: index.cgi
-# 　　版本: 1.0.0
-# 　　作者: FNOSP/xieguanru
-# 　协作者: FNOSP/MR_XIAOBO
-# 创建日期: 2025-11-18
-# 最后修改: 2025-11-19
-# 　　描述: 这个脚本用于演示 Shell 脚本的各种注释方式
-# 使用方式: 文件重命名，从 linux_shell_cgi_index.sh 改成 index.cgi,
-# 　　　　　放置应用包 /ui 路径下，记得 chmod +x index.cgi 赋权
-# 　许可证: MIT
-
-# 【注意】修改你自己的静态文件根目录，以本应用为例：
-BASE_PATH="/var/apps/App.Native.HelloFnosAppCenter/target/www"
-
-# 1. 从 REQUEST_URI 里拿到 index.cgi 后面的路径
-#    例如：/cgi/ThirdParty/App.Native.HelloFnosAppCenter/index.cgi/index.html?foo=bar
-#    先去掉 ? 后面的 query string
-URI_NO_QUERY="${REQUEST_URI%%\?*}"
-
-# 默认值（如果没匹配到 index.cgi）
-REL_PATH="/"
-
-# 用 index.cgi 作为切割点，取后面的部分
-case "$URI_NO_QUERY" in
-    *index.cgi*)
-        # 去掉前面所有直到 index.cgi 为止的内容，保留后面的
-        # /cgi/ThirdParty/App.Native.HelloFnosAppCenter/index.cgi/index.html -> /index.html
-        REL_PATH="${URI_NO_QUERY#*index.cgi}"
-        ;;
-esac
-
-# 如果为空或只有 /，就默认 /index.html
-if [ -z "$REL_PATH" ] || [ "$REL_PATH" = "/" ]; then
-    REL_PATH="/index.html"
-fi
-
-# 拼出真实文件路径：basePath + /ui + index.cgi 后面的路径
-TARGET_FILE="${BASE_PATH}${REL_PATH}"
-
-# 简单防御：禁止 .. 越级访问
-if echo "$TARGET_FILE" | grep -q '\.\.'; then
-    echo "Status: 400 Bad Request"
-    echo "Content-Type: text/plain; charset=utf-8"
-    echo ""
-    echo "Bad Request"
-    exit 0
-fi
-
-# 2. 判断文件是否存在
-if [ ! -f "$TARGET_FILE" ]; then
-    echo "Status: 404 Not Found"
-    echo "Content-Type: text/plain; charset=utf-8"
-    echo ""
-    echo "404 Not Found: ${REL_PATH}"
-    exit 0
-fi
-
-# 3. 根据扩展名简单判断 Content-Type
-ext="${TARGET_FILE##*.}"
-case "$ext" in
-    html|htm)
-        mime="text/html; charset=utf-8"
-        ;;
-    css)
-        mime="text/css; charset=utf-8"
-        ;;
-    js)
-        mime="application/javascript; charset=utf-8"
-        ;;
-    jpg|jpeg)
-        mime="image/jpeg"
-        ;;
-    png)
-        mime="image/png"
-        ;;
-    gif)
-        mime="image/gif"
-        ;;
-    svg)
-        mime="image/svg+xml"
-        ;;
-    txt|log)
-        mime="text/plain; charset=utf-8"
-        ;;
-    *)
-        mime="application/octet-stream"
-        ;;
-esac
-
-# 4. 输出头 + 文件内容
-echo "Content-Type: $mime"
-echo ""
-
-cat "$TARGET_FILE"
-```
-
-> [!NOTE]
-> 更多开发语言`CGI 程序`实现案例，请前往社区共建团开放平台 **FNOSP** 代码仓库中`应用中心通用网关 CGI 集合`项目获取。
->
-> 可点 [**此处**](https://github.com/FNOSP/fnosAppCenterCgiCollection) 跳转进行获取。
-
-#### 替换应用 icon 图标（非包文件 icon 图标，步骤3 如已进行替换请忽略）
-
-- 在app/ui/images目录下创建icon_64.png和icon_256.png文件（注意文件名小写），分别替换默认的应用icon图标。
-- 图标尺寸要求：
-    - icon_64.png - 64x64 像素
-    - icon_256.png - 256x256 像素
-- 图标格式要求：PNG 格式
-- 图标透明度要求：不透明
-- 图标文件名称要求：icon_64.png 和 icon_256.png（注意文件名小写）
-- 图标文件路径要求：app/ui/images 目录下
-
-### 8. 编写应用生命周期管理脚本
-
-系统需要准确知道您的应用全部生命周期状态。为此，系统会定期调用 cmd/main 脚本（通过传入不通参数）来操作/检查应用状态：
-
-- 脚本返回 exit 0 表示成功或应用运行中
-- 脚本返回 exit 1 表示失败或应用已停止
-- 脚本返回 exit 3 表示应用未运行
-
-#### 当前教学案例为静态页面项目，脚本不涉及后台程序调用、启动及运行状态判断，系统调用时无需执行具体操作，修改如下：
+`cmd/main` 负责处理应用运行状态。
 
 **cmd/main**
 
 ```bash
 #!/bin/bash
 
-case $1 in
-start)
-    # 启动应用的命令，成功返回 0，失败返回 1
+case "$1" in
+  start)
+    # Start the application service.
     exit 0
     ;;
-stop)
-    # 停止应用的命令，成功返回 0，失败返回 1
+
+  stop)
+    # Stop the application service.
     exit 0
     ;;
-status)
-    # 检查应用运行状态，运行中返回 0，未运行返回 3
+
+  status)
+    # Return 0 when running, 3 when not running.
     exit 0
     ;;
-*)
+
+  *)
     exit 1
     ;;
 esac
 ```
 
-> [!NOTE]
-> 更多`应用生命周期脚本`配置方法，可点 [**此处**](../core-concepts/framework.md#%E5%BA%94%E7%94%A8%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%AE%A1%E7%90%86) 跳转进行学习。
+退出码：
 
-### 9. 编译应用包文件
+- 0：成功，或在 status 中表示正在运行。
+- 1：失败。
+- 3：在 status 中表示未运行。
 
-- 使用 fnpack 工具（可点 **此处** 跳转获取）编译应用，生成应用包文件。
+静态应用可以在 `manifest` 中设置 `ctl_stop=false`，隐藏运行控制。
+
+## 用户可见错误
+
+生命周期脚本可以在返回失败码前，将清晰的错误信息写入 `TRIM_TEMP_LOGFILE`。
+
+**cmd/main**
 
 ```bash
-# 前往根目录 App.Native.HelloFnosAppCenter 下执行
+if [ ! -f "$TRIM_PKGETC/config.conf" ]; then
+  echo "Missing configuration file." > "$TRIM_TEMP_LOGFILE"
+  exit 1
+fi
+```
+
+这类信息应简短并可执行。它们可能会在安装、启动、升级或配置流程中展示给用户。
+
+---
+
+- 上一页: [📘　开发指南](../category/开发指南.md)
+- 下一页: [Manifest](manifest.md)
+
+---
+
+## fnpack
+
+`fnpack` 用于创建飞牛 fnOS 应用项目，并将应用打包为可安装的 `.fpk` 文件。开发者可以在本地开发机使用，也可以在飞牛 fnOS 设备上使用。
+
+## 下载
+
+根据开发机系统下载对应版本：
+
+- Windows x86: fnpack-1.2.3-windows-amd64
+- Linux x86: fnpack-1.2.3-linux-amd64
+- Linux ARM: fnpack-1.2.3-linux-arm64
+- macOS Intel: fnpack-1.2.3-darwin-amd64
+- macOS Apple Silicon: fnpack-1.2.3-darwin-arm64
+
+Linux 或 macOS 可安装到系统路径：
+
+```bash
+chmod +x fnpack-1.2.3-linux-amd64
+sudo mv fnpack-1.2.3-linux-amd64 /usr/local/bin/fnpack
+fnpack --help
+```
+
+## 创建项目
+
+创建普通应用项目：
+
+```bash
+fnpack create <appname>
+```
+
+创建不包含桌面入口的服务类项目：
+
+```bash
+fnpack create <appname> --without-ui true
+```
+
+创建 Docker 应用项目：
+
+```bash
+fnpack create <appname> --template docker
+```
+
+创建不包含桌面入口的 Docker 服务类项目：
+
+```bash
+fnpack create <appname> --template docker --without-ui true
+```
+
+Docker 模板会生成 `docker-compose.yaml`、基础资源声明和生命周期脚本框架。打包前需要根据应用实际运行方式检查并调整这些文件。
+
+## 项目结构
+
+```text
+myapp/
+├── app/
+│   ├── ui/
+│   │   ├── config
+│   │   └── images/
+│   └── docker/
+│       └── docker-compose.yaml
+├── cmd/
+│   ├── main
+│   ├── install_init
+│   ├── install_callback
+│   ├── upgrade_init
+│   ├── upgrade_callback
+│   ├── uninstall_init
+│   ├── uninstall_callback
+│   ├── config_init
+│   └── config_callback
+├── config/
+│   ├── privilege
+│   └── resource
+├── wizard/
+├── manifest
+├── ICON.PNG
+└── ICON_256.PNG
+```
+
+## 打包项目
+
+在应用目录中执行：
+
+```bash
+cd myapp
 fnpack build
 ```
 
-- 注意：部分用户开发环境电脑未配置系统环境变量，可将 fnpack 工具放置根目录下然后执行：
+指定其他目录进行打包：
 
 ```bash
-# Linux 环境（注意文件版本号）
-./fnpack-1.0.4-linux-amd64 build
-
-# MacOS 环境（注意文件版本号）
-./fnpack-1.0.4-darwin-amd64 build
-
-# Windows 环境（注意文件版本号）
-.\fnpack-1.0.4-windows-amd64 build
+fnpack build --directory <path>
 ```
 
-> [!NOTE]
-> 更多应用开发技能及配置方法，可点左侧 **开发指南** 分类完成【**基础**】部分内容学习以便了解整个应用中心开发过程。
+## 打包检查
+
+`fnpack` 会在生成 `.fpk` 前检查必要文件和基础格式。
+
+| 路径 | 类型 | 要求 |
+| --- | --- | --- |
+| `manifest` | 文件 | 存在，并包含必要字段 |
+| `config/privilege` | 文件 | 存在，并使用合法 JSON |
+| `config/resource` | 文件 | 存在，并使用合法 JSON |
+| `ICON.PNG` | 文件 | 存在 |
+| `ICON_256.PNG` | 文件 | 存在 |
+| `app/` | 目录 | 存在 |
+| `cmd/` | 目录 | 存在 |
+| `wizard/` | 目录 | 存在 |
+| `app/{desktop_uidir}/` | 目录 | 声明 `desktop_uidir` 时必须存在 |
+
+## 使用建议
+
+- 将打包目录放在应用源码附近，便于版本管理和自动化构建。
+- 在发布构建脚本中加入 fnpack build。
+- 发布前在飞牛 fnOS 测试设备上安装生成的 .fpk 并完成基础验证。
 
 ---
 
-- 上一页: [📋　准备工作](prerequisites.md)
-- 下一页: [🧪　测试应用](test-application.md)
+- 上一页: [🛠️　开发工具](../category/️开发工具.md)
+- 下一页: [appcenter-cli](appcentercli.md)
 
 ---
 
-## 📋　准备工作
+## 创建应用
 
-> [!TIP]
-> 你可以从 [飞牛官网](https://www.fnnas.com/download?key=fnos) 下载飞牛 fnOS 安装镜像进行安装！飞牛 fnOS 既支持物理机安装，也支持虚拟机安装
-
-关于飞牛 fnOS 的底层架构：
-
-- Linux 内核版本: 当前飞牛 fnOS 最新内核版本为 6.12.18
-- 系统架构支持: 当前飞牛 fnOS 仅支持 x86_64 (AMD64) 设备安装，即应用的编译选项也需要选择 x86_64
-
-## 系统要求
-
-> [!WARNING]
-> 为了数据安全考虑，不建议在有重要数据存储的或有其他正常用途的飞牛 fnOS 设备上进行开发和测试
-
-在应用测试阶段，为了实机测试你的应用，确保应用的运行正常，你需要先准备一台已安装飞牛 fnOS 的设备。
-
-- 系统版本: 飞牛 fnOS 0.9.27 及以上版本
-- 存储空间: 至少创建一个存储空间，可用于安装应用
-- 管理员权限: 拥有该设备的管理权限，只有管理员才能操作应用安装、卸载，以及更改系统设置等
-
-在开发阶段，你既可以在本地开发，也可以使用远程方式在飞牛 fnOS 设备上开发。当使用远程方式在飞牛 fnOS 设备上开发时，不仅能保证环境的一致性，结合 `appcenter-cli install-local` 命令，可以实现应用快速安装，提升调试效率。
-
-## 应用技术栈
-
-fnOS 基于 Linux 内核（Debian 发行版）深度开发，支持多种技术栈的应用运行，你可以根据自己擅长的语言进行选择。
-
-- 服务开发语言: Node.js、Python、Java、Go 以及 Linux 运行时支持的其他语言
-- 前端开发语言: Html/Javascript/CSS 以及现代桌面和移动浏览器引擎支持的其他语言和框架
-
-## CLI 工具
-
-- fnpack: 应用打包工具
-- appcenter-cli: 应用中心命令行工具（已在飞牛 fnOS 环境中预装）
+创建名为 `HelloFnos` 的最小飞牛 fnOS 应用包。该包包含一个通过 `index.cgi` 访问的静态页面，因此不需要应用端口。
 
 ---
 
-- 上一页: [🚀　快速开始](../category/快速开始.md)
-- 下一页: [✨　创建应用](create-application.md)
+## 1. 创建项目
+
+```bash
+fnpack create HelloFnos
+```
+
+本页涉及的关键文件：
+
+- manifest：应用包基础信息
+- config/privilege：运行用户模式
+- app/www：静态文件
+- app/ui/config：桌面入口
+- app/ui/index.cgi：静态文件的 CGI 入口
+
+## 2. 添加静态页面
+
+创建 `app/www/index.html`：
+
+**./app/www/index.html**
+
+```html
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello fnOS</title>
+  <style>
+    body {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #eef6ff;
+      color: #1f2937;
+    }
+    main {
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 12px;
+      font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Hello fnOS</h1>
+    <p>Hello fnOS 应用正在运行。</p>
+  </main>
+</body>
+</html>
+```
+
+## 3. 配置 manifest
+
+编辑 `manifest`：
+
+**./manifest**
+
+```ini
+appname="HelloFnos"
+version="1.0.0"
+display_name="Hello fnOS"
+desc="一个最小的飞牛 fnOS 应用。"
+maintainer="Your Name"
+maintainer_url="https://example.com"
+source="thirdparty"
+platform="all"
+ctl_stop=false
+```
+
+当前应用可适配不同设备架构，因此 `platform` 设置为 `all`。如果应用包含原生二进制或特定架构依赖，请将 `platform` 设置为支持的架构。
+
+`ctl_stop=false` 会隐藏启动和停止控制，因为当前应用只提供静态页面，不运行后台服务。
+
+全部字段请参考 [Manifest](../core-concepts/manifest.md)。
+
+## 4. 配置权限
+
+编辑 `config/privilege`：
+
+**./config/privilege**
+
+```json
+{
+  "defaults": {
+    "run-as": "package"
+  },
+  "username": "hellofnos",
+  "groupname": "hellofnos"
+}
+```
+
+`package` 表示使用 `username` 和 `groupname` 定义的专用应用用户和用户组运行应用。共享文件夹、Docker 项目、外部运行时和其他资源应在 `config/resource` 中声明。
+
+参考 [应用权限](../core-concepts/privilege.md) 和 [应用资源](../core-concepts/resource.md)。
+
+## 5. 配置桌面入口
+
+创建 `app/ui/config`：
+
+**./app/ui/config**
+
+```json
+{
+  ".url": {
+    "HelloFnos.Application": {
+      "title": "Hello fnOS",
+      "icon": "images/icon_{0}.png",
+      "type": "iframe",
+      "url": "/cgi/ThirdParty/HelloFnos/index.cgi/",
+      "allUsers": true
+    }
+  }
+}
+```
+
+添加入口引用的图标文件，例如 `app/ui/images/icon_64.png` 和 `app/ui/images/icon_256.png`。
+
+CGI 入口不声明端口。服务类应用通常通过应用端口或统一网关暴露 UI。
+
+参考 [应用入口](../core-concepts/app-entry.md)。
+
+## 6. 添加 CGI 入口
+
+创建 `app/ui/index.cgi`：
+
+**./app/ui/index.cgi**
+
+```bash
+#!/bin/bash
+
+BASE_PATH="/var/apps/HelloFnos/target/www"
+URI_NO_QUERY="${REQUEST_URI%%\?*}"
+REL_PATH="/"
+
+case "$URI_NO_QUERY" in
+  *index.cgi*)
+    REL_PATH="${URI_NO_QUERY#*index.cgi}"
+    ;;
+esac
+
+if [ -z "$REL_PATH" ] || [ "$REL_PATH" = "/" ]; then
+  REL_PATH="/index.html"
+fi
+
+TARGET_FILE="${BASE_PATH}${REL_PATH}"
+
+if echo "$TARGET_FILE" | grep -q '\.\.'; then
+  echo "Status: 400 Bad Request"
+  echo "Content-Type: text/plain; charset=utf-8"
+  echo ""
+  echo "Bad Request"
+  exit 0
+fi
+
+if [ ! -f "$TARGET_FILE" ]; then
+  echo "Status: 404 Not Found"
+  echo "Content-Type: text/plain; charset=utf-8"
+  echo ""
+  echo "404 Not Found"
+  exit 0
+fi
+
+case "${TARGET_FILE##*.}" in
+  html|htm) mime="text/html; charset=utf-8" ;;
+  css) mime="text/css; charset=utf-8" ;;
+  js) mime="application/javascript; charset=utf-8" ;;
+  png) mime="image/png" ;;
+  jpg|jpeg) mime="image/jpeg" ;;
+  svg) mime="image/svg+xml" ;;
+  *) mime="application/octet-stream" ;;
+esac
+
+echo "Content-Type: $mime"
+echo ""
+cat "$TARGET_FILE"
+```
+
+`BASE_PATH` 必须与安装后的应用路径一致。对于 `HelloFnos`，静态文件安装在 `/var/apps/HelloFnos/target/www`。
+
+参考 [index.cgi](../core-concepts/index-cgi.md)。
+
+## 7. 打包应用
+
+在项目目录中运行 `fnpack`：
+
+```bash
+fnpack build
+```
+
+将生成的 `.fpk` 文件安装到飞牛 fnOS 测试设备。
+
+## 下一步
+
+继续阅读 [测试应用](test-application.md)。
 
 ---
 
-## 📤　上架应用
-
-> [!TIP]
-> 开发者后台即将上线，在此之前，您可以加入**`应用中心开发者先锋交流群`**，群内会有专员为您办理应用内测和应用上架。
-
-## 🌟 加群流程 · 3 步即可上车
-
-- ① 加入任意飞牛粉丝群（点击fnos官网进入，右上角关注飞牛，微信群分类扫描二维码）
-    - 在群内联系【飞牛社区主理人】，加入开发者先锋交流群。
-- ② 提交基础信息完成认证
-    - 包括：个人/企业信息、代表作品、技术栈等。
-- ③ 获取文档 → 创建应用 → 提交审核
-    - 我们将全程协助，让你的上架体验顺畅无阻。
+- 上一页: [准备工作](prerequisites.md)
+- 下一页: [测试应用](test-application.md)
 
 ---
 
-- 上一页: [🧪　测试应用](test-application.md)
+## 测试应用
+
+将 `.fpk` 包安装到飞牛 fnOS 测试设备，并验证桌面入口。
+
+---
+
+## 1. 安装应用包
+
+### 通过应用中心安装
+
+适用于本地验证。
+
+打开应用中心，进入手动安装入口，并选择 `HelloFnos.fpk`。
+
+![应用中心手动安装入口](../../assets/static/appcenter-marketing/20250829100144099.png)
+
+手动安装仅用于本地测试，不应作为公开分发方式。
+
+### 使用 appcenter-cli 安装
+
+适用于脚本化安装或 CI 流程。
+
+在飞牛 fnOS 设备上运行：
+
+```bash
+appcenter-cli install-fpk HelloFnos.fpk
+```
+
+包含安装向导的应用包可指定环境变量文件：
+
+```bash
+appcenter-cli install-fpk HelloFnos.fpk --env config.env
+```
+
+## 2. 打开应用
+
+从飞牛 fnOS 桌面打开 **Hello fnOS**。
+
+页面应显示：
+
+```text
+Hello fnOS 应用正在运行。
+```
+
+如果入口无法打开，检查：
+
+- app/ui/config：入口 URL 应为 /cgi/ThirdParty/HelloFnos/index.cgi/
+- app/ui/index.cgi：BASE_PATH 应指向 /var/apps/HelloFnos/target/www
+- app/www/index.html：目标页面应存在于应用包中
+
+## 3. 开发中重复测试
+
+修改应用包后：
+
+1. 运行 fnpack build
+2. 安装新的 .fpk 文件
+3. 再次打开桌面入口
+
+包含后台服务的应用，还需要检查进程状态、端口和运行日志。可继续阅读 [应用架构](../core-concepts/framework.md)、[Native 应用案例](../examples/native.md) 或 [Docker 应用案例](../examples/docker.md)。
+
+## 下一步
+
+继续阅读 [发布应用](publish-application.md)。
+
+---
+
+- 上一页: [创建应用](create-application.md)
+- 下一页: [上架应用](publish-application.md)
+
+---
+
+## 上架应用
+
+提交应用到应用中心前，请准备发布材料，并在计划支持的环境中完成测试。
+
+---
+
+## 1. 提交方式
+
+开发者后台上线前，可以通过应用中心开发者先锋交流群提交应用。
+
+加入流程：
+
+1. 加入任意飞牛粉丝群。可从 飞牛官网 进入，右上角关注飞牛，并在 微信群 分类中扫码加入。
+2. 在群内联系飞牛社区主理人，加入应用中心开发者先锋交流群。
+3. 根据工作人员指引提交应用信息、应用包和测试材料。
+
+开发者后台上线后，请以后续平台流程为准。
+
+## 2. 准备发布材料
+
+大部分应用信息都定义在 `manifest` 中，包括应用名称、描述、版本、维护者、支持的系统版本范围、平台和更新说明。上架前请确保这些字段准确。
+
+准备 `manifest` 之外的发布材料：
+
+- 通过 fnpack 生成的最终 .fpk 包
+- 应用图标
+- 截图
+
+截图应展示真实应用界面和核心流程，不应使用占位页面或开发阶段的临时设计图。
+
+## 3. 发布前测试
+
+不要只依赖一次成功安装。请在计划支持的飞牛 fnOS 版本和硬件架构上测试应用。
+
+重点关注用户实际会遇到的体验：
+
+- 应用可以按预期安装、打开和运行
+- 主要流程可以完成，不会出现非预期错误
+- 用户创建或导入的数据可以正确保存、读取、更新和删除
+- 用户无法访问未授权的数据或操作
+- 本地 API、网络端口和后台任务只暴露应用真正需要的能力
+
+如果应用依赖外部服务、数据库、硬件设备或大模型，也需要测试依赖不可用、配置错误或资源不足时的表现。
+
+## 下一步
+
+回顾打包和测试文档：
+
+- 创建应用
+- 测试应用
+- Manifest
+- fnpack
+
+---
+
+- 上一页: [测试应用](test-application.md)
 - 下一页: [📘　开发指南](../category/开发指南.md)
 
 ---
 
-## 🧪　测试应用
+## Manifest
 
-## 安装 fpk
+`manifest` 文件用于描述应用包。它放在应用包根目录下，没有文件扩展名。
 
-将 fpk 文件放置到飞牛 fnOS 设备上安装测试：
+飞牛 fnOS 会使用这个文件识别应用、在应用中心中展示应用、检查兼容性，并准备运行环境。
 
-### 方式一
+## 基础信息
 
-使用 `appcenter-cli` 工具操作
+- `appname`：应用唯一标识。
+- `version`：应用版本，例如 1.0.0 或 2.1.3-beta。
+- `display_name`：显示在应用中心、应用设置和用户界面中的名称。
+- `desc`：应用描述。必要时可以使用 HTML 内容。
+- `source`：应用来源。第三方应用使用 thirdparty。
 
-```bash
-appcenter-cli install-fpk App.Native.HelloFnosAppCenter.fpk
+## 平台支持
+
+- `platform`：应用包支持的硬件架构。
+    - x86：支持 x86 设备。
+    - arm：支持 ARM 设备。
+    - all：同时支持 x86 和 ARM 设备。仅当应用包不包含特定架构二进制时使用。
+
+## 开发者信息
+
+- `maintainer`：开发者或团队名称。
+- `maintainer_url`：开发者网站或联系方式。
+- `distributor`：发布者名称。如果与开发者不同，可单独填写。
+- `distributor_url`：发布者网站或联系方式。
+
+## 兼容范围
+
+- `os_min_version`：支持的最低飞牛 fnOS 版本。
+- `os_max_version`：支持的最高飞牛 fnOS 版本。如果应用存在明确的兼容上限，可填写该字段。
+
+请根据实际测试过的版本设置这些字段，不要声明超过应用真实支持能力的范围。
+
+## 运行控制
+
+- `ctl_stop`：控制应用中心是否显示启动和停止操作。
+    - true：显示启动、停止和运行状态。
+    - false：隐藏这些控制项。
+
+静态页面、配置型应用，或不应由用户手动启动和停止的应用，可使用 `ctl_stop=false`。
+
+## 安装
+
+- **`install_type`**：安装目标。
+    - 空值：安装时由用户选择存储位置。
+    - root：安装到系统分区。
+- **`install_dep_apps`**：依赖应用。
+    - 多个依赖使用 : 分隔。
+    - 使用 > 声明最低版本，例如 database>2.2.2:cache。
+
+## 桌面集成
+
+- `desktop_uidir`：相对于应用目录的 UI 目录，默认值为 ui。
+- `desktop_applaunchname`：当应用存在多个入口时，用于指定从应用中心应用卡片打开的入口 ID。该 ID 应与 {desktop_uidir}/config 中定义的入口一致。
+
+## 端口
+
+- `service_port`：应用服务端口。
+- `checkport`：控制飞牛 fnOS 是否在启动应用前检查端口，默认值为 true。
+
+不监听固定端口的应用可以省略 `service_port`，或在适合的情况下设置 `checkport=false`。
+
+## 授权
+
+- `disable_authorization_path`：控制应用设置页是否显示授权目录设置。
+    - false：用户可以配置授权目录。
+    - true：隐藏授权目录设置。
+
+仅当应用不需要用户选择文件或目录访问权限时，才使用 `true`。
+
+## 更新说明
+
+- `changelog`：应用更新时或应用中心更新相关界面中展示的更新说明。
+
+更新说明应保持简洁，并面向用户表达。
+
+## 示例
+
+**manifest**
+
+```ini
+appname=HelloFnos
+version=1.0.0
+display_name=Hello fnOS
+desc=一个最小的飞牛 fnOS 应用。
+source=thirdparty
+platform=all
+
+maintainer=Example Team
+maintainer_url=https://example.com
+
+os_min_version=1.2.0
+
+desktop_uidir=ui
+desktop_applaunchname=HelloFnos.Application
+
+ctl_stop=false
+checkport=false
 ```
 
-### 方式二
+对于服务类应用，还需要声明服务端口，并根据是否允许用户在应用中心中启动和停止应用来设置 `ctl_stop`。
 
-![](../../assets/static/appcenter-marketing/20250829100144099.png)
+---
+
+- 上一页: [应用框架](framework.md)
+- 下一页: [环境变量](environment-variables.md)
+
+---
+
+## 环境变量
+
+飞牛 fnOS 会向生命周期脚本和应用进程提供环境变量。应用可以用它们定位目录、读取包信息，并获取用户配置。
+
+环境变量主要来自：
+
+- manifest 字段
+- 安装、配置和升级向导
+- 系统运行上下文
+- 应用资源和权限设置
+
+## 应用信息
+
+- `TRIM_APPNAME`：来自 manifest.appname 的应用名称。
+- `TRIM_APPVER`：当前应用版本。
+- `TRIM_OLD_APPVER`：升级过程中的旧版本。
+- `TRIM_APP_STATUS`：当前操作，例如 INSTALL、START、UPGRADE、UNINSTALL、STOP 或 CONFIG。
+
+## 应用路径
+
+- `TRIM_APPDEST`：已安装的 target 目录。
+- `TRIM_PKGETC`：应用配置目录。
+- `TRIM_PKGVAR`：运行时数据目录。
+- `TRIM_PKGTMP`：临时目录。
+- `TRIM_PKGHOME`：应用用户数据目录。
+- `TRIM_PKGMETA`：元数据目录。
+- `TRIM_APPDEST_VOL`：应用安装所在的存储空间路径。
+
+尽量使用这些变量，而不是在脚本中硬编码路径。
+
+## 用户和权限上下文
+
+- `TRIM_USERNAME`：专用应用用户。
+- `TRIM_GROUPNAME`：专用应用用户组。
+- `TRIM_UID`：应用用户 ID。
+- `TRIM_GID`：应用用户组 ID。
+- `TRIM_RUN_USERNAME`：当前执行脚本的用户。
+- `TRIM_RUN_GROUPNAME`：当前执行脚本的用户组。
+- `TRIM_RUN_UID`：当前执行脚本的 UID。
+- `TRIM_RUN_GID`：当前执行脚本的 GID。
+
+`TRIM_USERNAME` 表示应用用户。`TRIM_RUN_USERNAME` 表示当前脚本的执行用户，在特权操作中可能不同。
+
+## 网络和资源
+
+- `TRIM_SERVICE_PORT`：manifest.service_port 声明的服务端口。
+- `TRIM_DATA_SHARE_PATHS`：config/resource 声明的数据共享路径，多个路径使用 : 分隔。
+- `TRIM_DATA_ACCESSIBLE_PATHS`：用户授权的可访问路径，多个路径使用 : 分隔。
+
+共享数据目录也可以通过 `/var/apps/myapp/share/` 下的软链访问。
+
+使用这些路径读写文件前，应用仍应验证文件权限。
+
+## 日志和临时文件
+
+- `TRIM_TEMP_LOGFILE`：生命周期脚本用于输出用户可见错误信息的临时日志文件。
+- `TRIM_TEMP_UPGRADE_FOLDER`：升级过程临时目录。
+- `TRIM_PKGINST_TEMP_DIR`：安装时的临时解压目录。
+- `TRIM_TEMP_TPKFILE`：应用包解压目录。
+
+生命周期脚本失败时，请在以非零状态退出前，将清晰的错误信息写入 `TRIM_TEMP_LOGFILE`。
+
+## 系统上下文
+
+- `TRIM_SYS_VERSION`：完整飞牛 fnOS 版本。
+- `TRIM_SYS_VERSION_MAJOR`：系统主版本。
+- `TRIM_SYS_VERSION_MINOR`：系统次版本。
+- `TRIM_SYS_VERSION_BUILD`：构建号。
+- `TRIM_SYS_ARCH`：系统 CPU 架构。
+- `TRIM_KERNEL_VERSION`：内核版本。
+- `TRIM_SYS_MACHINE_ID`：设备唯一标识。
+- `TRIM_SYS_LANGUAGE`：系统语言。
+
+系统变量适合用于诊断和兼容性检查。不要让实际行为与 `manifest` 声明的支持范围冲突。
+
+## 向导变量
+
+向导中收集的值会变成环境变量。这些变量不使用 `TRIM_` 前缀。
+
+例如，名为 `db_port` 的向导字段会变成：
+
+```text
+db_port
+```
+
+向导变量名称应清晰并保持稳定，因为生命周期脚本和应用服务可能会依赖它们。
+
+## 示例
+
+**cmd/main**
+
+```bash
+#!/bin/bash
+
+case "$1" in
+  start)
+    echo "Starting $TRIM_APPNAME $TRIM_APPVER"
+    echo "App directory: $TRIM_APPDEST"
+    echo "Config directory: $TRIM_PKGETC"
+    echo "Data directory: $TRIM_PKGVAR"
+
+    if [ ! -f "$TRIM_PKGETC/config.conf" ]; then
+      cp "$TRIM_APPDEST/config.conf.example" "$TRIM_PKGETC/config.conf"
+    fi
+
+    cd "$TRIM_APPDEST"
+    ./myapp \
+      --config "$TRIM_PKGETC/config.conf" \
+      --data "$TRIM_PKGVAR" \
+      --port "$TRIM_SERVICE_PORT" \
+      --log "$TRIM_TEMP_LOGFILE" &
+    ;;
+
+  status)
+    if pgrep -f "myapp.*$TRIM_SERVICE_PORT" > /dev/null; then
+      exit 0
+    fi
+    exit 3
+    ;;
+
+  stop)
+    pkill -f "myapp.*$TRIM_SERVICE_PORT"
+    ;;
+
+  *)
+    echo "Unknown command: $1" > "$TRIM_TEMP_LOGFILE"
+    exit 1
+    ;;
+esac
+```
+
+## 建议
+
+- 自定义向导变量不要使用 TRIM_ 前缀。
+- 使用路径变量前，先检查目录是否存在。
+- Shell 脚本中引用变量时加引号。
+- 将向导值和来自请求的值视为不可信输入。
+- 使用 TRIM_TEMP_LOGFILE 输出清晰的用户可见错误信息。
+
+---
+
+- 上一页: [Manifest](manifest.md)
+- 下一页: [应用权限](privilege.md)
+
+---
+
+## 应用权限
+
+`config/privilege` 定义应用以哪个用户身份运行。应使用能满足应用需求的最小权限。
+
+大多数应用应使用专用包用户运行。
+
+## 包用户
+
+**config/privilege**
+
+```json
+{
+  "defaults": {
+    "run-as": "package"
+  },
+  "username": "myapp_user",
+  "groupname": "myapp_group"
+}
+```
+
+- `run-as`：运行身份。使用 package 表示专用应用用户。
+- `username`：专用用户名。省略时，飞牛 fnOS 会根据 manifest.appname 生成。
+- `groupname`：专用用户组名。省略时，飞牛 fnOS 会根据 manifest.appname 生成。
+- `join-groups`：可选字段，用于添加到应用用户的附加用户组。
+
+使用 `run-as=package` 时，应用进程会以专用应用用户运行。默认情况下，这可以将应用与系统级权限隔离。
+
+## 附加用户组
+
+当应用需要访问由系统用户组权限控制的资源时，可以使用 `join-groups`。
+
+例如，需要访问视频设备、GPU 渲染或硬件加速媒体输出的应用，可能需要通过 `video` 或 `render` 等系统用户组获得对应访问能力。这时可以将 `join-groups` 配置为 `["video", "render"]`。
+
+**config/privilege**
+
+```json
+{
+  "defaults": {
+    "run-as": "package"
+  },
+  "username": "media_app",
+  "groupname": "media_app",
+  "join-groups": ["required_system_group"]
+}
+```
+
+应用仍然以包用户身份运行。`join-groups` 只是将该用户加入指定用户组，以便访问这些用户组允许的资源。
+
+只加入应用确实需要的用户组。每增加一个用户组，应用进程可访问的资源范围都会扩大。
+
+## Root 模式
+
+普通应用运行时不建议使用 Root 模式。以 root 身份运行应用，会放大 Web 处理逻辑、API、后台任务和第三方依赖中的安全风险。
+
+**config/privilege**
+
+```json
+{
+  "defaults": {
+    "run-as": "root"
+  },
+  "username": "myapp_user",
+  "groupname": "myapp_group"
+}
+```
+
+只有生命周期脚本确实需要执行特权准备任务时，才使用 Root 模式，例如准备系统集成，或访问包用户无法处理的设备。
+
+长期运行并对外提供访问的进程，应尽可能以非 root 用户运行。Root 生命周期脚本可以使用 `runuser` 或同类命令，将服务进程切换到包用户：
+
+**cmd/main**
+
+```bash
+runuser -u "$TRIM_USERNAME" -- /var/apps/myapp/target/server/myapp
+```
+
+选择 Root 模式前，请先确认是否可以通过资源声明、附加用户组、用户授权或更窄的服务设计来完成同样目标。
+
+## 用户文件访问
+
+应用默认不会获得用户文件的广泛访问权限。需要读取或写入用户数据时，应由用户明确授权目录访问。
+
+目录访问通常有两种方式：
+
+- 用户在应用设置中授权目录。
+- 应用在 config/resource 中声明共享数据目录。
+
+共享目录配置请参考 [应用资源](resource.md)。
+
+## 运行用户检查
+
+生命周期脚本可在需要时读取运行用户变量：
+
+**cmd/main**
+
+```bash
+#!/bin/bash
+
+echo "Current runtime user: $TRIM_RUN_USERNAME"
+echo "Application user: $TRIM_USERNAME"
+```
+
+这类检查适合用于诊断。鉴权逻辑应基于明确的应用逻辑和系统提供的访问控制。
+
+## 权限建议
+
+- 默认使用 run-as=package。
+- 仅在访问特定用户组保护的资源时使用 join-groups。
+- 避免让长期运行或面向用户访问的进程使用 Root 模式。
+- 只有没有更窄方案时才请求 Root 模式，并在启动用户可访问服务前降权。
+- 仅在业务流程需要时请求用户文件访问。
+- 除非用户授权共享位置，否则应用数据应保存在应用目录内。
+- 将文件路径、请求参数和用户 ID 都视为不可信输入。
+
+---
+
+- 上一页: [环境变量](environment-variables.md)
+- 下一页: [应用资源](resource.md)
+
+---
+
+## 应用资源
+
+`config/resource` 用于声明应用需要的系统资源和集成能力。这个文件应只包含应用实际使用的能力。
+
+## 共享数据目录
+
+当应用需要提供可由用户在文件管理器中访问的共享目录时，使用 `data-share`。
+
+**config/resource**
+
+```json
+{
+  "data-share": {
+    "shares": [
+      {
+        "name": "myapp/documents"
+      },
+      {
+        "name": "myapp/backups"
+      }
+    ]
+  }
+}
+```
+
+- `name`：共享路径名称。
+- `permission`：可选字段，用于给其他用户或应用配置访问权限。大多数共享目录不需要配置。
+
+安装应用时，飞牛 fnOS 会自动创建声明的共享目录。这些目录使用 Windows ACL 权限模型，而不是 POSIX ACL。系统会自动为应用运行用户授予所需的 ACL 访问权限。
+
+应用可以通过 `TRIM_DATA_SHARE_PATHS` 环境变量获取已创建的共享目录路径，也可以通过 `/var/apps/myapp/share/` 下的软链访问对应目录，例如 `/var/apps/myapp/share/documents`。
+
+适合将用户需要查看、导入、导出或在应用外管理的内容放入共享目录。建议使用应用名称作为统一的顶级目录，例如 `myapp`，再按用途定义子目录，例如 `myapp/documents`、`myapp/backups`。这样用户看到的共享内容更集中，也能减少和其他应用的命名冲突。
+
+只有在其他应用或系统用户需要访问该共享目录时，才需要配置 `permission`：
+
+**config/resource**
+
+```json
+{
+  "data-share": {
+    "shares": [
+      {
+        "name": "myapp/documents",
+        "permission": {
+          "rw": ["other_app_user"],
+          "ro": ["report_reader"]
+        }
+      }
+    ]
+  }
+}
+```
+
+- `rw`：拥有读写权限的用户。
+- `ro`：拥有只读权限的用户。
+
+## 系统链接
+
+当应用需要将命令、库或配置文件暴露到标准系统位置时，使用 `usr-local-linker`。
+
+**config/resource**
+
+```json
+{
+  "usr-local-linker": {
+    "bin": [
+      "bin/myapp-cli"
+    ],
+    "lib": [
+      "lib/mylib.so"
+    ],
+    "etc": [
+      "etc/myapp.conf"
+    ]
+  }
+}
+```
+
+- `bin`：链接到 /usr/local/bin/。
+- `lib`：链接到 /usr/local/lib/。
+- `etc`：链接到 /usr/local/etc/。
+
+只应暴露其他命令或应用确实需要使用的稳定接口。对于可执行文件，应避免使用 `cli`、`server`、`tool` 等通用名称。建议使用带有应用标识的命令名，例如 `myapp-cli`，以减少和系统命令或其他应用的注册冲突。
+
+## Docker 项目
+
+当应用通过 Docker Compose 运行时，使用 `docker-project`。
+
+项目结构：
+
+```text
+myapp/
+├── app/
+│   └── docker/
+│       └── docker-compose.yaml
+├── manifest
+├── cmd/
+└── config/
+    └── resource
+```
+
+资源声明：
+
+**config/resource**
+
+```json
+{
+  "docker-project": {
+    "projects": [
+      {
+        "name": "myapp-stack",
+        "path": "docker"
+      }
+    ]
+  }
+}
+```
+
+- `name`：Docker Compose 项目名称。
+- `path`：相对于 app 目录的路径，该目录应包含 docker-compose.yaml。
+
+Docker 项目适合多服务应用、依赖数据库或缓存的应用，以及需要受控运行环境的应用。
+
+## 建议
+
+- 只声明应用实际需要的资源。
+- 资源名称应在版本之间保持稳定。
+- 不要将内部工具或内部数据目录作为共享资源暴露。
+- 用户可见的共享目录应在应用界面或更新说明中说明。
+
+---
+
+- 上一页: [应用权限](privilege.md)
+- 下一页: [应用入口](app-entry.md)
+
+---
+
+## 应用入口
+
+应用入口定义用户如何从飞牛 fnOS 打开应用，常用于注册桌面图标和注册文件打开方式。默认情况下，入口配置写在 `app/ui/config` 中。
+
+一个应用可以为不同用户任务提供一个或多个入口。本文使用端口服务作为示例，说明如何注册桌面图标，以及如何注册文件打开方式。CGI 和统一网关访问请参考 [index.cgi](index-cgi.md) 和 [统一网关](gateway-registration.md)。
+
+## 入口文件
+
+如果 `manifest` 中使用 `desktop_uidir=ui`，入口配置文件为：
+
+```text
+app/ui/config
+```
+
+常见结构：
+
+```text
+myapp/
+├── app/
+│   └── ui/
+│       ├── config
+│       └── images/
+│           ├── icon_64.png
+│           └── icon_256.png
+├── manifest
+└── config/
+```
+
+入口定义在 `.url` 字段下。入口 ID 应保持稳定，并使用 `appname` 作为前缀，例如 `myapp.main`。
+
+当应用存在多个入口时，可以在 `manifest` 中使用 `desktop_applaunchname` 指定应用中心应用卡片打开的入口。
+
+## 字段
+
+- `title`：用户看到的入口名称。
+- `icon`：相对于 UI 目录的图标路径。可使用 {0} 表示不同尺寸的图标，例如 images/icon_{0}.png。
+- `type`：打开方式。
+    - iframe：在飞牛 fnOS 桌面窗口内打开。
+    - url：在浏览器标签页或外部 Web 视图中打开。
+- `protocol`：http、https，或使用空字符串交给系统自适应处理。
+- `port`：服务端口。需要使用向导中收集的端口时，可以使用 ${wizard_port}。
+- `url`：入口打开的路径。需要使用向导中收集的路径时，可以使用 ${wizard_path}。
+- `allUsers`：控制入口是否对所有用户可见。
+- `fileTypes`：文件入口支持的文件扩展名。
+- `noDisplay`：在桌面隐藏入口，但保留文件操作入口。
+- `control`：可选字段，用于定义应用设置中的入口设置行为。
+    - control.accessPerm=editable：用户可以编辑该设置。
+    - control.accessPerm=readonly：用户可以查看但不能编辑。
+    - control.accessPerm=hidden：隐藏该设置。
+
+## 注册桌面图标
+
+下面的示例会注册一个桌面图标，用于在飞牛 fnOS 桌面窗口中打开应用服务：
+
+**app/ui/config**
+
+```json
+{
+  ".url": {
+    "myapp.main": {
+      "title": "My App",
+      "icon": "images/icon_{0}.png",
+      "type": "iframe",
+      "protocol": "http",
+      "port": "8080",
+      "url": "/",
+      "allUsers": true
+    }
+  }
+}
+```
+
+需要在飞牛 fnOS 桌面窗口内打开应用时，使用 `iframe`。需要完整浏览器能力时，使用 `url`。
+
+## 可见性示例
+
+如果某个入口只应对管理员可见，可以使用 `allUsers=false` 和 `control.accessPerm=readonly`：
+
+**app/ui/config**
+
+```json
+{
+  ".url": {
+    "myapp.admin": {
+      "title": "Admin Console",
+      "icon": "images/admin_{0}.png",
+      "type": "iframe",
+      "protocol": "http",
+      "port": "8080",
+      "url": "/admin",
+      "allUsers": false,
+      "control": {
+        "accessPerm": "readonly"
+      }
+    }
+  }
+}
+```
+
+## 注册文件打开方式
+
+当应用可以从文件管理器右键菜单打开或处理文件时，可以注册文件打开方式。
+
+**app/ui/config**
+
+```json
+{
+  ".url": {
+    "myapp.editor": {
+      "title": "Text Editor",
+      "icon": "images/editor_{0}.png",
+      "type": "iframe",
+      "protocol": "http",
+      "port": "8080",
+      "url": "/edit",
+      "allUsers": true,
+      "fileTypes": ["txt", "md", "json"],
+      "noDisplay": true
+    }
+  }
+}
+```
+
+用户通过该入口打开文件时，飞牛 fnOS 会在 URL 后追加 `path` 查询参数。
+
+```text
+http://localhost:8080/edit?path=/vol1/Users/admin/Documents/example.txt
+```
+
+请将文件路径视为用户输入。读取或修改文件前，需要验证访问权限。
+
+## 访问模型
+
+本文使用端口服务作为示例，因为它最适合展示桌面入口和文件入口的基础定义方式。
+
+- 端口服务：入口打开应用自己的服务端口。这种方式和 NAS 用户登录态无关，适合独立服务。
+- CGI：当应用需要一个轻量入口，并在系统访问域名下通过 NAS 登录态校验访问时，参考 index.cgi。
+- 统一网关：当应用需要复用系统访问域名、支持 WebSocket，或获取网关提供的用户上下文时，参考 统一网关。
+
+## 入口设计
+
+入口应保持克制。每个入口都应该对应一个明确的用户任务。
+
+- 使用清晰、符合预期的名称。
+- 入口 ID 使用应用名称作为前缀。
+- 仅限管理员使用的应用，建议同时使用 allUsers=false 和 control.accessPerm=readonly。
+- 只声明应用确实支持的文件类型。
+
+---
+
+- 上一页: [应用资源](resource.md)
+- 下一页: [index.cgi](index-cgi.md)
+
+---
+
+## index.cgi
+
+`index.cgi` 是一种基于 CGI 的轻量入口。应用提供可执行的 `app/ui/index.cgi` 文件，用户打开配置好的 CGI URL 时，飞牛 fnOS 会调用该文件。
+
+对于 CGI 入口，`protocol` 和 `port` 会被忽略。请求会沿用当前访问域名，直接按配置的路径访问。飞牛 fnOS 会在调用 CGI 入口前校验 NAS 用户登录态。
+
+## 适用场景
+
+`index.cgi` 适合简单静态页面，或需要兼容轻量包的场景。CGI 只处理普通 HTTP 请求，不支持 WebSocket。
+
+当应用需要后台进程、WebSocket、流式响应、长时间请求、高流量 API 或复杂 API 时，请使用端口服务或统一网关。
+
+## 入口配置
+
+CGI 入口通常使用以下路径：
+
+```text
+/cgi/ThirdParty/{appname}/index.cgi/
+```
+
+示例：
+
+**app/ui/config**
+
+```json
+{
+  ".url": {
+    "HelloFnos.Application": {
+      "title": "Hello fnOS",
+      "icon": "images/icon_{0}.png",
+      "type": "iframe",
+      "protocol": "http",
+      "port": "8080",
+      "url": "/cgi/ThirdParty/HelloFnos/index.cgi/",
+      "allUsers": true
+    }
+  }
+}
+```
+
+CGI 请求会使用当前访问域名和配置的 `url` 路径。`protocol` 和 `port` 不参与 CGI 路由。
+
+## 文件位置
+
+将可执行 CGI 文件放在 UI 目录中：
+
+```text
+app/ui/index.cgi
+```
+
+打包工具会在打包过程中处理可执行权限。如果在设备上手动测试，请确认该文件可以执行。
+
+## 静态文件示例
+
+以下示例会将 `index.cgi` 后面的请求路径映射到已安装的 `www` 目录。
+
+这只是静态文件服务的一种实现方式。应用也可以根据自己的路由需求实现不同的 CGI 逻辑。
+
+**app/ui/index.cgi**
+
+```bash
+#!/bin/bash
+
+BASE_PATH="/var/apps/HelloFnos/target/www"
+URI_NO_QUERY="${REQUEST_URI%%\?*}"
+REL_PATH="/"
+
+case "$URI_NO_QUERY" in
+  *index.cgi*)
+    REL_PATH="${URI_NO_QUERY#*index.cgi}"
+    ;;
+esac
+
+if [ -z "$REL_PATH" ] || [ "$REL_PATH" = "/" ]; then
+  REL_PATH="/index.html"
+fi
+
+TARGET_FILE="${BASE_PATH}${REL_PATH}"
+
+if echo "$TARGET_FILE" | grep -q '\.\.'; then
+  echo "Status: 400 Bad Request"
+  echo "Content-Type: text/plain; charset=utf-8"
+  echo ""
+  echo "Bad Request"
+  exit 0
+fi
+
+if [ ! -f "$TARGET_FILE" ]; then
+  echo "Status: 404 Not Found"
+  echo "Content-Type: text/plain; charset=utf-8"
+  echo ""
+  echo "404 Not Found"
+  exit 0
+fi
+
+case "${TARGET_FILE##*.}" in
+  html|htm) mime="text/html; charset=utf-8" ;;
+  css) mime="text/css; charset=utf-8" ;;
+  js) mime="application/javascript; charset=utf-8" ;;
+  png) mime="image/png" ;;
+  jpg|jpeg) mime="image/jpeg" ;;
+  svg) mime="image/svg+xml" ;;
+  *) mime="application/octet-stream" ;;
+esac
+
+echo "Content-Type: $mime"
+echo ""
+cat "$TARGET_FILE"
+```
+
+## 安全注意事项
+
+请将每个请求路径都视为用户输入。
+
+- 拒绝 .. 等目录穿越路径。
+- 只从预期的应用目录提供文件。
+- 对缺失或非法文件返回明确状态码。
+- 不要直接执行来自请求参数的命令。
+- 不要将请求路径拼接到 shell 命令中执行。
+
+---
+
+- 上一页: [应用入口](app-entry.md)
+- 下一页: [统一网关](gateway-registration.md)
+
+---
+
+## 统一网关
+
+统一网关为应用提供飞牛 fnOS 访问域名下的稳定系统 URL。发送到网关路径的请求会先由飞牛 fnOS 校验，再转发到应用本地 Unix Socket。
+
+当应用需要复用系统访问域名，同时运行长期服务、支持 WebSocket 或提供 API 时，可以使用统一网关。独立服务访问仍然可以使用端口服务，小型静态页面或简单包兼容场景也可以使用 `index.cgi`。
+
+## 选择访问模型
+
+| 能力 | `index.cgi` | 统一网关 |
+| --- | --- | --- |
+| 简单静态页面 | 适合 | 支持 |
+| 常驻服务 | 不推荐 | 适合 |
+| WebSocket | 不支持 | 支持 |
+| NAS 登录态 | 调用 CGI 前校验 | 转发到服务前校验，并提供用户 Header |
+| 性能 | 每次请求启动 CGI 进程 | 转发到长期运行的服务 |
+| 代码适配成本 | 静态页面或简单包通常改造较少 | 服务需要适配网关路由和鉴权 |
+| 运行方式 | 每次请求启动 CGI 进程 | 转发到应用服务 |
+| 常见路径 | `/cgi/ThirdParty/{appname}/index.cgi/` | `/app/{appname}` |
+
+当应用需要暴露自己的独立服务端口，且不需要接入 NAS 登录态时，可以使用端口服务。
+
+## 工作方式
+
+1. 应用通过 gatewayPrefix 注册公开路径。
+2. 应用服务监听 gatewaySocket 声明的 Unix Socket。
+3. 用户打开网关路径，例如 /app/myapp。
+4. 飞牛 fnOS 校验用户会话。
+5. 飞牛 fnOS 将请求转发到 /var/apps/myapp/target/app.sock。
+6. 应用在需要用户上下文时读取网关转发的用户 Header。
+
+## 入口配置
+
+在 `app/ui/config` 中声明网关入口：
+
+**app/ui/config**
+
+```json
+{
+  ".url": {
+    "myapp.main": {
+      "title": "My App",
+      "icon": "images/icon_{0}.png",
+      "type": "iframe",
+      "protocol": "",
+      "gatewayPrefix": "/app/myapp",
+      "gatewaySocket": "app.sock",
+      "url": "/app/myapp",
+      "allUsers": true
+    }
+  }
+}
+```
+
+该配置会注册：
+
+```text
+/app/myapp
+```
+
+请求会转发到：
+
+```text
+/var/apps/myapp/target/app.sock
+```
+
+统一网关入口由 `gatewayPrefix` 和 `gatewaySocket` 决定。`protocol` 和 `port` 会被忽略，不参与统一网关路由。
+
+## 字段规则
+
+- **`protocol`**：统一网关入口会忽略该字段。
+- **`port`**：统一网关入口会忽略该字段。
+- **`gatewayPrefix`**
+    - 使用 /app/{appname} 或 /app/{appname}/{customPath}。
+    - 路径应在版本之间保持稳定。
+    - 使用简单、URL 安全的名称。公开路径中避免使用点号。
+- **`gatewaySocket`**
+    - 只填写 Socket 文件名，例如 app.sock。
+    - Socket 文件应放在已安装应用的 target 目录下。
+    - 脚本中可使用 ${TRIM_APPDEST} 定位该目录。
+
+## 应用要求
+
+- 应用服务应监听 gatewaySocket 声明的 Unix Socket。
+- Docker 应用也可以使用统一网关。将 ${TRIM_APPDEST} 挂载到容器内，并让容器中的服务在该目录下创建对应的 Socket。
+- HTTP 和 WebSocket 路由应保持在声明的 gatewayPrefix 下。
+- 不要信任客户端传入的用户 ID。请使用飞牛 fnOS 转发的网关鉴权 Header。
+- 读取文件或执行用户相关操作前，请验证请求路径和输入。
+
+## 会话校验和用户 Header
+
+应用通过统一网关访问时，飞牛 fnOS 会先校验用户会话，再将请求转发给应用。
+
+网关确认用户已登录。应用仍然需要负责自己的业务鉴权规则。
+
+请求通过认证后，网关会通过 Header 转发用户信息：
+
+| Header | 说明 | 示例 |
+| --- | --- | --- |
+| `X-Trim-Userid` | 当前用户 UID | `1000` |
+| `X-Trim-Isadmin` | 当前用户是否为管理员 | `true` 或 `false` |
+| `X-Trim-Username` | 当前用户名 | `admin` |
+
+转发到应用的请求示例：
+
+**Forwarded request**
+
+```http
+GET /app/myapp/list HTTP/1.1
+X-Trim-Userid: 1000
+X-Trim-Isadmin: true
+X-Trim-Username: admin
+```
+
+应用侧使用：
+
+**Node.js**
+
+```js
+function getGatewayUser(req) {
+  return {
+    uid: req.headers["x-trim-userid"],
+    isAdmin: req.headers["x-trim-isadmin"] === "true",
+    username: req.headers["x-trim-username"]
+  };
+}
+```
+
+这些值可以作为网关提供的可信身份上下文使用，但应用仍需要执行自己的业务鉴权。
+
+## WebSocket
+
+WebSocket 可以复用同一个网关前缀和 Socket。建议将 WebSocket 路由放在稳定的子路径下，例如：
+
+```text
+/app/myapp/ws
+```
+
+前端示例：
+
+**WebSocket connection**
+
+```js
+const wsProtocol = window.location.protocol === "https:" ? "wss:" : "ws:";
+const wsUrl = `${wsProtocol}//${window.location.host}/app/myapp/ws`;
+
+const socket = new WebSocket(wsUrl);
+
+socket.onopen = () => {
+  socket.send(JSON.stringify({ type: "ping" }));
+};
+
+socket.onmessage = (event) => {
+  const message = JSON.parse(event.data);
+  console.log(message);
+};
+```
+
+通过网关建立的 WebSocket 连接，也会在连接建立时获得同样的身份上下文。连接建立后，应将连接绑定到 `X-Trim-Userid`。
+
+不要信任 WebSocket 消息中由客户端发送的用户 ID。
+
+## 鉴权和安全
+
+网关校验登录状态，不负责业务权限。应用仍应执行以下规则：
+
+- 用户只能访问自己的数据。
+- 管理接口需要管理员身份。
+- 高风险操作需要明确的权限检查。
+- 文件路径和记录 ID 需要结合当前用户进行校验。
+
+如果应用通过网关提供文件访问，请限制文件访问范围：
+
+- 标准化请求路径。
+- 拒绝 .. 目录穿越。
+- 只从预期目录提供文件。
+- 不暴露密钥、数据库、配置文件或私有日志。
+
+OAuth 回调等公开回调路径应保持窄而明确。未鉴权路径只开放所需的 HTTP 方法和数据。
+
+---
+
+- 上一页: [index.cgi](index-cgi.md)
+- 下一页: [用户向导](wizard.md)
+
+---
+
+## 用户向导
+
+向导用于在安装、升级、卸载或配置时收集用户输入。向导收集到的值会作为环境变量提供给生命周期脚本。
+
+只有当应用确实需要用户提供无法安全自动检测或默认处理的信息时，才使用向导。表单应聚焦于安装、运行或配置应用所必需的值。
+
+## 向导文件
+
+飞牛 fnOS 支持四种向导文件：
+
+- `wizard/install`：安装时显示。
+- `wizard/upgrade`：升级时显示。
+- `wizard/uninstall`：卸载时显示。
+- `wizard/config`：安装后从应用设置中显示。用户可以继续修改应用配置，提交后的值会继续作为环境变量提供给应用使用。
+
+## 基本结构
+
+每个向导文件都是一个由步骤组成的 JSON 数组。
+
+- `stepTitle`：步骤标题。
+- `items`：该步骤中显示的表单项。
+- `field`：字段名。收集到的值会成为同名环境变量。
+
+**wizard/install**
+
+```json
+[
+  {
+    "stepTitle": "Setup",
+    "items": [
+      {
+        "type": "text",
+        "field": "wizard_username",
+        "label": "Username",
+        "initValue": "admin",
+        "rules": [
+          {
+            "required": true,
+            "message": "Enter a username"
+          }
+        ]
+      }
+    ]
+  }
+]
+```
+
+字段 `wizard_username` 会变成名为 `wizard_username` 的环境变量。
+
+## 字段类型
+
+| 类型 | 用途 |
+| --- | --- |
+| `text` | 短文本、端口、路径、用户名等普通值 |
+| `password` | 不应明文显示的密钥或令牌 |
+| `radio` | 少量互斥选项 |
+| `checkbox` | 多选项 |
+| `select` | 较长的互斥选项列表 |
+| `switch` | 布尔风格选项 |
+| `tips` | 只读提示文本 |
+
+带选项字段示例：
+
+```json
+{
+  "type": "select",
+  "field": "wizard_database_type",
+  "label": "Database",
+  "initValue": "sqlite",
+  "options": [
+    {
+      "label": "SQLite",
+      "value": "sqlite"
+    },
+    {
+      "label": "PostgreSQL",
+      "value": "postgresql"
+    }
+  ]
+}
+```
+
+提示文本示例：
+
+```json
+{
+  "type": "tips",
+  "helpText": "Review the configuration before continuing."
+}
+```
+
+## 校验规则
+
+通过 `rules` 数组添加校验规则。
+
+```json
+{
+  "type": "text",
+  "field": "wizard_port",
+  "label": "Service port",
+  "rules": [
+    {
+      "required": true,
+      "message": "Enter a port"
+    },
+    {
+      "pattern": "^[0-9]+$",
+      "message": "Use numbers only"
+    }
+  ]
+}
+```
+
+常见规则：
+
+- `required`：必填。
+- `min` 和 `max`：长度或数值范围。
+- `len`：固定长度。
+- `pattern`：正则表达式。
+
+## 使用向导值
+
+向导值会作为环境变量提供给生命周期脚本。可以用于生成配置文件、选择安装模式、设置端口或路径，以及控制可选功能。
+
+**cmd/install_callback**
+
+```bash
+#!/bin/bash
+
+echo "Database type: $wizard_database_type"
+echo "Service port: $wizard_port"
+```
+
+脚本中应将向导值按字符串处理，并在使用前再次校验。
+
+## 字段命名
+
+- 使用稳定的字段名。修改字段名会改变环境变量名。
+- 自定义字段建议使用 wizard_ 前缀，例如 wizard_port。
+- 自定义向导字段不要使用 TRIM_ 前缀。该前缀保留给系统变量。
+- 尽量兼容已发布版本使用过的字段名。
+
+## 设计建议
+
+- 只询问应用安装、运行或配置所需的值。
+- 尽可能提供合理默认值。
+- 使用简短标签和清晰的校验信息。
+- 密钥类输入使用 password。
+- 不要将密钥写入日志。
+- 在生命周期脚本中使用前，再次校验输入值。
+
+---
+
+- 上一页: [统一网关](gateway-registration.md)
+- 下一页: [应用依赖](dependency.md)
+
+---
+
+## 应用依赖
+
+当应用依赖其他应用时，在 `manifest` 中使用 `install_dep_apps`。
+
+**manifest**
+
+```ini
+install_dep_apps=database:cache
+```
+
+## 依赖顺序
+
+声明多个依赖时，飞牛 fnOS 会从右到左安装和启用依赖。
+
+例如，`cache` 需要先于 `database` 准备完成时，可以这样声明：
+
+**manifest**
+
+```ini
+install_dep_apps=database:cache
+```
+
+依赖顺序应明确声明。嵌套依赖不会为当前应用递归解析。
+
+## 版本要求
+
+使用 `>` 声明依赖所需的最低版本：
+
+**manifest**
+
+```ini
+install_dep_apps=database>2.2.2:cache
+```
+
+只有应用依赖某个版本引入的特定行为时，才声明版本要求。
+
+## 嵌套依赖
+
+依赖检查不递归。如果应用同时需要 `database` 和 `cache`，即使其中一个也依赖另一个，也应在当前应用中直接声明二者。
+
+**manifest**
+
+```ini
+install_dep_apps=database:cache
+```
+
+## 建议
+
+- 只声明应用直接需要的依赖。
+- 在版本迭代中保持依赖名称稳定。
+- 在干净设备上测试安装，确认依赖链可用。
+- 依赖缺失或不可用时，显示清晰的用户可见错误信息。
+
+---
+
+- 上一页: [用户向导](wizard.md)
+- 下一页: [中间件服务](middleware.md)
+
+---
+
+## 中间件服务
+
+应用可以使用 Redis、MinIO 或 RabbitMQ 等中间件服务。请在 `manifest` 中通过 `install_dep_apps` 声明所需服务。
+
+## Redis
+
+**manifest**
+
+```ini
+install_dep_apps=redis
+```
+
+Python 示例：
+
+```python
+import redis
+
+pool = redis.ConnectionPool(
+    host="127.0.0.1",
+    port=6379,
+    db=1,
+    decode_responses=True,
+    max_connections=10,
+)
+
+client = redis.Redis(connection_pool=pool)
+client.lpush("my_list", "item1", "item2")
+items = client.lrange("my_list", 0, -1)
+print(items)
+```
+
+建议使用独立数据库编号或 key 前缀，避免与其他应用冲突。
+
+## MinIO
+
+**manifest**
+
+```ini
+install_dep_apps=minio
+```
+
+Python 示例：
+
+```python
+from minio import Minio
+
+client = Minio(
+    endpoint="127.0.0.1:9000",
+    access_key="your_access_key",
+    secret_key="your_secret_key",
+    secure=False,
+)
+
+bucket_name = "my-bucket"
+
+if not client.bucket_exists(bucket_name):
+    client.make_bucket(bucket_name)
+```
+
+请安全保存访问密钥，不要在应用包中硬编码生产凭据。
+
+## RabbitMQ
+
+**manifest**
+
+```ini
+install_dep_apps=rabbitmq
+```
+
+Python 示例：
+
+```python
+import pika
+
+credentials = pika.PlainCredentials("guest", "guest")
+connection = pika.BlockingConnection(
+    pika.ConnectionParameters(
+        host="127.0.0.1",
+        port=5672,
+        virtual_host="/",
+        credentials=credentials,
+    )
+)
+
+channel = connection.channel()
+channel.queue_declare(queue="my_queue", durable=True)
+channel.basic_publish(exchange="", routing_key="my_queue", body=b"hello")
+connection.close()
+```
+
+请使用应用专属的队列、交换机和路由键。
+
+## 建议
+
+- 只声明应用实际需要的中间件服务。
+- 在干净的飞牛 fnOS 设备上测试安装。
+- 服务不可用时，显示清晰的用户可见错误信息。
+- 不要将凭据提交到源码仓库或打包模板中。
+- 为数据库、桶、队列和 key 使用命名空间。
+
+---
+
+- 上一页: [应用依赖](dependency.md)
+- 下一页: [运行时环境](runtime.md)
+
+---
+
+## 运行时环境
+
+应用可以使用 Python、Node.js 或 Java 等打包运行时环境。请在 `manifest` 中通过 `install_dep_apps` 声明所需的运行时包。
+
+## Python
+
+**manifest**
+
+```ini
+install_dep_apps=python312
+```
+
+运行 Python 命令前，先将运行时路径加入 `PATH`：
+
+```bash
+export PATH=/var/apps/python312/target/bin:$PATH
+
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Node.js
+
+**manifest**
+
+```ini
+install_dep_apps=nodejs_v22
+```
+
+```bash
+export PATH=/var/apps/nodejs_v22/target/bin:$PATH
+
+node -v
+npm -v
+```
+
+## Java
+
+**manifest**
+
+```ini
+install_dep_apps=java-21-openjdk
+```
+
+```bash
+export PATH=/var/apps/java-21-openjdk/target/bin:$PATH
+
+java --version
+```
+
+## 建议
+
+- 声明应用实际使用的运行时包。
+- 在生命周期脚本中调用运行时命令前，将运行时 bin 目录加入 PATH。
+- 将应用自身依赖保存在应用目录或专用虚拟环境中。
+- 在干净的飞牛 fnOS 设备上测试应用包，确认运行时依赖可以正确安装。
+
+---
+
+- 上一页: [中间件服务](middleware.md)
+- 下一页: [图标](icon.md)
+
+---
+
+## 图标
+
+应用包需要提供包图标，应用入口也可以单独配置入口图标。包图标用于应用中心、安装包识别等场景；入口图标用于桌面图标、文件打开方式等用户入口。
+
+## 包图标
+
+应用包根目录需要包含两个图标文件：
+
+- ICON.PNG：64 x 64 px
+- ICON_256.PNG：256 x 256 px
+
+示例结构：
+
+```text
+myapp/
+├── ICON.PNG
+├── ICON_256.PNG
+├── app/
+├── config/
+├── cmd/
+└── manifest
+```
+
+## 设计要求
+
+- 格式：PNG 或 JPG
+- 色彩空间：sRGB
+- 文件大小：不超过 1024 KB
+- 画布：完整正方形图片
+- 圆角：图标视觉主体应使用圆角矩形风格。不要使用直角满铺的方形主体；圆角、留白和阴影应尽量与系统图标保持一致。
+
+两个尺寸应使用一致的视觉识别。图标在 64 x 64 px 下仍需要清晰可辨，重要内容不要贴近画布边缘，也不要依赖过细的文字或装饰细节。
+
+可以参考系统图标的圆角、留白和层次关系：
+
+![系统设置图标示例](../../assets/site/assets/images/icon-example-system-settings-2787823b1bb660e9518d03faed4b4a47.png)
+
+## 应用入口图标
+
+应用入口可以引用 UI 目录下的图标，用于注册桌面图标或注册文件打开方式。推荐将入口图标放在 `app/ui/images/` 下：
+
+```text
+myapp/
+└── app/
+    └── ui/
+        ├── config
+        └── images/
+            ├── icon_64.png
+            └── icon_256.png
+```
+
+在 `app/ui/config` 中通过 `icon` 字段引用：
+
+**app/ui/config**
+
+```json
+{
+  ".url": {
+    "myapp.main": {
+      "title": "My App",
+      "icon": "images/icon_{0}.png",
+      "type": "iframe",
+      "protocol": "http",
+      "port": "8080",
+      "url": "/",
+      "allUsers": true
+    }
+  }
+}
+```
+
+飞牛 fnOS 会将 `{0}` 替换为所需的图标尺寸，例如 `icon_64.png` 或 `icon_256.png`。
+
+入口配置的更多规则可参考 [应用入口](app-entry.md)。
+
+## 检查清单
+
+打包前建议确认：
+
+- 根目录包含 ICON.PNG 和 ICON_256.PNG。
+- 图标文件大小不超过 1024 KB。
+- 64 px 图标仍能看清主体。
+- 图标主体是圆角矩形风格，而不是直角方块铺满画布。
+- 如果入口配置了 images/icon_{0}.png，对应的 icon_64.png 和 icon_256.png 都已放入 UI 目录。
+
+---
+
+- 上一页: [运行时环境](runtime.md)
+- 下一页: [🧩　应用案例](../category/应用案例.md)
+
+---
+
+## Native 应用案例
+
+Native 应用是在飞牛 fnOS 上运行的进程。它可以提供 Web UI、后台服务、CLI 工具，或这些能力的组合。
+
+这一页从零创建一个 Notepad 示例应用，并将它打包成可以安装运行的 `.fpk` 文件。示例应用包含一个 Node.js 后端服务和一个 React 前端页面，用户可以在页面中编辑笔记，笔记内容会保存到飞牛 fnOS 创建的数据目录中。
+
+本案例使用：
+
+- 项目目录：notepad-demo
+- 应用包名：notepad
+- 访问方式：统一网关 /app/notepad
+- 网关 Socket：app.sock
+- 运行时依赖：nodejs_v22
+
+## 创建源码目录
+
+先创建项目目录：
+
+```bash
+mkdir -p notepad-demo/backend notepad-demo/frontend/src notepad-demo/scripts
+cd notepad-demo
+```
+
+目录结构如下：
+
+```text
+notepad-demo/
+├── backend/
+├── frontend/
+│   └── src/
+└── scripts/
+```
+
+## 根目录配置
+
+根目录使用 npm workspace 管理前后端项目：
+
+**notepad-demo/package.json**
+
+```json
+{
+  "name": "notepad-demo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev:frontend": "npm --workspace frontend run start",
+    "dev:backend": "npm --workspace backend run start",
+    "build:frontend": "npm --workspace frontend run build",
+    "serve:dist": "cross-env FRONTEND_DIST=../frontend/dist npm --workspace backend run start",
+    "start": "npm run build:frontend && npm run serve:dist",
+    "build": "node scripts/build-combined.js"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
+```
+
+## 后端服务
+
+后端提供两个接口：
+
+- GET /api/note：读取笔记内容。
+- POST /api/note：保存笔记内容。
+
+创建后端依赖文件：
+
+**notepad-demo/backend/package.json**
+
+```json
+{
+  "name": "notepad-backend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
+```
+
+创建后端服务：
+
+**notepad-demo/backend/server.js**
+
+```js
+const express = require("express");
+const fs = require("fs");
+const path = require("path");
+
+const app = express();
+const PORT = process.env.PORT || 5001;
+const SOCKET_PATH = process.env.SOCKET_PATH || "";
+const GATEWAY_PREFIX = process.env.GATEWAY_PREFIX || "/app/notepad";
+const DATA_DIR = process.env.DATA_DIR || path.join(__dirname, "data");
+
+app.use(express.json({ limit: "1mb" }));
+app.use(express.urlencoded({ extended: true }));
+
+fs.mkdirSync(DATA_DIR, { recursive: true });
+
+const router = express.Router();
+
+function getUserId(req) {
+  return req.headers["x-trim-userid"] || "local";
+}
+
+function getNoteFile(req) {
+  const userId = String(getUserId(req)).replace(/[^a-zA-Z0-9_-]/g, "_");
+  return path.join(DATA_DIR, `note-${userId}.txt`);
+}
+
+router.get("/api/note", (req, res) => {
+  try {
+    const noteFile = getNoteFile(req);
+    let content = "";
+    let updatedAt = null;
+
+    if (fs.existsSync(noteFile)) {
+      content = fs.readFileSync(noteFile, "utf8");
+      updatedAt = fs.statSync(noteFile).mtime;
+    }
+
+    res.json({ content, updatedAt, userId: getUserId(req) });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to read note" });
+  }
+});
+
+router.post("/api/note", (req, res) => {
+  try {
+    const noteFile = getNoteFile(req);
+    const content = typeof req.body.content === "string" ? req.body.content : "";
+
+    if (content.length > 1_000_000) {
+      return res.status(413).json({ error: "Content too large" });
+    }
+
+    fs.writeFileSync(noteFile, content, "utf8");
+    res.json({ ok: true, savedAt: fs.statSync(noteFile).mtime });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to write note" });
+  }
+});
+
+app.use("/", router);
+app.use(GATEWAY_PREFIX, router);
+
+const FRONTEND_DIST = process.env.FRONTEND_DIST;
+const LOCAL_PUBLIC = path.join(__dirname, "public");
+const STATIC_DIR = FRONTEND_DIST && fs.existsSync(FRONTEND_DIST)
+  ? FRONTEND_DIST
+  : (fs.existsSync(path.join(LOCAL_PUBLIC, "index.html")) ? LOCAL_PUBLIC : null);
+
+if (STATIC_DIR) {
+  app.use(GATEWAY_PREFIX, express.static(STATIC_DIR));
+  app.get(`${GATEWAY_PREFIX}/*`, (req, res) => {
+    res.sendFile(path.join(STATIC_DIR, "index.html"));
+  });
+
+  app.use(express.static(STATIC_DIR));
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(STATIC_DIR, "index.html"));
+  });
+}
+
+if (SOCKET_PATH) {
+  fs.rmSync(SOCKET_PATH, { force: true });
+  app.listen(SOCKET_PATH, () => {
+    console.log(`notepad server running on ${SOCKET_PATH}`);
+  });
+} else {
+  app.listen(PORT, () => {
+    console.log(`notepad server running at http://localhost:${PORT}`);
+  });
+}
+```
+
+这里使用两个环境变量：
+
+- PORT：本地开发时使用的服务端口。
+- SOCKET_PATH：安装到飞牛 fnOS 后使用的 Unix Socket 路径。
+- GATEWAY_PREFIX：统一网关访问前缀，本案例使用 /app/notepad。
+- DATA_DIR：笔记保存目录。安装到飞牛 fnOS 后，指向 data-share 创建的数据目录。
+
+统一网关会在请求转发时带上 `X-Trim-Userid`。示例使用该 Header 为不同用户保存不同的笔记文件。本地开发时没有这个 Header，会使用 `local` 作为用户标识。
+
+## 前端页面
+
+前端通过相对路径调用后端接口。这样本地运行和安装到飞牛 fnOS 后都不需要写死域名。
+
+创建前端依赖文件：
+
+**notepad-demo/frontend/package.json**
+
+```json
+{
+  "name": "notepad-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0"
+  }
+}
+```
+
+创建 Vite 配置：
+
+**notepad-demo/frontend/vite.config.mjs**
+
+```js
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+  base: "/app/notepad/",
+  plugins: [react()],
+  server: {
+    port: 5173,
+    proxy: {
+      "/app/notepad": "http://localhost:5001"
+    }
+  }
+});
+```
+
+创建 HTML 入口：
+
+**notepad-demo/frontend/index.html**
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notepad</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+```
+
+创建前端页面：
+
+**notepad-demo/frontend/src/main.jsx**
+
+```jsx
+import React, { useEffect, useState } from "react";
+import { createRoot } from "react-dom/client";
+
+function App() {
+  const [content, setContent] = useState("");
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    async function loadNote() {
+      try {
+        const res = await fetch("/app/notepad/api/note");
+        if (!res.ok) throw new Error("Failed to load");
+        const data = await res.json();
+        setContent(data.content || "");
+      } catch (err) {
+        setError(err.message || "Failed to load");
+      }
+    }
+
+    loadNote();
+  }, []);
+
+  async function saveNote() {
+    try {
+      setSaving(true);
+      const res = await fetch("/app/notepad/api/note", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ content })
+      });
+
+      if (!res.ok) throw new Error("Failed to save");
+      setError("");
+    } catch (err) {
+      setError(err.message || "Failed to save");
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  return (
+    <main style={{ maxWidth: 720, margin: "40px auto", fontFamily: "sans-serif" }}>
+      <h1>Notepad</h1>
+      <textarea
+        value={content}
+        onChange={(event) => setContent(event.target.value)}
+        rows={12}
+        style={{ width: "100%", boxSizing: "border-box" }}
+      />
+      <div style={{ marginTop: 12 }}>
+        <button onClick={saveNote} disabled={saving}>
+          {saving ? "Saving..." : "Save"}
+        </button>
+      </div>
+      {error ? <p style={{ color: "crimson" }}>{error}</p> : null}
+    </main>
+  );
+}
+
+createRoot(document.getElementById("root")).render(<App />);
+```
+
+## 本地运行
+
+安装依赖：
+
+```bash
+npm install --workspaces
+```
+
+启动本地预览：
+
+```bash
+npm run start
+```
+
+访问：
+
+```text
+http://localhost:5001/app/notepad
+```
+
+如果本地页面可以打开，并且能保存和重新读取笔记，再继续应用打包。本地开发时，前端构建路径和接口路径也使用 `/app/notepad`，用于提前模拟统一网关下的访问路径。
+
+## 创建应用打包目录
+
+在 `notepad-demo/` 目录下创建飞牛 fnOS 应用包目录：
+
+```bash
+fnpack create notepad
+```
+
+创建后目录结构如下：
+
+```text
+notepad-demo/
+├── backend/
+├── frontend/
+├── scripts/
+├── notepad/
+│   ├── app/
+│   ├── cmd/
+│   ├── config/
+│   │   ├── privilege
+│   │   └── resource
+│   ├── wizard/
+│   ├── manifest
+│   ├── LICENSE
+│   ├── ICON.PNG
+│   └── ICON_256.PNG
+├── package-lock.json
+└── package.json
+```
+
+`notepad/` 是应用包目录。后续运行文件、入口配置、权限和资源声明都放在这个目录中。
+
+## 编辑 manifest
+
+将 `notepad/manifest` 改为：
+
+**notepad-demo/notepad/manifest**
+
+```ini
+appname=notepad
+version=0.0.1
+desc=A simple notepad
+display_name=Notepad
+maintainer=someone
+distributor=someone
+platform=all
+desktop_uidir=ui
+desktop_applaunchname=notepad.main
+source=thirdparty
+install_dep_apps=nodejs_v22
+os_min_version=1.1.3100
+ctl_stop=true
+```
+
+字段说明：
+
+- appname=notepad 是应用包名。
+- platform=all 表示当前包不包含平台相关二进制，能适配不同架构。
+- desktop_uidir=ui 表示入口配置位于 app/ui/。
+- desktop_applaunchname=notepad.main 表示应用卡片打开 notepad.main 入口。
+- install_dep_apps=nodejs_v22 表示应用依赖 Node.js 运行时。
+- os_min_version=1.1.3100 表示应用使用统一网关，国内版需要声明最低系统版本。
+- 统一网关通过 Socket 转发请求，因此这里不需要声明 service_port。
+- ctl_stop=true 表示应用有启动、停止和状态检查逻辑。
+
+更多字段可参考 [Manifest](../core-concepts/manifest.md)。
+
+## 编辑权限
+
+将 `notepad/config/privilege` 改为：
+
+**notepad-demo/notepad/config/privilege**
+
+```json
+{
+  "defaults": {
+    "run-as": "package"
+  },
+  "username": "notepad",
+  "groupname": "notepad"
+}
+```
+
+这样应用进程会以 `notepad` 用户运行，降低应用异常或漏洞带来的系统风险。更多说明可参考 [应用权限](../core-concepts/privilege.md)。
+
+## 声明数据目录
+
+Notepad 需要保存用户笔记。将 `notepad/config/resource` 改为：
+
+**notepad-demo/notepad/config/resource**
+
+```json
+{
+  "data-share": {
+    "shares": [
+      {
+        "name": "notepad/notes"
+      }
+    ]
+  }
+}
+```
+
+安装时，系统会创建该目录，并为应用运行用户授予访问权限。应用运行时可通过 `TRIM_DATA_SHARE_PATHS` 读取系统创建的数据目录，也可以通过 `/var/apps/notepad/share/notes` 软链访问这个目录。
+
+一般情况下不需要写 `permission`。只有需要授权其他应用访问该目录时，再声明额外的访问权限。更多说明可参考 [应用资源](../core-concepts/resource.md)。
+
+## 编辑启停脚本
+
+将 `notepad/cmd/main` 改为：
+
+**notepad-demo/notepad/cmd/main**
+
+```bash
+#!/bin/bash
+
+LOG_FILE="${TRIM_PKGVAR}/app.log"
+PID_FILE="${TRIM_PKGVAR}/app.pid"
+
+export PATH=/var/apps/nodejs_v22/target/bin:$PATH
+
+APP_DIR="${TRIM_APPDEST}/server"
+DATA_DIR="${TRIM_DATA_SHARE_PATHS%%:*}"
+GATEWAY_PREFIX="/app/notepad"
+SOCKET_PATH="${TRIM_APPDEST}/app.sock"
+
+log_msg() {
+  echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> "$LOG_FILE"
+}
+
+check_process() {
+  local pid="$1"
+  kill -0 "$pid" 2>/dev/null
+}
+
+status_app() {
+  if [ -f "$PID_FILE" ]; then
+    local pid
+    pid="$(head -n 1 "$PID_FILE" | tr -d '[:space:]')"
+    if [ -n "$pid" ] && check_process "$pid"; then
+      return 0
+    fi
+    rm -f "$PID_FILE"
+  fi
+
+  return 1
+}
+
+start_app() {
+  if status_app; then
+    return 0
+  fi
+
+  log_msg "Starting Notepad..."
+  cd "$APP_DIR" || exit 1
+  DATA_DIR="$DATA_DIR" GATEWAY_PREFIX="$GATEWAY_PREFIX" SOCKET_PATH="$SOCKET_PATH" node server.js >> "$LOG_FILE" 2>&1 &
+  echo "$!" > "$PID_FILE"
+}
+
+stop_app() {
+  log_msg "Stopping Notepad..."
+
+  if [ ! -f "$PID_FILE" ]; then
+    return 0
+  fi
+
+  local pid
+  pid="$(head -n 1 "$PID_FILE" | tr -d '[:space:]')"
+
+  if [ -z "$pid" ] || ! check_process "$pid"; then
+    rm -f "$PID_FILE"
+    return 0
+  fi
+
+  kill -TERM "$pid" 2>> "$LOG_FILE" || true
+
+  local count=0
+  while check_process "$pid" && [ "$count" -lt 10 ]; do
+    sleep 1
+    count=$((count + 1))
+  done
+
+  if check_process "$pid"; then
+    kill -KILL "$pid" 2>> "$LOG_FILE" || true
+  fi
+
+  rm -f "$PID_FILE"
+  rm -f "$SOCKET_PATH"
+}
+
+case "$1" in
+  start)
+    start_app
+    ;;
+  stop)
+    stop_app
+    ;;
+  status)
+    if status_app; then
+      exit 0
+    fi
+    exit 3
+    ;;
+  *)
+    echo "Unknown command: $1" > "$TRIM_TEMP_LOGFILE"
+    exit 1
+    ;;
+esac
+```
+
+这个脚本会：
+
+- 将 Node.js 运行时加入 PATH。
+- 从 TRIM_DATA_SHARE_PATHS 获取笔记保存目录。
+- 将服务监听到 ${TRIM_APPDEST}/app.sock。
+- 启动 server.js，并写入 PID 文件。
+- 停止时先发送 TERM，超时后再发送 KILL。
+
+脚本中使用的环境变量可参考 [环境变量](../core-concepts/environment-variables.md)。
+
+## 配置桌面入口
+
+将 `notepad/app/ui/config` 改为：
+
+**notepad-demo/notepad/app/ui/config**
+
+```json
+{
+  ".url": {
+    "notepad.main": {
+     "title": "Notepad",
+     "icon": "images/icon_{0}.png",
+     "type": "iframe",
+      "protocol": "",
+      "gatewayPrefix": "/app/notepad",
+      "gatewaySocket": "app.sock",
+      "url": "/app/notepad",
+      "allUsers": true
+    }
+  }
+}
+```
+
+注意：
+
+- 入口 ID 使用 notepad 作为前缀，并与 manifest 中的 desktop_applaunchname 保持一致。
+- icon 使用 {0} 占位时，系统会按尺寸选择 icon_64.png、icon_256.png 等文件。
+- gatewaySocket=app.sock 对应生命周期脚本中创建的 ${TRIM_APPDEST}/app.sock。
+- protocol 和 port 不参与统一网关路由。
+- 通过统一网关访问时，飞牛 fnOS 会先校验 NAS 登录态，再把用户信息通过 Header 转发给应用。
+
+入口配置的更多规则可参考 [应用入口](../core-concepts/app-entry.md)。
+
+## 构建并生成 FPK
+
+创建构建脚本：
+
+**notepad-demo/scripts/build-combined.js**
+
+```js
+const fs = require("fs");
+const path = require("path");
+const { execSync } = require("child_process");
+
+const root = path.join(__dirname, "..");
+const frontendDir = path.join(root, "frontend");
+const backendDir = path.join(root, "backend");
+const outDir = path.join(root, "dist");
+const packDir = path.join(root, "notepad");
+const packServerDir = path.join(packDir, "app", "server");
+
+function run(command, cwd = process.cwd()) {
+  execSync(command, { stdio: "inherit", cwd });
+}
+
+function emptyDir(dir) {
+  if (fs.existsSync(dir)) {
+    fs.rmSync(dir, { recursive: true, force: true });
+  }
+  fs.mkdirSync(dir, { recursive: true });
+}
+
+run("npm run build", frontendDir);
+
+emptyDir(outDir);
+fs.cpSync(backendDir, outDir, {
+  recursive: true,
+  filter: (src) => !src.endsWith("node_modules")
+});
+
+fs.mkdirSync(path.join(outDir, "public"), { recursive: true });
+fs.cpSync(path.join(frontendDir, "dist"), path.join(outDir, "public"), {
+  recursive: true
+});
+
+const backendPkg = JSON.parse(
+  fs.readFileSync(path.join(backendDir, "package.json"), "utf8")
+);
+
+fs.writeFileSync(
+  path.join(outDir, "package.json"),
+  JSON.stringify({
+    name: "notepad-combined",
+    version: backendPkg.version || "1.0.0",
+    private: true,
+    main: "server.js",
+    type: backendPkg.type || "commonjs",
+    scripts: {
+      start: "node server.js"
+    },
+    dependencies: backendPkg.dependencies || {}
+  }, null, 2)
+);
+
+run("npm install --omit=dev", outDir);
+
+emptyDir(packServerDir);
+fs.cpSync(outDir, packServerDir, { recursive: true });
+
+run(`fnpack build --directory ${packDir}`);
+```
+
+执行构建：
+
+```bash
+npm run build
+```
+
+成功后会生成：
+
+```text
+notepad.fpk
+```
+
+## 安装测试
+
+将 `notepad.fpk` 安装到飞牛 fnOS 测试设备后，检查以下内容：
+
+- 应用是否能正常安装。
+- 应用卡片是否能打开 Notepad 页面。
+- 不同用户输入笔记后，是否只看到自己的内容。
+- 应用是否能启动、停止，并正确返回运行状态。
+- 笔记内容是否写入声明的数据目录。
+- 日志是否写入 TRIM_PKGVAR 下的日志文件。
+
+如果以上检查都通过，就得到了一个可以运行的 Native 应用包。
+
+---
+
+- 上一页: [🧩　应用案例](../category/应用案例.md)
+- 下一页: [Docker 应用案例](docker.md)
+
+---
+
+## Docker 应用案例
+
+当应用已经容器化，或更适合以一个或多个容器交付并由 Docker Compose 管理时，可以使用 Docker 应用模板。
+
+这一页从零创建一个 `hello-docker` 示例应用，并将它打包成可以安装运行的 `.fpk` 文件。示例应用使用 `nginx:alpine` 启动一个 Web 页面，用户可以从飞牛 fnOS 桌面入口打开它。
+
+本案例使用：
+
+- 应用包名：hello-docker
+- Docker 镜像：nginx:alpine
+- 服务端口：8080
+- 访问方式：端口入口
+
+如果应用只是一个简单的 Node.js、Python、Go 或二进制服务，也可以参考 [Native 应用案例](native.md)。
+
+## 创建 Docker 应用项目
+
+创建应用包目录：
+
+```bash
+fnpack create hello-docker --template docker
+cd hello-docker
+```
+
+生成后的目录大致如下：
+
+```text
+hello-docker/
+├── app/
+│   ├── docker/
+│   │   └── docker-compose.yaml
+│   └── ui/
+│       ├── config
+│       └── images/
+├── cmd/
+│   └── main
+├── config/
+│   ├── privilege
+│   └── resource
+├── wizard/
+├── manifest
+├── ICON.PNG
+└── ICON_256.PNG
+```
+
+其中：
+
+- app/docker/docker-compose.yaml 存放 Docker Compose 编排文件。
+- config/resource 声明 Docker 项目资源。
+- cmd/main 负责返回应用运行状态。
+- app/ui/config 用于注册桌面图标或其他入口。
+
+## 编辑 manifest
+
+将 `manifest` 改为：
+
+**hello-docker/manifest**
+
+```ini
+appname=hello-docker
+version=1.0.0
+display_name=Hello Docker
+desc=A minimal Docker application.
+source=thirdparty
+platform=all
+maintainer=Example Team
+distributor=Example Team
+desktop_uidir=ui
+desktop_applaunchname=hello-docker.main
+service_port=8080
+checkport=true
+ctl_stop=true
+```
+
+说明：
+
+- platform=all 适用于不包含平台相关二进制的应用包。镜像本身仍需要支持目标设备架构。
+- service_port=8080 表示应用在宿主机上使用的访问端口。
+- desktop_applaunchname=hello-docker.main 指向应用卡片打开的入口 ID。
+- ctl_stop=true 表示应用中心显示启动、停止和运行状态。
+
+更多字段可参考 [Manifest](../core-concepts/manifest.md)。
+
+## 准备页面文件
+
+创建一个要由 nginx 提供的页面：
+
+```bash
+mkdir -p app/docker/html
+```
+
+写入页面文件：
+
+**hello-docker/app/docker/html/index.html**
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Docker</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        display: grid;
+        min-height: 100vh;
+        place-items: center;
+        background: #f5f7fb;
+        color: #1f2937;
+      }
+      main {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Hello Docker</h1>
+      <p>This page is served by nginx inside a Docker container.</p>
+    </main>
+  </body>
+</html>
+```
+
+## 编写 Docker Compose
+
+将 `app/docker/docker-compose.yaml` 改为：
+
+**hello-docker/app/docker/docker-compose.yaml**
+
+```yaml
+services:
+  web:
+    image: nginx:alpine
+    container_name: hello-docker-web
+    restart: unless-stopped
+    ports:
+      - "${TRIM_SERVICE_PORT}:80"
+    volumes:
+      - "${TRIM_APPDEST}/docker/html:/usr/share/nginx/html:ro"
+```
+
+这个 Compose 文件会：
+
+- 使用 nginx:alpine 启动 Web 服务。
+- 将容器端口 80 映射到 manifest.service_port 声明的端口。
+- 将应用包中的 app/docker/html 目录挂载到 nginx 的网页目录。
+
+Compose 文件可以使用飞牛 fnOS 提供的环境变量。常用变量包括：
+
+- TRIM_SERVICE_PORT：manifest.service_port 声明的服务端口。
+- TRIM_APPDEST：应用安装后的目标目录。
+- TRIM_PKGVAR：应用运行时数据目录。
+- TRIM_DATA_SHARE_PATHS：config/resource 声明的数据共享路径。
+
+更多变量可参考 [环境变量](../core-concepts/environment-variables.md)。
 
 > [!NOTE]
-> 手动安装入口仅用于应用测试用途，不得用于应用分发。温馨提醒，在系统后续更新中，将补充签名校验逻辑。
+> 如果应用要同时支持 x86 和 ARM 设备，请确认使用的镜像支持对应架构。应用包可以声明 `platform=all`，但镜像不支持目标架构时，容器仍然无法启动。
 
-手动安装入口默认关闭，你可以 ssh 登录飞牛 fnOS 后输入以下命令开启
+## 声明 Docker 项目资源
 
-```bash
-appcenter-cli manual-install enable
+将 `config/resource` 改为：
+
+**hello-docker/config/resource**
+
+```json
+{
+  "docker-project": {
+    "projects": [
+      {
+        "name": "hello-docker",
+        "path": "docker"
+      }
+    ]
+  }
+}
 ```
 
-## 查看启动停止日志
+字段说明：
 
-按照 `cmd/main` 的配置，日志位置为 `/var/apps/App.Native.HelloFnosAppCenter/var/info.log`，可检查是否正常运行
+- docker-project.projects[].name：Docker Compose 项目名称，应保持稳定。
+- docker-project.projects[].path：相对于 app/ 目录的路径。这里指向 app/docker/。
 
-## 点击桌面图标
+如果应用需要让用户在文件管理器中访问数据，再额外声明 `data-share`。更多资源声明可参考 [应用资源](../core-concepts/resource.md)。
 
-安装并启动完成后，桌面将出现名为 **应用中心案例** 的图标，点击即可访问应用
+## 权限配置
+
+Docker 应用通常由容器承载主要进程，`config/privilege` 不用于指定容器内进程身份。这里保留默认的 package 配置，主要用于保持包结构完整，也便于后续应用形态调整或补充本地脚本。
+
+将 `config/privilege` 改为：
+
+**hello-docker/config/privilege**
+
+```json
+{
+  "defaults": {
+    "run-as": "package"
+  },
+  "username": "hello-docker",
+  "groupname": "hello-docker"
+}
+```
+
+如果应用额外包含本地脚本或原生进程，再根据实际需要调整权限配置。更多说明可参考 [应用权限](../core-concepts/privilege.md)。
+
+## 运行状态检查
+
+Docker 应用的启动和停止由飞牛 fnOS 根据 Docker 项目资源处理。`cmd/main` 中的 `start` 和 `stop` 通常不需要额外操作，但 `status` 仍需要准确判断应用是否正在运行。
+
+将 `cmd/main` 改为：
+
+**hello-docker/cmd/main**
+
+```bash
+#!/bin/bash
+
+CONTAINER_NAME="hello-docker-web"
+
+is_running() {
+  docker inspect "$CONTAINER_NAME" 2>/dev/null | grep -q '"Status": "running"'
+}
+
+case "$1" in
+  start)
+    exit 0
+    ;;
+  stop)
+    exit 0
+    ;;
+  status)
+    if is_running; then
+      exit 0
+    fi
+    exit 3
+    ;;
+  *)
+    echo "Unknown command: $1" > "$TRIM_TEMP_LOGFILE"
+    exit 1
+    ;;
+esac
+```
+
+选择状态检查容器时，建议使用最能代表应用可用性的容器。这个示例只有一个容器，所以直接检查 `hello-docker-web`。
+
+## 配置桌面入口
+
+将 `app/ui/config` 改为：
+
+**hello-docker/app/ui/config**
+
+```json
+{
+  ".url": {
+    "hello-docker.main": {
+      "title": "Hello Docker",
+      "icon": "images/icon_{0}.png",
+      "type": "iframe",
+      "protocol": "http",
+      "port": "8080",
+      "url": "/",
+      "allUsers": true
+    }
+  }
+}
+```
+
+注意：
+
+- 入口 ID 使用 hello-docker 作为前缀，并与 manifest 中的 desktop_applaunchname 保持一致。
+- port 应与 manifest.service_port 和 Compose 端口映射保持一致。
+- 入口配置的更多规则可参考 应用入口。
+
+## 打包和验证
+
+在应用包目录执行：
+
+```bash
+fnpack build
+```
+
+成功后会生成：
+
+```text
+hello-docker.fpk
+```
+
+将 `hello-docker.fpk` 安装到飞牛 fnOS 测试设备后，检查以下内容：
+
+- 应用是否能正常安装。
+- Docker 镜像是否能拉取。
+- 容器是否按预期启动和停止。
+- cmd/main status 是否能正确返回运行状态。
+- 应用卡片是否能打开 Hello Docker 页面。
+- 目标设备架构是否被镜像支持。
+
+**可选：改用统一网关**
+
+Docker 应用也可以使用统一网关，而不是直接暴露宿主机端口。做法是将应用安装目录 `${TRIM_APPDEST}` 挂载到容器内，让容器中的服务在该目录下创建 Unix Socket。
+
+入口配置中使用 `gatewayPrefix` 和 `gatewaySocket`：
+
+**hello-docker/app/ui/config**
+
+```json
+{
+  ".url": {
+    "hello-docker.main": {
+      "title": "Hello Docker",
+      "icon": "images/icon_{0}.png",
+      "type": "iframe",
+      "protocol": "",
+      "gatewayPrefix": "/app/hello-docker",
+      "gatewaySocket": "app.sock",
+      "url": "/app/hello-docker",
+      "allUsers": true
+    }
+  }
+}
+```
+
+Compose 中将 `${TRIM_APPDEST}` 挂载到容器内，并把 Socket 路径传给服务：
+
+**hello-docker/app/docker/docker-compose.yaml**
+
+```yaml
+services:
+  web:
+    image: my-app:latest
+    container_name: hello-docker-web
+    restart: unless-stopped
+    volumes:
+      - "${TRIM_APPDEST}:/app/target:rw"
+    environment:
+      GATEWAY_SOCKET: /app/target/app.sock
+```
+
+容器内的 Web 服务需要监听 `/app/target/app.sock`。宿主机上对应的 Socket 路径为：
+
+```text
+/var/apps/hello-docker/target/app.sock
+```
+
+统一网关会把 `/app/hello-docker` 下的请求转发到这个 Socket。`protocol` 和 `port` 不参与统一网关路由。
+
+如果应用只通过统一网关提供访问入口，可以不依赖 `manifest.service_port` 和端口入口；如果应用同时提供独立端口访问和统一网关访问，则需要分别维护端口映射和网关 Socket。
+
+更多规则可参考 [统一网关](../core-concepts/gateway-registration.md)。
+
+**排查要点**
+
+- 入口打不开：检查 manifest.service_port、docker-compose.yaml 中映射到宿主机的端口，以及 app/ui/config 中入口的 port 是否一致。
+- 状态一直显示未运行：确认 cmd/main 中的 CONTAINER_NAME 与 Compose 文件中的 container_name 一致。没有写 container_name 时，Docker Compose 会生成项目相关的容器名称，脚本中需要按实际名称检查。
+- 镜像无法启动：确认目标设备可以拉取镜像，并确认镜像支持设备架构。nginx:alpine 是多架构镜像，适合作为入门示例；实际应用镜像也需要做同样检查。
 
 ---
 
-- 上一页: [✨　创建应用](create-application.md)
-- 下一页: [📤　上架应用](publish-application.md)
+- 上一页: [Native 应用案例](native.md)
+- 下一页: [🛠️　开发工具](../category/️开发工具.md)
 
 ---
 
-## 20251216 更新日志
+## appcenter-cli
 
-- 修复暗色主题模式下首页及Footer显示不友好的问题
-- 优化首页一级分类命名，开发过程 "四部走"，新人按顺序阅读，成手按需快速定位查阅
-- manifest 新增 应用更新 分类,增加 change_log 属性
-- fnpack优化，补全注释，工具更新到V1.0.4 版本
-- 页面右上角全局添加搜索插件，使文档可以支持关联检索功能
-- 移动原有 创建应用 文档到 开发指南 => 【实战】Native原生应用 分类教程
-- Docker应用文档注释补全，内容优化
-- 优化新版 创建应用 文档教学案例（HelloFnosAppCenter），改为前端基础开发语言 Html/Javascript/CSS，方便不同阶段的开发者更快速的了解应用中心开发流程
+`appcenter-cli` 是飞牛 fnOS 设备上的应用中心命令行工具，适合本地调试、重复安装测试和自动化流程。普通手动测试建议优先通过应用中心界面完成。
+
+## 安装 FPK 包
+
+```bash
+appcenter-cli install-fpk myapp.fpk
+```
+
+如果应用包含安装向导，可以通过环境变量文件传入配置：
+
+```bash
+appcenter-cli install-fpk myapp.fpk --env config.env
+```
+
+环境变量文件示例：
+
+**config.env**
+
+```ini
+wizard_admin_username=admin
+wizard_database_type=sqlite
+wizard_app_port=8080
+wizard_agree_terms=true
+```
+
+包含账号、密码、Token 等敏感信息的环境变量文件，不应提交到代码仓库。
+
+## 从本地目录安装
+
+开发过程中，如果应用项目已经位于飞牛 fnOS 测试设备上，可以直接从项目目录安装：
+
+```bash
+cd /path/to/myapp
+appcenter-cli install-local
+```
+
+该命令会完成本地打包和安装，适合快速验证当前开发版本。
+
+## 默认安装位置
+
+查看当前默认安装位置：
+
+```bash
+appcenter-cli default-volume
+```
+
+设置默认安装位置：
+
+```bash
+appcenter-cli default-volume 1
+```
+
+## 应用管理
+
+查看已安装应用：
+
+```bash
+appcenter-cli list
+```
+
+启动应用：
+
+```bash
+appcenter-cli start myapp
+```
+
+停止应用：
+
+```bash
+appcenter-cli stop myapp
+```
+
+## 使用建议
+
+- 手动安装和交互式测试优先使用应用中心界面。
+- 需要重复安装、脚本化测试或 CI 流程时，再使用 appcenter-cli。
+- 测试包含向导的应用时，提前准备环境变量文件。
+- 发布前建议在干净的飞牛 fnOS 测试设备上安装 .fpk 并完成验证。
 
 ---
 
-- 上一页: [🔄　文档更新日志](../category/文档更新日志.md)
-- 下一页: [20251231 更新日志](20251231.md)
+- 上一页: [fnpack](fnpack.md)
+- 下一页: [📝　更新日志](../category/更新日志.md)
 
 ---
 
-## 20251231 更新日志
+## 2026-07-05
 
-- 文档加入New! 及 Update! 等徽标样式，方便快速查阅新增特性
-- 重新调整文档结构并补全说明，方便阅读更加流畅
-- 开发指南 >【基础】环境变量 新增 获取授权目录列表
-- 应用入口（entry实体）新增 配置文件支持环境变量特性，更新 `protocol` 字段，协议为空自适应https
-- Manifest文件更新，基本信息 => 系统要求，废除原有 `arch` 字段，改为 `platform` 字段用于多架构开发适配
-- 一级分类添加 文档更新日志 方便开发者查阅各版本更新内容，文档内通过徽标进行二次标记（仅记录最后版本差异化新增及更新）
-- 架构概述 分类下新增 应用运行状态管理 分类，原有生命周期管理中的 应用状态监控 / 应用启动流程 / 应用停止流程 移至新分类
-- 架构概述 分类下新增 应用错误异常展示处理 分类，介绍脚本执行过程中发生错误时，如何进行处理并将错误信息返回给前端用户。
-- 开发指南 >【基础】环境变量 更新 临时日志 分类，通过 `TRIM_TEMP_LOGFILE` 环境变量透传错误信息给用户
-- CLI开发工具 > fnpack 更新1.2.0版本，补齐打包错误校验，新增Linux ARM版本
+本次更新优化了文档结构和应用案例，方便开发者更快理解应用开发流程。
+
+## 主要变化
+
+- fnpack 更新至 V1.2.3。
+- 新增 llms.txt 和 llms-full.txt，方便 AI 工具读取文档索引和完整内容。
+- 优化部分描述，提升文档整体一致性。
 
 ---
 
-- 上一页: [20251216 更新日志](20251216.md)
-- 下一页: [20260509 更新日志](20260509.md)
+- 上一页: [📝　更新日志](../category/更新日志.md)
+- 下一页: [2026-05-09](20260509.md)
 
 ---
 
-## 20260509 更新日志
+## 2026-05-09
 
-- 开发指南 >【进阶】新增 统一网关注册 文档，介绍应用在 fnOS V1.1.3100 及以上版本接入统一网关的方式
-- 开发指南 >【进阶】新增 登录认证 文档，介绍 fnOS V1.1.3100 及以上版本的统一网关登录态校验和用户信息 Header 透传机制
+本次更新补充统一网关相关文档，用于说明应用如何复用飞牛 fnOS 访问域名提供服务。
+
+## 主要变化
+
+- 新增统一网关文档，介绍通过 gatewayPrefix 和 gatewaySocket 注册应用访问路径。
+- 补充统一网关的登录态校验说明，以及网关转发给应用的用户信息 Header。
+- 补充 WebSocket 接入方式，说明长连接请求如何通过统一网关转发到应用服务。
+
+## 适用场景
+
+统一网关适合需要复用系统访问域名、接入 NAS 登录态、提供 API 或支持 WebSocket 的应用。简单静态页面或兼容已有包时，也可以继续使用 `index.cgi`。
 
 ---
 
-- 上一页: [20251231 更新日志](20251231.md)
+- 上一页: [2026-07-05](20260705.md)
+- 下一页: [2025-12-31](20251231.md)
+
+---
+
+## 2025-12-31
+
+本次更新调整了文档组织方式，并补充多架构、环境变量和打包工具相关说明。
+
+## 主要变化
+
+- 增加文档更新日志分类，便于查看不同阶段的文档变化。
+- 调整部分文档结构，使阅读顺序更接近应用开发流程。
+- 增加 New、Update 等文档标记，用于提示新增或更新内容。
+
+## 开发概念
+
+- 环境变量文档新增授权目录列表相关说明。
+- 应用入口配置支持使用环境变量。
+- 应用入口 protocol 字段支持为空，由系统根据当前访问方式自适应处理。
+- manifest 中废弃原 arch 字段，改用 platform 表示应用支持的架构范围。
+
+## 工具更新
+
+- fnpack 更新至 V1.2.0。
+- 补充打包前校验规则。
+- 新增 Linux ARM 版本下载。
+
+---
+
+- 上一页: [2026-05-09](20260509.md)
+- 下一页: [2025-12-16](20251216.md)
+
+---
+
+## 2025-12-16
+
+本次更新主要优化文档结构、搜索能力和入门示例。
+
+## 主要变化
+
+- 修复暗色主题下首页和 Footer 的显示问题。
+- 优化首页一级分类命名，让新开发者可以按顺序阅读，熟悉流程的开发者也能快速定位内容。
+- 在页面右上角加入全局搜索，支持文档内容检索。
+- 调整 创建应用 文档位置，并更新为更容易理解的入门案例。
+
+## 内容更新
+
+- manifest 新增应用更新相关说明，并增加 change_log 字段。
+- fnpack 更新至 V1.0.4，补充命令说明和注释。
+- Docker 应用文档补充注释并优化说明。
+- 入门示例调整为 HTML、JavaScript、CSS 静态页面，降低初次阅读门槛。
+
+---
+
+- 上一页: [2025-12-31](20251231.md)

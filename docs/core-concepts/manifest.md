@@ -1,131 +1,110 @@
-# 📚 【基础】Manifest
+# Manifest
 
 > 原始页面: [https://developer.fnnas.com/docs/core-concepts/manifest/](https://developer.fnnas.com/docs/core-concepts/manifest/)
 
-> [!NOTE]
-> 本文档于 **2025-12-31** 重新调整了内容结构，并新增了部分内容。
+`manifest` 文件用于描述应用包。它放在应用包根目录下，没有文件扩展名。
 
-manifest 文件就像是应用的"身份证"，它告诉飞牛 fnOS 系统您的应用是谁、需要什么、怎么运行。这个文件必须放在应用包的根目录下，文件名就叫 `manifest`（没有扩展名）。
+飞牛 fnOS 会使用这个文件识别应用、在应用中心中展示应用、检查兼容性，并准备运行环境。
 
-## 基本信息
+## 基础信息
 
-这些是每个应用都必须提供的基本信息：
+- `appname`：应用唯一标识。
+- `version`：应用版本，例如 1.0.0 或 2.1.3-beta。
+- `display_name`：显示在应用中心、应用设置和用户界面中的名称。
+- `desc`：应用描述。必要时可以使用 HTML 内容。
+- `source`：应用来源。第三方应用使用 thirdparty。
 
-### 应用标识
+## 平台支持
 
-- `appname` - 应用的唯一标识符，就像人的身份证号一样，在整个系统中必须是唯一的
-- `version` - 应用版本号，格式为 x[.y[.z]][-build]，例如：1.0.0、2.1.3-beta
-- `display_name` - 在应用中心和应用设置中显示的名称，用户看到的就是这个名字
-- `desc` - 应用的详细介绍，支持 HTML 格式，可以包含链接、图片等
-
-### 系统要求 Update!
-
-- **`arch`** - 架构类型，目前固定为 `x86_64`废弃
-- `platform` - 架构类型，缺省时默认值： x86，（⚠️注意：不支持多个值填写）New!V1.1.8+
-    - 声明为 x86 时，应用仅支持 x86 架构
-    - 声明为 arm 时，应用仅支持 arm 架构
-    - 声明为 all 时，表示应用支持所有架构，不区分平台，所有平台都可以下载安装。例如Docker应用。
-- `source` - 应用来源，固定为 thirdparty
+- `platform`：应用包支持的硬件架构。
+    - x86：支持 x86 设备。
+    - arm：支持 ARM 设备。
+    - all：同时支持 x86 和 ARM 设备。仅当应用包不包含特定架构二进制时使用。
 
 ## 开发者信息
 
-这些信息帮助用户了解应用的开发者和发布者：
+- `maintainer`：开发者或团队名称。
+- `maintainer_url`：开发者网站或联系方式。
+- `distributor`：发布者名称。如果与开发者不同，可单独填写。
+- `distributor_url`：发布者网站或联系方式。
 
-- `maintainer` - 应用开发者或开发团队名称
-- `maintainer_url` - 开发者网站或联系方式
-- `distributor` - 应用发布者（可能与开发者不同）
-- `distributor_url` - 发布者网站
+## 兼容范围
 
-## 安装和运行控制
+- `os_min_version`：支持的最低飞牛 fnOS 版本。
+- `os_max_version`：支持的最高飞牛 fnOS 版本。如果应用存在明确的兼容上限，可填写该字段。
 
-### 系统兼容性
+请根据实际测试过的版本设置这些字段，不要声明超过应用真实支持能力的范围。
 
-- `os_min_version` - 支持的最低系统版本，例如：0.9.0
-- `os_max_version` - 支持的最高系统版本，例如：0.9.100
+## 运行控制
 
-### 应用控制
+- `ctl_stop`：控制应用中心是否显示启动和停止操作。
+    - true：显示启动、停止和运行状态。
+    - false：隐藏这些控制项。
 
-- `ctl_stop` - 是否显示启动/停止功能，默认为 true
-    - 设置为 false 时，应用中心将隐藏启动、停止按钮和运行状态
-    - 适用于那些需要无进程应用或不应该被用户手动控制的应用
+静态页面、配置型应用，或不应由用户手动启动和停止的应用，可使用 `ctl_stop=false`。
 
-### 安装位置
+## 安装
 
-- `install_type` - 安装类型，默认为空
-    - 设置为 root 时，应用会安装到系统分区 /usr/local/apps/@appcenter/
-    - 为空时，用户可以在安装向导中选择存储位置 /vol${x}/@appcenter/
+- **`install_type`**：安装目标。
+    - 空值：安装时由用户选择存储位置。
+    - root：安装到系统分区。
+- **`install_dep_apps`**：依赖应用。
+    - 多个依赖使用 : 分隔。
+    - 使用 > 声明最低版本，例如 database>2.2.2:cache。
 
-### 依赖管理
+## 桌面集成
 
-- `install_dep_apps` - 依赖应用列表
-    - 格式：app1>2.2.2:app2:app3
-    - 系统会按照列表顺序自动安装依赖应用
-    - 版本号前的 > 表示最低版本要求
+- `desktop_uidir`：相对于应用目录的 UI 目录，默认值为 ui。
+- `desktop_applaunchname`：当应用存在多个入口时，用于指定从应用中心应用卡片打开的入口 ID。该 ID 应与 {desktop_uidir}/config 中定义的入口一致。
 
-## 用户界面
+## 端口
 
-### 桌面集成
+- `service_port`：应用服务端口。
+- `checkport`：控制飞牛 fnOS 是否在启动应用前检查端口，默认值为 true。
 
-- `desktop_uidir` - UI 组件目录路径
-    - 相对于应用根目录的路径，默认为 ui
-    - 这个目录存放应用的 Web 界面文件
-- `desktop_applaunchname` - 应用中心启动入口
-    - 用户点击应用卡片上的"打开"按钮时，系统会启动这个 entry ID，对应 {desktop_uidir}/config 文件中定义的某个入口
+不监听固定端口的应用可以省略 `service_port`，或在适合的情况下设置 `checkport=false`。
 
-## 端口管理
+## 授权
 
-### 端口检查
+- `disable_authorization_path`：控制应用设置页是否显示授权目录设置。
+    - false：用户可以配置授权目录。
+    - true：隐藏授权目录设置。
 
-- `service_port` - 应用监听的端口号
-    - 系统会在启动应用前检查这个端口是否被占用
-    - 目前只支持单个端口设置
-- `checkport` - 是否启用端口检查，默认为 true
-    - 设置为 false 时，系统不会检查端口占用情况
-    - 适用于不需要固定端口的应用
+仅当应用不需要用户选择文件或目录访问权限时，才使用 `true`。
 
-## 权限控制
+## 更新说明
 
-- `disable_authorization_path` - 是否禁用授权目录功能，默认为 false
-    - 设置为 true 时，应用设置页面不会显示授权目录操作
-    - 适用于不需要访问特定系统目录的应用
+- `changelog`：应用更新时或应用中心更新相关界面中展示的更新说明。
 
-## 应用更新
-
-- `changelog` - 应用更新日志
-    - 用于应用升级时展示更新日志内容
-    - 应用中心可用更新页面展示的更新日志内容，在应用详情页更新时将展示为"新功能"介绍
+更新说明应保持简洁，并面向用户表达。
 
 ## 示例
 
-下面是一个典型的 manifest 文件示例：
+**manifest**
 
-```text
-appname=myapp
+```ini
+appname=HelloFnos
 version=1.0.0
-display_name=我的应用
-desc=这是一个示例应用，展示了 manifest 文件的基本用法
-arch=x86_64
+display_name=Hello fnOS
+desc=一个最小的飞牛 fnOS 应用。
 source=thirdparty
+platform=all
 
-maintainer=张三
+maintainer=Example Team
 maintainer_url=https://example.com
-distributor=示例公司
-distributor_url=https://company.com
 
-os_min_version=0.9.0
+os_min_version=1.2.0
 
 desktop_uidir=ui
-desktop_applaunchname=myapp.APPLICATION
+desktop_applaunchname=HelloFnos.Application
 
-service_port=8080
-checkport=true
-
-install_dep_apps=mariaDB:redis
+ctl_stop=false
+checkport=false
 ```
 
-这个文件定义了应用的基本信息、开发者信息、系统要求、UI 配置、端口设置和依赖关系。系统会根据这些信息来正确安装、配置和运行您的应用。
+对于服务类应用，还需要声明服务端口，并根据是否允许用户在应用中心中启动和停止应用来设置 `ctl_stop`。
 
 ---
 
-- 上一页: [📚 【基础】架构概述](framework.md)
-- 下一页: [📚 【基础】环境变量](environment-variables.md)
+- 上一页: [应用框架](framework.md)
+- 下一页: [环境变量](environment-variables.md)

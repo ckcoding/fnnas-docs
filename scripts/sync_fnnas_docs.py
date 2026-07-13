@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import collections
 import json
 import re
 import shutil
 import sys
-import xml.etree.ElementTree as ET
 from dataclasses import dataclass
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlparse
@@ -144,20 +144,57 @@ def make_session() -> requests.Session:
 
 
 def fetch_sitemap_routes(session: requests.Session) -> list[str]:
-    response = session.get(SITEMAP_URL, timeout=30)
-    response.raise_for_status()
-    root = ET.fromstring(response.content.decode("utf-8", errors="replace"))
-    routes: list[str] = []
-    seen: set[str] = set()
+    """Discover doc routes by crawling sidebar links instead of sitemap.xml.
 
-    for loc in root.findall(".//{*}loc"):
-        if not loc.text:
-            continue
-        route = normalize_doc_route(loc.text)
-        if not route or route in seen:
-            continue
+    The site no longer serves /sitemap.xml, so we start from the docs entry
+    page and follow every /docs/ link found in the sidebar, recursing into
+    category pages until no new routes are discovered.
+    """
+    ENTRY_URL = f"{SITE_ROOT}/docs/guide/"
+    seen: set[str] = set()
+    routes: list[str] = []
+    queue: collections.deque[str] = collections.deque()
+
+    def _extract_doc_links(html: str) -> list[str]:
+        soup = BeautifulSoup(html, "lxml")
+        links: list[str] = []
+        local_seen: set[str] = set()
+        for a_tag in soup.find_all("a", href=True):
+            href = a_tag["href"]
+            if not href.startswith("/docs/"):
+                continue
+            route = normalize_doc_route(href)
+            if route and route not in seen and route not in local_seen:
+                local_seen.add(route)
+                links.append(route)
+        return links
+
+    # Seed with the entry page
+    response = session.get(ENTRY_URL, timeout=30)
+    response.raise_for_status()
+    html = response.content.decode("utf-8", errors="replace").replace("\x00", "")
+    for route in _extract_doc_links(html):
         seen.add(route)
         routes.append(route)
+        queue.append(route)
+
+    # BFS: visit category pages to discover more routes
+    while queue:
+        route = queue.popleft()
+        if "/category/" not in route:
+            continue
+        url = source_url_for_route(route)
+        try:
+            resp = session.get(url, timeout=30)
+            resp.raise_for_status()
+        except requests.RequestException as exc:
+            log(f"Warning: failed to fetch category page {url}: {exc}")
+            continue
+        page_html = resp.content.decode("utf-8", errors="replace").replace("\x00", "")
+        for new_route in _extract_doc_links(page_html):
+            seen.add(new_route)
+            routes.append(new_route)
+            queue.append(new_route)
 
     return routes
 
