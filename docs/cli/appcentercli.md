@@ -84,4 +84,3 @@ appcenter-cli stop myapp
 ---
 
 - 上一页: [fnpack](fnpack.md)
-- 下一页: [📝　更新日志](../category/更新日志.md)

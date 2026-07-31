@@ -703,5 +703,5 @@ notepad.fpk
 
 ---
 
-- 上一页: [🧩　应用案例](../category/应用案例.md)
+- 上一页: [应用案例](../category/应用案例.md)
 - 下一页: [Docker 应用案例](docker.md)

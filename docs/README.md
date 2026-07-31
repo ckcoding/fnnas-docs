@@ -10,13 +10,16 @@
 
 - [欢迎加入飞牛应用开发者平台](guide.md)
 
+### 文档更新日志
+
+- [更新日志](update-log.md)
+
 ### 分类页
 
-- [🚀　快速开始](category/快速开始.md)
-- [📘　开发指南](category/开发指南.md)
-- [🧩　应用案例](category/应用案例.md)
-- [🛠️　开发工具](category/️开发工具.md)
-- [📝　更新日志](category/更新日志.md)
+- [快速开始](category/快速开始.md)
+- [开发指南](category/开发指南.md)
+- [应用案例](category/应用案例.md)
+- [开发工具](category/开发工具.md)
 
 ### 快速开始
 
@@ -50,10 +53,3 @@
 
 - [Native 应用案例](examples/native.md)
 - [Docker 应用案例](examples/docker.md)
-
-### 文档更新日志
-
-- [2026-07-05](update-log/20260705.md)
-- [2026-05-09](update-log/20260509.md)
-- [2025-12-31](update-log/20251231.md)
-- [2025-12-16](update-log/20251216.md)

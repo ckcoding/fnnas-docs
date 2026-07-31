@@ -145,5 +145,5 @@ fi
 
 ---
 
-- 上一页: [📘　开发指南](../category/开发指南.md)
+- 上一页: [开发指南](../category/开发指南.md)
 - 下一页: [Manifest](manifest.md)
